@@ -1,73 +1,118 @@
 import {Component, OnInit} from '@angular/core';
-import {ConfirmationService} from 'primeng';
+import {ConfirmationService, MessageService} from 'primeng';
+import {QuestionService} from './question.service';
+import {SessionService} from '../services/session.service';
+import {switchMap} from 'rxjs/operators';
+import {AnswerService} from '../services/answer.service';
 
 @Component({
   selector: 'app-question',
   templateUrl: './question.component.html',
-  styleUrls: ['./question.component.scss']
+  styleUrls: ['./question.component.scss'],
+  providers: [MessageService]
 })
 export class QuestionComponent implements OnInit {
 
   public question: any;
-  selectOptions: any;
+  selectOptionsMulti: any;
+  selectOptionsSingle: any;
   msgs: any;
+  index = 1;
+  currentSession: any;
 
-  constructor(private confirmationService: ConfirmationService) {
+
+  constructor(private confirmationService: ConfirmationService,
+              private questionService: QuestionService,
+              private sessionService: SessionService,
+              private answerService: AnswerService,
+              private messageService: MessageService) {
   }
 
   ngOnInit() {
+
+
+    this.loadQuestion();
+
     this.msgs = [];
-    this.question = {
-      'chapter': 1,
-      'number': 1,
-      'asking': 'Which of the following statements regarding S3 storage classes is true?',
-      'answerOption': [{
-        'option': 'A',
-        'description': 'The availability of S3 and S3-IA is the same.'
-      }, {
-        'option': 'B',
-        'description': 'The durability of S3 and S3-IA is the same.'
-      }, {
-        'option': 'C',
-        'description': 'The latency of S3 and Glacier is the same.'
-      }, {
-        'option': 'D',
-        'description': 'The latency of S3 is greater than that of Glacier.'
-      }],
-      'rightAnswer': {
-        'domain': 1,
-        'number': 1,
-        'options': ['B', 'C'],
-        'description': 'This is a common question on AWS exams, and relates to your understanding of the various S3 classes. S3 and S3-IA have the same durability, but the availability of S3 is one 9 greater than S3-IA. S3 has 99.99 availability, while S3-IA has 99.9 availability. Glacier has much greater first-byte latency than S3, so both C and D are false.'
-      }
-    };
+
+  }
+
+  private loadQuestion() {
+    this.sessionService.getSession().pipe(
+      switchMap((session) => {
+        this.currentSession = session;
+        return this.questionService.getQuestion(session.lastIndex);
+      })
+    ).subscribe((res) => {
+      this.msgs = [];
+      this.question = res;
+    });
   }
 
   confirm() {
     this.msgs = [];
+    const size = this.question.rightAnswer.options.length;
 
+    let correct;
+    let selectionOption = null;
+    if (size === 1) {
+      correct = this.selectOptionsSingle === this.question.rightAnswer.options[0];
+      this.checkResult(correct);
 
-    const selection = this.selectOptions.split(',');
-    if (this.question.rightAnswer.options.length !== selection.length) {
-      this.confirmationService.confirm({
-        message: 'Você deve selecionar ' + this.question.rightAnswer.options.length + ' respostas',
-        header: 'Aviso',
-        icon: 'pi pi-exclamation-triangle',
-        accept: () => {
-          this.checkResult();
-        },
-        reject: () => {}
+      selectionOption = this.selectOptionsSingle;
+    } else {
+
+      const right = this.question.rightAnswer.options;
+      const select = this.selectOptionsMulti;
+      correct = right.length === select.length && right.sort().every((value, index) => {
+        return value === select.sort()[index];
       });
+
+      this.checkResult(correct);
+      selectionOption = this.selectOptionsMulti.toString();
     }
 
 
+    const answer = {
+      index: this.currentSession.lastIndex,
+      chapter: this.question.chapter,
+      number: this.question.number,
+      selectOption: selectionOption,
+      'correct': correct
+    };
+
+
+    this.answerService.saveAnswer(answer).subscribe(() => {
+      //this.messageService.clear();
+      this.messageService.add({severity:'success', summary: 'Salvo', detail:'Resposta salva!', key:'ans'});
+    });
   }
 
-  private checkResult() {
-    const sucess = 'success';
-    const error = 'error';
-
-    const result = {severity: sucess, summary: this.question.rightAnswer.options, detail: this.question.rightAnswer.description};
+  private checkResult(correct: boolean) {
+    const severityOption = correct ? 'success' : 'error';
+    const result = {
+      severity: severityOption,
+      summary: this.question.rightAnswer.options,
+      detail: this.question.rightAnswer.description
+    };
     this.msgs.push(result);
+  }
+
+  next() {
+    this.currentSession.lastIndex = this.currentSession.lastIndex + 1;
+    this.sessionService.saveSession(this.currentSession).subscribe((session) => {
+        this.index = session.lastIndex;
+        this.loadQuestion();
+      }
+    );
+  }
+
+  previous() {
+    this.currentSession.lastIndex = this.currentSession.lastIndex - 1;
+    this.sessionService.saveSession(this.currentSession).subscribe((session: any) => {
+        this.index = session.lastIndex;
+        this.loadQuestion();
+      }
+    );
   }
 }

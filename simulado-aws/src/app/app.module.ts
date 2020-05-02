@@ -13,6 +13,11 @@ import {CardModule} from 'primeng/card';
 import {MessagesModule} from 'primeng/messages';
 import {MessageModule} from 'primeng/message';
 import {DialogModule} from 'primeng/dialog';
+import {ConfirmDialogModule} from 'primeng/confirmdialog';
+import {ConfirmationService} from 'primeng/api';
+import {HttpClientModule} from '@angular/common/http';
+import {ToastModule} from 'primeng/toast';
+
 
 @NgModule({
   declarations: [
@@ -30,10 +35,13 @@ import {DialogModule} from 'primeng/dialog';
     CardModule,
     MessagesModule,
     MessageModule,
-    DialogModule
+    DialogModule,
+    ConfirmDialogModule,
+    HttpClientModule,
+    ToastModule
 
   ],
-  providers: [],
+  providers: [ConfirmationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

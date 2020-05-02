@@ -1,24 +1,48 @@
-<p-card>
-  <div class="ui-g" *ngIf="msgs.length > 0">
-    <div class="ui-g-12" >
+<div style="max-width: 1024px;">
+  <p-toast key="ans" position="bottom-right"></p-toast>
+  <p-card>
+    <div class="ui-g" *ngIf="msgs.length > 0">
+      <div class="ui-g-12">
         <p-messages [(value)]="msgs"></p-messages>
+      </div>
     </div>
-  </div>
 
-  <h3 class="first">{{question.chapter + '/' + question.number + ' - ' + question.asking}}</h3>
-  <div class="ui-g">
-    <div class="ui-g-12" *ngFor="let option of question.answerOption">
-      <p-checkbox *ngIf="question.rightAnswer.options.length > 1" name="{{option.option}}" value="{{option.option}}"
-                  label="{{option.option+') '+ option.description}}" [(ngModel)]="selectOptions" inputId="option.option"></p-checkbox>
-      <p-radioButton *ngIf="question.rightAnswer.options.length == 1" name="option" value="{{option.option}}"
-                     label="{{option.option+') '+option.description}}" [(ngModel)]="selectOptions" inputId="opt1"></p-radioButton>
+    <h3 class="first">{{question.chapter + '/' + question.number + ' - ' + question.asking}}</h3>
+    <div class="ui-g" *ngFor="let option of question.answerOption">
+      <div class="ui-g-12">
+        <p-checkbox *ngIf="question.rightAnswer.options.length > 1" name="{{option.option}}" value="{{option.option}}"
+                    label="{{option.option+') '+ option.description}}" [(ngModel)]="selectOptionsMulti"
+                    inputId="option.option"></p-checkbox>
+        <p-radioButton *ngIf="question.rightAnswer.options.length == 1" name="option" value="{{option.option}}"
+                       label="{{option.option+') '+option.description}}" [(ngModel)]="selectOptionsSingle"
+                       inputId="opt1"></p-radioButton>
+      </div>
     </div>
-    <div class="ui-g-12 ">
+    <div class="ui-g">
+      <div class="ui-g-12 ">
+      </div>
     </div>
-    <div class="ui-g-12 ">
-      <button pButton type="button" label="Confirmar" (click)="confirm()" class="ui-button-rounded"></button>
+    <div class="ui-g">
+      <div class="ui-g-12 ">
+        <button pButton type="button"
+                [disabled]="question.rightAnswer.options.length > 1 ? (selectOptionsMulti == null || selectOptionsMulti.length != question.rightAnswer.options.length) : selectOptionsSingle == null "
+                label="Confirmar" (click)="confirm()" class="ui-button-rounded"></button>
+      </div>
     </div>
-  </div>
-</p-card>
-{{selectOptions}}
-<p-confirmDialog header="Confirmação" icon="pi pi-exclamation-triangle"></p-confirmDialog>
+
+    <div class="ui-g">
+      <div class="ui-g-12 " style="text-align: right">
+        <button pButton type="button"
+                label="Anterior" (click)="previous()" class="ui-button-rounded ui-button-secondary"></button>
+
+        <button pButton type="button" style="margin-left: 20px"
+                label="Próximo" (click)="next()" class="ui-button-rounded ui-button-secondary"></button>
+      </div>
+    </div>
+
+
+  </p-card>
+
+
+  <p-confirmDialog header="Confirmação" icon="pi pi-exclamation-triangle"></p-confirmDialog>
+</div>

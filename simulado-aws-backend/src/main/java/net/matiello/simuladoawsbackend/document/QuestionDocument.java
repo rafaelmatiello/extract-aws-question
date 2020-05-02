@@ -1,17 +1,23 @@
-package net.matiello.pdf_reader.pojo;
+package net.matiello.simuladoawsbackend.document;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Question {
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection = "question")
+public class QuestionDocument {
+
+	@Id
+	private String id;
 	private int index;
 	private int chapter;
 	private int number;
 	private String asking;
 
 	private List<AnswerOption> answerOption = new ArrayList<AnswerOption>(4);
-	
+
 	private RightAnswer rightAnswer;
 
 	public int getNumber() {
@@ -32,7 +38,7 @@ public class Question {
 
 	@Override
 	public String toString() {
-		return number + ". " + asking + "\n" + getAnswerOption() ;
+		return number + ". " + asking + "\n" + getAnswerOption();
 	}
 
 	public List<AnswerOption> getAnswerOption() {

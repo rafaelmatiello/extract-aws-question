@@ -64,6 +64,7 @@ public class GetLinesFromPDF extends PDFTextStripper {
 			RightAnswer currentRightAnswer = null;
 			boolean startRightAnswer = false;
 
+			int index = 1;
 			// print lines
 			for (String line : lines) {
 				System.out.println(line);
@@ -91,19 +92,20 @@ public class GetLinesFromPDF extends PDFTextStripper {
 					}
 					
 
-					Question asking = isAsking(line);
+					Question question = isQuestion(line);
 					AnswerOption answer = isAnswerOptions(line);
 
-					if (asking == null && currentQuestion == null && currentAnswer == null) {
+					if (question == null && currentQuestion == null && currentAnswer == null) {
 						continue;
 					}
 
-					if (asking != null) {
-						currentQuestion = asking;
+					if (question != null) {
+						currentQuestion = question;
 						currentQuestion.setChapter(lastChapter);
+						question.setIndex(index++);
 						startQuestion = true;
 						startAnswer = false;
-						questions.put(lastChapter + "-" + asking.getNumber(), asking);
+						questions.put(lastChapter + "-" + question.getNumber(), question);
 					} else if (startQuestion && answer == null) {
 						currentQuestion.setAsking(currentQuestion.getAsking() + line);
 					}
@@ -164,11 +166,11 @@ public class GetLinesFromPDF extends PDFTextStripper {
 
 		ObjectMapper objectMapper = new ObjectMapper();
 		objectMapper.writerWithDefaultPrettyPrinter()
-				.writeValue(new File("C:\\workspace\\estudos\\pdf-reader\\src\\main\\resources\\perguntas.json"), questions.values());
+				.writeValue(new File("C:\\repositorios\\extract-aws-question\\pdf-reader\\src\\main\\resources\\perguntas.json"), questions.values());
 
 		
 		objectMapper.writerWithDefaultPrettyPrinter()
-				.writeValue(new File("C:\\workspace\\estudos\\pdf-reader\\src\\main\\resources\\notFound.json"), questionNotFound);
+				.writeValue(new File("C:\\repositorios\\extract-aws-question\\pdf-reader\\src\\main\\resources\\notFound.json"), questionNotFound);
 
 	}
 
@@ -188,7 +190,7 @@ public class GetLinesFromPDF extends PDFTextStripper {
 		return null;
 	}
 
-	private static Question isAsking(String line) {
+	private static Question isQuestion(String line) {
 
 		Pattern pattern = Pattern.compile("^\\s?([0-9|\\s]+)\\.\\s(.*)$");
 		Matcher matcher = pattern.matcher(line);
