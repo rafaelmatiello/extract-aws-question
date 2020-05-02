@@ -7,7 +7,7 @@
       </div>
     </div>
 
-    <h3 class="first">{{question.chapter + '/' + question.number + ' - ' + question.asking}}</h3>
+    <h3 class="first" *ngIf="question">{{question.chapter + '/' + question.number + ' - ' + question.asking}}</h3>
     <div class="ui-g" *ngFor="let option of question.answerOption">
       <div class="ui-g-12">
         <p-checkbox *ngIf="question.rightAnswer.options.length > 1" name="{{option.option}}" value="{{option.option}}"
@@ -32,7 +32,10 @@
 
     <div class="ui-g">
       <div class="ui-g-12 " style="text-align: right">
-        <input type="number" maxlength="9999" style="width: 70px;" pInputText [(ngModel)]="gotoIndex"/>
+        <button pButton type="button" style="margin-left: 20px"
+                label="Resumo" (click)="showStatistics()" class="ui-button-rounded ui-button-success"></button>
+
+        <input type="number" maxlength="9999" style="width: 70px;margin-left: 20px;" pInputText [(ngModel)]="gotoIndex"/>
         <button pButton type="button" style="margin-left: 20px"
                 label="Ir Para" (click)="goTo()" class="ui-button-rounded ui-button-secondary"></button>
 
@@ -50,3 +53,29 @@
 
   <p-confirmDialog header="Confirmação" icon="pi pi-exclamation-triangle"></p-confirmDialog>
 </div>
+<p-sidebar [(visible)]="showSidebar" styleClass="ui-sidebar-lg" position="right" [baseZIndex]="10000">
+
+  <p-table *ngIf="statistics" [value]="statistics">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Capitulo</th>
+        <th>Respostas</th>
+        <th>Certas</th>
+        <th>Erradas</th>
+        <th>Percentual</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-stat>
+      <tr>
+        <td>{{stat.key}}</td>
+        <td>{{stat.answers}}</td>
+        <td>{{stat.correct}}</td>
+        <td>{{stat.wrong}}</td>
+        <td>{{stat.percent}}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+  <br>
+  <button pButton type="button" style="margin-left: 20px"
+          label="Fechar" (click)="showSidebar = false" class="ui-button-rounded ui-button-secondary"></button>
+</p-sidebar>

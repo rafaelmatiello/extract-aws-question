@@ -4,6 +4,7 @@ import {QuestionService} from './question.service';
 import {SessionService} from '../services/session.service';
 import {switchMap} from 'rxjs/operators';
 import {AnswerService} from '../services/answer.service';
+import {StatisticsService} from '../services/statistics.service';
 
 @Component({
   selector: 'app-question',
@@ -20,13 +21,16 @@ export class QuestionComponent implements OnInit {
   index = 1;
   currentSession: any;
   gotoIndex: any;
+  showSidebar = false;
+  public statistics: any;
 
 
   constructor(private confirmationService: ConfirmationService,
               private questionService: QuestionService,
               private sessionService: SessionService,
               private answerService: AnswerService,
-              private messageService: MessageService) {
+              private messageService: MessageService,
+              private statisticsService: StatisticsService) {
   }
 
   ngOnInit() {
@@ -46,6 +50,8 @@ export class QuestionComponent implements OnInit {
       })
     ).subscribe((res) => {
       this.msgs = [];
+      this.selectOptionsMulti = null;
+      this.selectOptionsSingle = null;
       this.question = res;
     });
   }
@@ -84,8 +90,7 @@ export class QuestionComponent implements OnInit {
 
 
     this.answerService.saveAnswer(answer).subscribe(() => {
-      //this.messageService.clear();
-      this.messageService.add({severity:'success', summary: 'Salvo', detail:'Resposta salva!', key:'ans'});
+      this.messageService.add({severity: 'success', summary: 'Salvo', detail: 'Resposta salva!', key: 'ans'});
     });
   }
 
@@ -124,5 +129,20 @@ export class QuestionComponent implements OnInit {
         this.loadQuestion();
       }
     );
+  }
+
+  showStatistics() {
+
+    this.statisticsService.getStatistics().subscribe((statistics) => {
+
+      this.statistics = statistics;
+      this.statistics.forEach(stat => {
+        debugger
+        stat.percent = (stat.correct * 100) / stat.answers;
+      });
+      this.showSidebar = true;
+    });
+
+
   }
 }

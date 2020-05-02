@@ -36,5 +36,6 @@ public class SesssionController {
 	public SessionDocument create(@RequestBody SessionDocument sessionDocument) {
 		return sessionRepository.save(sessionDocument);
 	}
+	
 
 }
