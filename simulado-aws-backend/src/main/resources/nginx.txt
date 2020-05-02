@@ -1,0 +1,10 @@
+server {
+        listen       80;
+        #listen       somename:8080;
+        #server_name  somename  alias  another.alias;
+
+        location / {
+            root   html/simulado-aws;
+            try_files $uri $uri/ /index.html;
+        }
+}

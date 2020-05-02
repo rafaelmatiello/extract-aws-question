@@ -14,13 +14,4 @@ public class SimuladoAwsBackendApplication {
 	}
 
 	
-	@Bean
-	public WebMvcConfigurer corsConfigurer() {
-		return new WebMvcConfigurer() {
-			@Override
-			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/session").allowedOrigins("http://localhost:8080");
-			}
-		};
-	}
 }

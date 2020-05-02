@@ -1,4 +1,4 @@
-<div style="max-width: 1024px;">
+<div style="max-width: 1024px; margin: 0 auto;padding: 20px;">
   <p-toast key="ans" position="bottom-right"></p-toast>
   <p-card>
     <div class="ui-g" *ngIf="msgs.length > 0">
@@ -32,7 +32,11 @@
 
     <div class="ui-g">
       <div class="ui-g-12 " style="text-align: right">
-        <button pButton type="button"
+        <input type="number" maxlength="9999" style="width: 70px;" pInputText [(ngModel)]="gotoIndex"/>
+        <button pButton type="button" style="margin-left: 20px"
+                label="Ir Para" (click)="goTo()" class="ui-button-rounded ui-button-secondary"></button>
+
+        <button pButton type="button" style="margin-left: 20px"
                 label="Anterior" (click)="previous()" class="ui-button-rounded ui-button-secondary"></button>
 
         <button pButton type="button" style="margin-left: 20px"

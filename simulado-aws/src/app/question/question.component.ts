@@ -19,6 +19,7 @@ export class QuestionComponent implements OnInit {
   msgs: any;
   index = 1;
   currentSession: any;
+  gotoIndex: any;
 
 
   constructor(private confirmationService: ConfirmationService,
@@ -109,6 +110,15 @@ export class QuestionComponent implements OnInit {
 
   previous() {
     this.currentSession.lastIndex = this.currentSession.lastIndex - 1;
+    this.sessionService.saveSession(this.currentSession).subscribe((session: any) => {
+        this.index = session.lastIndex;
+        this.loadQuestion();
+      }
+    );
+  }
+
+  goTo() {
+    this.currentSession.lastIndex = this.gotoIndex;
     this.sessionService.saveSession(this.currentSession).subscribe((session: any) => {
         this.index = session.lastIndex;
         this.loadQuestion();

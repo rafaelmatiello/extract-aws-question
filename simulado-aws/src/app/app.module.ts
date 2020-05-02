@@ -17,7 +17,7 @@ import {ConfirmDialogModule} from 'primeng/confirmdialog';
 import {ConfirmationService} from 'primeng/api';
 import {HttpClientModule} from '@angular/common/http';
 import {ToastModule} from 'primeng/toast';
-
+import {InputTextModule} from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,8 @@ import {ToastModule} from 'primeng/toast';
     DialogModule,
     ConfirmDialogModule,
     HttpClientModule,
-    ToastModule
+    ToastModule,
+    InputTextModule
 
   ],
   providers: [ConfirmationService],

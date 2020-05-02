@@ -17,6 +17,6 @@ export class AnswerService {
       })
     };
 
-    return this.http.post('http://localhost:8080/answers/' + answer.index, answer, httpOptions);
+    return this.http.post('http://note-rafael:8080/answers/' + answer.index, answer, httpOptions);
   }
 }

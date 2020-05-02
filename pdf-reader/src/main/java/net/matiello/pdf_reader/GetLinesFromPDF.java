@@ -1,5 +1,6 @@
 package net.matiello.pdf_reader;
 
+import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
@@ -13,6 +14,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.pdfbox.io.IOUtils;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.apache.pdfbox.text.TextPosition;
@@ -42,13 +44,14 @@ public class GetLinesFromPDF extends PDFTextStripper {
 		Map<String, Question> questions = new LinkedHashMap<String, Question>();
 		List<String> questionNotFound = new ArrayList<String>();
 		try {
+			
 			document = PDDocument.load(new File(fileName));
 			PDFTextStripper stripper = new GetLinesFromPDF();
 			stripper.setSortByPosition(true);
 			stripper.setStartPage(0);
 			stripper.setEndPage(document.getNumberOfPages());
 			// stripper.setEndPage(59);
-			Writer dummy = new OutputStreamWriter(new ByteArrayOutputStream());
+			Writer dummy = new OutputStreamWriter(new ByteArrayOutputStream(), "UTF-8");
 			stripper.writeText(document, dummy);
 
 			Question currentQuestion = null;
