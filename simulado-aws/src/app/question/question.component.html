@@ -1,0 +1,24 @@
+<p-card>
+  <div class="ui-g" *ngIf="msgs.length > 0">
+    <div class="ui-g-12" >
+        <p-messages [(value)]="msgs"></p-messages>
+    </div>
+  </div>
+
+  <h3 class="first">{{question.chapter + '/' + question.number + ' - ' + question.asking}}</h3>
+  <div class="ui-g">
+    <div class="ui-g-12" *ngFor="let option of question.answerOption">
+      <p-checkbox *ngIf="question.rightAnswer.options.length > 1" name="{{option.option}}" value="{{option.option}}"
+                  label="{{option.option+') '+ option.description}}" [(ngModel)]="selectOptions" inputId="option.option"></p-checkbox>
+      <p-radioButton *ngIf="question.rightAnswer.options.length == 1" name="option" value="{{option.option}}"
+                     label="{{option.option+') '+option.description}}" [(ngModel)]="selectOptions" inputId="opt1"></p-radioButton>
+    </div>
+    <div class="ui-g-12 ">
+    </div>
+    <div class="ui-g-12 ">
+      <button pButton type="button" label="Confirmar" (click)="confirm()" class="ui-button-rounded"></button>
+    </div>
+  </div>
+</p-card>
+{{selectOptions}}
+<p-confirmDialog header="Confirmação" icon="pi pi-exclamation-triangle"></p-confirmDialog>
