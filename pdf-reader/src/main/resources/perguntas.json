@@ -92,7 +92,7 @@
     "description" : "DELETEs"
   }, {
     "option" : "D",
-    "description" : "PUTs that overwrite existing objectsReview Questions 3"
+    "description" : "PUTs that overwrite existing objects"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -359,7 +359,7 @@
     "description" : "The polling time for monitoring network latency"
   }, {
     "option" : "D",
-    "description" : "The IAM role to associate with created instancesReview Questions 5"
+    "description" : "The IAM role to associate with created instances"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -647,7 +647,7 @@
     "description" : "Amazon VPC to customer gateway to virtual private gateway"
   }, {
     "option" : "D",
-    "description" : "Customer gateway to virtual private gateway to Amazon VPCReview Questions 7"
+    "description" : "Customer gateway to virtual private gateway to Amazon VPC"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -914,7 +914,7 @@
     "description" : "Stored volume gateway"
   }, {
     "option" : "D",
-    "description" : "Tape gatewayReview Questions 9"
+    "description" : "Tape gateway"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -1226,7 +1226,7 @@
     "description" : "S3 One Zone-IA"
   }, {
     "option" : "D",
-    "description" : "All of the aboveReview Questions 11"
+    "description" : "All of the above"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -1514,7 +1514,7 @@
     "description" : "An AWS CloudFront distribution"
   }, {
     "option" : "D",
-    "description" : "All of the aboveReview Questions 13"
+    "description" : "All of the above"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -1802,7 +1802,7 @@
     "description" : "Apex zone record URLs"
   }, {
     "option" : "D",
-    "description" : "Path-style URLsReview Questions 15"
+    "description" : "Path-style URLs"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -2090,7 +2090,7 @@
     "description" : "The bucket owner"
   }, {
     "option" : "D",
-    "description" : "The root account that owns the bucketReview Questions 17"
+    "description" : "The root account that owns the bucket"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -2378,7 +2378,7 @@
     "description" : "Edge locations < regions < availability zones"
   }, {
     "option" : "D",
-    "description" : "Edge locations < availability zones < regionsReview Questions 19"
+    "description" : "Edge locations < availability zones < regions"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -2690,7 +2690,7 @@
     "description" : "Transfer Acceleration"
   }, {
     "option" : "D",
-    "description" : "Edge transportReview Questions 21"
+    "description" : "Edge transport"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -3002,7 +3002,7 @@
     "description" : "Users taking advantage of HTTPS for uploads"
   }, {
     "option" : "D",
-    "description" : "All users equally benefit.Review Questions 23"
+    "description" : "All users equally benefit."
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -3266,7 +3266,7 @@
     "description" : "Application health monitoring"
   }, {
     "option" : "D",
-    "description" : "Log inspection and backupReview Questions 25"
+    "description" : "Log inspection and backup"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -3578,7 +3578,7 @@
     "description" : "SWF"
   }, {
     "option" : "D",
-    "description" : "IAMReview Questions 27"
+    "description" : "IAM"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -3914,7 +3914,7 @@
     "description" : "Compute services"
   }, {
     "option" : "D",
-    "description" : "Networking servicesReview Questions 29"
+    "description" : "Networking services"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -4226,7 +4226,7 @@
     "description" : "An availability zone’s name (for example, us-east-1a) may change across AWS accounts."
   }, {
     "option" : "D",
-    "description" : "You can specify an availability zone in which to launch your instance when creating the instance.Review Questions 31"
+    "description" : "You can specify an availability zone in which to launch your instance when creating the instance."
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -4562,7 +4562,7 @@
     "description" : "22"
   }, {
     "option" : "D",
-    "description" : "3306Review Questions 33"
+    "description" : "3306"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -4898,7 +4898,7 @@
     "description" : "Aurora"
   }, {
     "option" : "D",
-    "description" : "They are all equivalent.Review Questions 35"
+    "description" : "They are all equivalent."
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -5234,7 +5234,7 @@
     "description" : "High durability"
   }, {
     "option" : "D",
-    "description" : "Automatic failoverReview Questions 37"
+    "description" : "Automatic failover"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -5549,7 +5549,7 @@
     "description" : "/24"
   }, {
     "option" : "D",
-    "description" : "/28Review Questions 39"
+    "description" : "/28"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -5885,7 +5885,7 @@
     "description" : "By an IAM role"
   }, {
     "option" : "D",
-    "description" : "By a named messageReview Questions 41"
+    "description" : "By a named message"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -6173,7 +6173,7 @@
     "description" : "Three"
   }, {
     "option" : "D",
-    "description" : "FiveReview Questions 43"
+    "description" : "Five"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -6485,7 +6485,7 @@
     "description" : "A security group allowing outbound traffic"
   }, {
     "option" : "D",
-    "description" : "An internet gatewayReview Questions 45"
+    "description" : "An internet gateway"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -6803,7 +6803,7 @@
     "description" : "Deny rules only"
   }, {
     "option" : "D",
-    "description" : "Allow, deny, and permit rulesReview Questions 47"
+    "description" : "Allow, deny, and permit rules"
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -7115,7 +7115,7 @@
     "description" : "A single instance retains its public IP within a VPC when stopped and restarted."
   }, {
     "option" : "D",
-    "description" : "A single instance does not retain its public IP within a VPC when stopped and restarted.Review Questions 49"
+    "description" : "A single instance does not retain its public IP within a VPC when stopped and restarted."
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -7382,7 +7382,7 @@
     "description" : "It automatically allows inbound traffic from your on-premises connection."
   }, {
     "option" : "D",
-    "description" : "It enables storage-based traffic from a customer’s storage gateway.Review Questions 51"
+    "description" : "It enables storage-based traffic from a customer’s storage gateway."
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -7820,7 +7820,7 @@
     "description" : "It is updated via asynchronous replication from the primary instance."
   }, {
     "option" : "D",
-    "description" : "It is updated via synchronous replication from the primary instance.Review Questions 55"
+    "description" : "It is updated via synchronous replication from the primary instance."
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -8060,7 +8060,7 @@
     "description" : "Your boss has asked for an automated backup solution that takes advantage of AWS managed services."
   }, {
     "option" : "D",
-    "description" : "You need to perform additional OLTP queries and want to improve the performance of those queries.Review Questions 57"
+    "description" : "You need to perform additional OLTP queries and want to improve the performance of those queries."
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -8327,7 +8327,7 @@
     "description" : "Both volumes are preserved."
   }, {
     "option" : "D",
-    "description" : "The instance is unable to terminate until the root volume is deleted.Review Questions 59"
+    "description" : "The instance is unable to terminate until the root volume is deleted."
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -8591,7 +8591,7 @@
     "description" : "Set up a read replica configuration for your RDS and round-robin requests between all the replicas to spread out traffic."
   }, {
     "option" : "D",
-    "description" : "Increase the number of EC2 instances allocated to your Auto Scaling group to spread out traffic on the web application tier.Review Questions 61"
+    "description" : "Increase the number of EC2 instances allocated to your Auto Scaling group to spread out traffic on the web application tier."
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -8879,7 +8879,7 @@
     "description" : "12 TB"
   }, {
     "option" : "D",
-    "description" : "1 PBReview Questions 63"
+    "description" : "1 PB"
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -9167,7 +9167,7 @@
     "description" : "Cold HDD"
   }, {
     "option" : "D",
-    "description" : "MagneticReview Questions 65"
+    "description" : "Magnetic"
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -9458,7 +9458,7 @@
     "description" : "There is no limit."
   }, {
     "option" : "D",
-    "description" : "There is a limit of 50, but it can be raised upon request.Review Questions 67"
+    "description" : "There is a limit of 50, but it can be raised upon request."
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -9770,7 +9770,7 @@
     "description" : "There are fewer edge locations than availability zones."
   }, {
     "option" : "D",
-    "description" : "There are more edge locations than availability zones.Review Questions 69"
+    "description" : "There are more edge locations than availability zones."
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -10058,7 +10058,7 @@
     "description" : "12 hours by default, but this value can be changed."
   }, {
     "option" : "D",
-    "description" : "24 hours by default, but this value can be changed.Review Questions 71"
+    "description" : "24 hours by default, but this value can be changed."
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -10346,7 +10346,7 @@
     "description" : "An RDS instance can be an origin server."
   }, {
     "option" : "D",
-    "description" : "The default expiration period is 12 hours.Review Questions 73"
+    "description" : "The default expiration period is 12 hours."
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -10658,7 +10658,7 @@
     "description" : "S3-IA"
   }, {
     "option" : "D",
-    "description" : "S3 standardReview Questions 75"
+    "description" : "S3 standard"
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -10898,7 +10898,7 @@
     "description" : "Consider installing a storage gateway with stored volumes at the customer’s on- premises site."
   }, {
     "option" : "D",
-    "description" : "Install ElastiCache in front of the database.Review Questions 77"
+    "description" : "Install ElastiCache in front of the database."
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -11186,7 +11186,7 @@
     "description" : "Geoproximity routing"
   }, {
     "option" : "D",
-    "description" : "Weighted routingReview Questions 79"
+    "description" : "Weighted routing"
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -11474,7 +11474,7 @@
     "description" : "Centralized control of AWS resource access"
   }, {
     "option" : "D",
-    "description" : "Integration with Active Directory accountsReview Questions 81"
+    "description" : "Integration with Active Directory accounts"
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -11762,7 +11762,7 @@
     "description" : "IAM"
   }, {
     "option" : "D",
-    "description" : "AWS OrganizationsReview Questions 83"
+    "description" : "AWS Organizations"
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -12074,7 +12074,7 @@
     "description" : "Security Auditor"
   }, {
     "option" : "D",
-    "description" : "Data ScientistReview Questions 85"
+    "description" : "Data Scientist"
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -12362,7 +12362,7 @@
     "description" : "Topic"
   }, {
     "option" : "D",
-    "description" : "PolicyReview Questions 87"
+    "description" : "Policy"
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -12674,7 +12674,7 @@
     "description" : "Resource-based scaling"
   }, {
     "option" : "D",
-    "description" : "Maintain current instance levelsReview Questions 89"
+    "description" : "Maintain current instance levels"
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -12962,7 +12962,7 @@
     "description" : "A launch template"
   }, {
     "option" : "D",
-    "description" : "Any of theseReview Questions 91"
+    "description" : "Any of these"
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -13229,7 +13229,7 @@
     "description" : "You should only store application keys in an encrypted AMI."
   }, {
     "option" : "D",
-    "description" : "You should only use your application key to log in to the AWS console.Review Questions 95"
+    "description" : "You should only use your application key to log in to the AWS console."
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -13496,7 +13496,7 @@
     "description" : "You can specify specific separate rules for inbound and outbound traffic."
   }, {
     "option" : "D",
-    "description" : "If there are no outbound rules, then all outbound traffic is allowed to flow out.Review Questions 97"
+    "description" : "If there are no outbound rules, then all outbound traffic is allowed to flow out."
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -13808,7 +13808,7 @@
     "description" : "Client-side encryption keys"
   }, {
     "option" : "D",
-    "description" : "SSE-CReview Questions 99"
+    "description" : "SSE-C"
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -14096,7 +14096,7 @@
     "description" : "Encrypted EBS volumes can only be stored if server-side encryption is enabled."
   }, {
     "option" : "D",
-    "description" : "S3 will accept locally encrypted data if client-side encryption is enabled.Review Questions 101"
+    "description" : "S3 will accept locally encrypted data if client-side encryption is enabled."
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -14384,7 +14384,7 @@
     "description" : "Encrypt the volume via the AWS API and turn on the “encrypt existing data” flag."
   }, {
     "option" : "D",
-    "description" : "None of these will encrypt all data on the volume.Review Questions 103"
+    "description" : "None of these will encrypt all data on the volume."
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -14696,7 +14696,7 @@
     "description" : "Process rules in order"
   }, {
     "option" : "D",
-    "description" : "Associated with an instanceReview Questions 105"
+    "description" : "Associated with an instance"
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -15032,7 +15032,7 @@
     "description" : "An IP address"
   }, {
     "option" : "D",
-    "description" : "A VPC identifierReview Questions 107"
+    "description" : "A VPC identifier"
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -15248,7 +15248,7 @@
     "description" : "The entire Internet, limited to IPv6 addresses"
   }, {
     "option" : "D",
-    "description" : "Inbound traffic from the entire InternetReview Questions 109"
+    "description" : "Inbound traffic from the entire Internet"
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -15563,7 +15563,7 @@
     "description" : "A set of VPC tags"
   }, {
     "option" : "D",
-    "description" : "An IPv4 CIDR blockReview Questions 111"
+    "description" : "An IPv4 CIDR block"
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -15878,7 +15878,7 @@
     "description" : "A virtual private gateway"
   }, {
     "option" : "D",
-    "description" : "A security groupReview Questions 113"
+    "description" : "A security group"
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -16172,7 +16172,7 @@
     "description" : "Two or more"
   }, {
     "option" : "D",
-    "description" : "All the availability zones within a regionReview Questions 115"
+    "description" : "All the availability zones within a region"
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -16484,7 +16484,7 @@
     "description" : "They are automatically highly available."
   }, {
     "option" : "D",
-    "description" : "They scale vertically.Review Questions 117"
+    "description" : "They scale vertically."
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -16796,7 +16796,7 @@
     "description" : "Public"
   }, {
     "option" : "D",
-    "description" : "TransportReview Questions 119"
+    "description" : "Transport"
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -17084,7 +17084,7 @@
     "description" : "Internet gateway"
   }, {
     "option" : "D",
-    "description" : "NAT instanceReview Questions 121"
+    "description" : "NAT instance"
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -17402,7 +17402,7 @@
     "description" : "One at a time, but it can be moved from one instance to another."
   }, {
     "option" : "D",
-    "description" : "Up to fiveReview Questions 123"
+    "description" : "Up to five"
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -17717,7 +17717,7 @@
     "description" : "You can assign two IAM roles to an instance, but no more than that."
   }, {
     "option" : "D",
-    "description" : "You cannot; only one role can be assigned to an instance.Review Questions 125"
+    "description" : "You cannot; only one role can be assigned to an instance."
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -18029,7 +18029,7 @@
     "description" : "Encrypt everything where possible."
   }, {
     "option" : "D",
-    "description" : "Encrypt data at rest.Review Questions 127"
+    "description" : "Encrypt data at rest."
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -18317,7 +18317,7 @@
     "description" : "Organizational blueprint"
   }, {
     "option" : "D",
-    "description" : "Cost optimizationReview Questions 129"
+    "description" : "Cost optimization"
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -18629,7 +18629,7 @@
     "description" : "To an organizational unit"
   }, {
     "option" : "D",
-    "description" : "To a SAML user storeReview Questions 131"
+    "description" : "To a SAML user store"
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -18869,7 +18869,7 @@
     "description" : "A model that defines how connections between offices or on-premises data centers and the cloud must work together to secure data that moves between the two"
   }, {
     "option" : "D",
-    "description" : "A model that defines how the five pillars of the AWS well-architected framework interactReview Questions 133"
+    "description" : "A model that defines how the five pillars of the AWS well-architected framework interact"
   } ],
   "rightAnswer" : {
     "domain" : 3,
@@ -19109,7 +19109,7 @@
     "description" : "Applications with steady-state usage"
   }, {
     "option" : "D",
-    "description" : "Applications being developed or tested on EC2 for the first timeReview Questions 137"
+    "description" : "Applications being developed or tested on EC2 for the first time"
   } ],
   "rightAnswer" : {
     "domain" : 4,
@@ -19376,7 +19376,7 @@
     "description" : "Provisioned IOPS SSD"
   }, {
     "option" : "D",
-    "description" : "Cold HDDReview Questions 139"
+    "description" : "Cold HDD"
   } ],
   "rightAnswer" : {
     "domain" : 4,
@@ -19616,7 +19616,7 @@
     "description" : "Transferring data across regions"
   }, {
     "option" : "D",
-    "description" : "Transferring data from one instance to another within the same availability zoneReview Questions 141"
+    "description" : "Transferring data from one instance to another within the same availability zone"
   } ],
   "rightAnswer" : {
     "domain" : 4,
@@ -19952,7 +19952,7 @@
     "description" : "Dedicated hosts"
   }, {
     "option" : "D",
-    "description" : "All upfrontReview Questions 143"
+    "description" : "All upfront"
   } ],
   "rightAnswer" : {
     "domain" : 4,
@@ -20240,7 +20240,7 @@
     "description" : "Transferring data from an EC2 instance to an instance in another region"
   }, {
     "option" : "D",
-    "description" : "Importing data to S3 via Transfer AccelerationReview Questions 145"
+    "description" : "Importing data to S3 via Transfer Acceleration"
   } ],
   "rightAnswer" : {
     "domain" : 4,
@@ -20552,7 +20552,7 @@
     "description" : "Save money with on-demand resources."
   }, {
     "option" : "D",
-    "description" : "Buy high capacity and serve low capacity.Review Questions 147"
+    "description" : "Buy high capacity and serve low capacity."
   } ],
   "rightAnswer" : {
     "domain" : 4,
@@ -20816,7 +20816,7 @@
     "description" : "Glacier"
   }, {
     "option" : "D",
-    "description" : "SnowballReview Questions 149"
+    "description" : "Snowball"
   } ],
   "rightAnswer" : {
     "domain" : 4,
@@ -21056,7 +21056,7 @@
     "description" : "Kinesis"
   }, {
     "option" : "D",
-    "description" : "CloudFormationReview Questions 151"
+    "description" : "CloudFormation"
   } ],
   "rightAnswer" : {
     "domain" : 4,
@@ -21344,7 +21344,7 @@
     "description" : "Use the AWS REST APIs with an application key."
   }, {
     "option" : "D",
-    "description" : "All of the aboveE. None of the aboveReview Questions 155"
+    "description" : "All of the aboveE. None of the above"
   } ],
   "rightAnswer" : {
     "domain" : 5,
@@ -21656,7 +21656,7 @@
     "description" : "aws instance [command]"
   }, {
     "option" : "D",
-    "description" : "You cannot operate upon EBS volumes directly from the AWS CLI.Review Questions 157"
+    "description" : "You cannot operate upon EBS volumes directly from the AWS CLI."
   } ],
   "rightAnswer" : {
     "domain" : 5,
@@ -21947,7 +21947,7 @@
     "description" : "Each VPC must use a unique security group."
   }, {
     "option" : "D",
-    "description" : "The two VPCs cannot have overlapping CIDR blocks.Review Questions 159"
+    "description" : "The two VPCs cannot have overlapping CIDR blocks."
   } ],
   "rightAnswer" : {
     "domain" : 5,
@@ -22220,7 +22220,7 @@
     "description" : "A private IPv4 address"
   }, {
     "option" : "D",
-    "description" : "A public IPv6 addressReview Questions 161"
+    "description" : "A public IPv6 address"
   } ],
   "rightAnswer" : {
     "domain" : 5,
@@ -22508,7 +22508,7 @@
     "description" : "Elastic Computer Service"
   }, {
     "option" : "D",
-    "description" : "Encapsulated Container ServiceReview Questions 163"
+    "description" : "Encapsulated Container Service"
   } ],
   "rightAnswer" : {
     "domain" : 5,

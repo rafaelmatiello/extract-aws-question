@@ -119,6 +119,11 @@ public class GetLinesFromPDF extends PDFTextStripper {
 						startAnswer = true;
 						currentQuestion.getAnswerOption().add(answer);
 					} else if (startAnswer) {
+						
+						if(isReviewQuestion(line)) {
+							continue;
+						}
+						
 						currentAnswer.setDescription(currentAnswer.getDescription() + line);
 					}
 				} else {
@@ -140,7 +145,6 @@ public class GetLinesFromPDF extends PDFTextStripper {
 						}
 					}
 					
-					
 
 					RightAnswer rightAnswer = isRightAnswer(line);
 
@@ -156,6 +160,10 @@ public class GetLinesFromPDF extends PDFTextStripper {
 							question.setRightAnswer(currentRightAnswer);
 						}
 					} else if (startRightAnswer) {
+						
+						if(domain != null) {
+							continue;
+						}
 						currentRightAnswer.setDescription(currentRightAnswer.getDescription() + line);
 					}
 
@@ -223,7 +231,8 @@ public class GetLinesFromPDF extends PDFTextStripper {
 
 	private static Integer isDomain(String line) {
 
-		Pattern pattern = Pattern.compile("^Domain\\s([0-9|\\s]+)\\:\\s(\\D*)$");
+		//Pattern pattern = Pattern.compile("^Domain\\s([0-9|\\s]+)\\:\\s([^0-9]*)\\s?(\\d*)$");
+		Pattern pattern = Pattern.compile("^Domain\\s([0-9|\\s]+)\\:\\s([^0-9]*)$");
 		Matcher matcher = pattern.matcher(line);
 
 		if (matcher.find()) {
@@ -263,6 +272,18 @@ public class GetLinesFromPDF extends PDFTextStripper {
 			return true;
 		}
 
+		return false;
+	}
+
+	private static boolean isReviewQuestion(String line) {
+		
+		Pattern pattern = Pattern.compile("Review Questions\\s[0-9]+");
+		Matcher matcher = pattern.matcher(line);
+		
+		if (matcher.find()) {
+			return true;
+		}
+		
 		return false;
 	}
 	

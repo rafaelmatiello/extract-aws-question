@@ -1,6 +1,7 @@
 package net.matiello.simuladoawsbackend.document;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -14,6 +15,10 @@ public class AnswerDocument {
 	private Integer chapter;
 	private Integer number;
 	private LocalDateTime date;
+	private Boolean star;
+	private String comment;
+	private List<String> tags;
+	
 
 	private String selectOption;
 
@@ -73,6 +78,30 @@ public class AnswerDocument {
 
 	public void setIndex(Integer index) {
 		this.index = index;
+	}
+
+	public Boolean getStar() {
+		return star;
+	}
+
+	public void setStar(Boolean star) {
+		this.star = star;
+	}
+
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(String comment) {
+		this.comment = comment;
+	}
+
+	public List<String> getTags() {
+		return tags;
+	}
+
+	public void setTags(List<String> tags) {
+		this.tags = tags;
 	}
 
 
