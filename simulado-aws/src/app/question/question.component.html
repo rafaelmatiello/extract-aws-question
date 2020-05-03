@@ -31,29 +31,37 @@
     </div>
 
     <div class="ui-g">
-      <div class="ui-g-12 " style="text-align: right">
-        <button pButton type="button" style="margin-left: 20px"
-                label="Resumo" (click)="showStatistics()" class="ui-button-rounded ui-button-success"></button>
-
-        <input type="number" maxlength="9999" style="width: 70px;margin-left: 20px;" pInputText [(ngModel)]="gotoIndex"/>
-        <button pButton type="button" style="margin-left: 20px"
-                label="Ir Para" (click)="goTo()" class="ui-button-rounded ui-button-secondary"></button>
-
-        <button pButton type="button" style="margin-left: 20px"
+      <div class="ui-g-6" style="text-align: left">
+        <button pButton type="button"
                 label="Anterior" (click)="previous()" class="ui-button-rounded ui-button-secondary"></button>
-
-        <button pButton type="button" style="margin-left: 20px"
+      </div>
+      <div class="ui-g-6" style="text-align: right">
+        <button pButton type="button"
                 label="Próximo" (click)="next()" class="ui-button-rounded ui-button-secondary"></button>
       </div>
     </div>
 
 
   </p-card>
+  <br>
+  <p-card>
+    <div class="ui-g">
+      <div class="ui-g-12 ui-lg-6 ui-md-12" >
+        <button pButton type="button"
+                label="Resumo" (click)="showStatistics()" class="ui-button-rounded ui-button-success"></button>
+        <input type="number" maxlength="9999" style="width: 70px;margin-left: 20px;" pInputText
+               [(ngModel)]="gotoIndex"/>
+        <button pButton type="button" style="margin-left: 20px"
+                label="Ir" (click)="goTo()" class="ui-button-rounded ui-button-secondary"></button>
+      </div>
+    </div>
 
+
+  </p-card>
 
   <p-confirmDialog header="Confirmação" icon="pi pi-exclamation-triangle"></p-confirmDialog>
 </div>
-<p-sidebar [(visible)]="showSidebar" styleClass="ui-sidebar-lg" position="right" [baseZIndex]="10000">
+<p-sidebar [(visible)]="showSidebar" styleClass="ui-sidebar-lg" [fullScreen]="true" [baseZIndex]="10000">
 
   <p-table *ngIf="statistics" [value]="statistics">
     <ng-template pTemplate="header">

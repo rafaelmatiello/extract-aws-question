@@ -90,7 +90,9 @@ export class QuestionComponent implements OnInit {
 
 
     this.answerService.saveAnswer(answer).subscribe(() => {
-      this.messageService.add({severity: 'success', summary: 'Salvo', detail: 'Resposta salva!', key: 'ans'});
+
+    }, (error) => {
+      this.messageService.add({severity: 'error', summary: 'Erro ao salvar', detail: error, key: 'ans'});
     });
   }
 
@@ -137,7 +139,6 @@ export class QuestionComponent implements OnInit {
 
       this.statistics = statistics;
       this.statistics.forEach(stat => {
-        debugger
         stat.percent = (stat.correct * 100) / stat.answers;
       });
       this.showSidebar = true;

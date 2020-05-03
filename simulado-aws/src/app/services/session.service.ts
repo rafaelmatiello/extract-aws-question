@@ -12,7 +12,7 @@ export class SessionService {
   }
 
   public getSession(): Observable<any> {
-    return this.http.get('http://note-rafael:8080/session');
+    return this.http.get('http://192.168.0.15:8080/session');
   }
 
   saveSession(currentSession: any): Observable<any> {
@@ -22,6 +22,6 @@ export class SessionService {
       })
     };
 
-    return this.http.post('http://note-rafael:8080/session', currentSession, httpOptions);
+    return this.http.post('http://192.168.0.15:8080/session', currentSession, httpOptions);
   }
 }

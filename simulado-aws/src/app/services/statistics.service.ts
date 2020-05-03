@@ -11,6 +11,6 @@ export class StatisticsService {
   }
 
   public getStatistics(): Observable<any> {
-    return this.http.get('http://note-rafael:8080/statistics');
+    return this.http.get('http://192.168.0.15:8080/statistics');
   }
 }

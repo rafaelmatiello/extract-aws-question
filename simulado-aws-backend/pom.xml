@@ -17,6 +17,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<start-class>net.matiello.simuladoawsbackend.SimuladoAwsBackendApplication</start-class>
 	</properties>
 
 	<dependencies>
@@ -50,7 +51,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		
+
 	</dependencies>
 
 	<build>
