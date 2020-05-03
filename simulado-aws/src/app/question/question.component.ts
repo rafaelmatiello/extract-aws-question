@@ -53,6 +53,7 @@ export class QuestionComponent implements OnInit {
       this.selectOptionsMulti = null;
       this.selectOptionsSingle = null;
       this.question = res;
+      this.gotoIndex = this.question.index;
     });
   }
 
