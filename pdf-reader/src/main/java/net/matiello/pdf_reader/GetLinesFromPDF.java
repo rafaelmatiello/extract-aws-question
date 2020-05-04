@@ -186,7 +186,7 @@ public class GetLinesFromPDF extends PDFTextStripper {
 	}
 
 	private static AnswerOption isAnswerOptions(String line) {
-		Pattern pattern = Pattern.compile("(A|B|C|D)\\.\\s*(.*)");
+		Pattern pattern = Pattern.compile("^(A|B|C|D)\\.\\s*(.*)$");
 
 		Matcher matcher = pattern.matcher(line);
 

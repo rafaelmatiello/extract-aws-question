@@ -50,11 +50,8 @@
   "index" : 3,
   "chapter" : 1,
   "number" : 3,
-  "asking" : "You have a group of web designers who frequently upload large zip files of images to S3, ",
+  "asking" : "You have a group of web designers who frequently upload large zip files of images to S3, often in excess of 5 GB. Recently, team members have reported that they are receiving the error “Your proposed upload exceeds the maximum allowed object size.” What action should you take to resolve the upload problems?",
   "answerOption" : [ {
-    "option" : "B",
-    "description" : "Recently, team members have reported that they are receiving the error “Your proposed upload exceeds the maximum allowed object size.” What action should you take to resolve the upload problems?"
-  }, {
     "option" : "A",
     "description" : "Increase the maximum allowed object size in the target S3 bucket used by the web designers."
   }, {
@@ -65,10 +62,7 @@
     "description" : "Contact AWS and submit a ticket to have your default S3 bucket size raised; ensure that this is also applied to the target bucket for your web designers’ uploads."
   }, {
     "option" : "D",
-    "description" : "Log in to the AWS console, select the S3 service, and locate your bucket. Edit the "
-  }, {
-    "option" : "B",
-    "description" : ""
+    "description" : "Log in to the AWS console, select the S3 service, and locate your bucket. Edit the bucket properties and increase the maximum object size to 50 GB."
   } ],
   "rightAnswer" : {
     "domain" : 1,
@@ -296,11 +290,8 @@
   "index" : 13,
   "chapter" : 1,
   "number" : 13,
-  "asking" : "You have an S3 bucket and are working on cost estimates for your customer. She has asked you about pricing of objects stored in S3. There are currently objects in the buck-",
+  "asking" : "You have an S3 bucket and are working on cost estimates for your customer. She has asked you about pricing of objects stored in S3. There are currently objects in the buck-ets ranging from 0 bytes to over 1 GB. In this situation, what is the smallest file size that S3-IA will charge you for?",
   "answerOption" : [ {
-    "option" : "B",
-    "description" : "In this situation, what is the smallest file size that S3-IA will charge you for?"
-  }, {
     "option" : "A",
     "description" : "1 byte"
   }, {
@@ -659,11 +650,8 @@
   "index" : 28,
   "chapter" : 1,
   "number" : 28,
-  "asking" : "You are setting up a site-to-site VPN from an on-premises network into an AWS VPC. ",
+  "asking" : "You are setting up a site-to-site VPN from an on-premises network into an AWS VPC. Which of the following are steps you may need to perform? (Choose two.)",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "Which of the following are steps you may need to perform? (Choose two.)"
-  }, {
     "option" : "A",
     "description" : "Set up a public IP address for the customer gateway."
   }, {
@@ -5414,11 +5402,8 @@
   "index" : 226,
   "chapter" : 1,
   "number" : 226,
-  "asking" : "You are a solutions architect for a data-driven company using DynamoDB. They want to ",
+  "asking" : "You are a solutions architect for a data-driven company using DynamoDB. They want to ensure always-accurate responses, so they have enabled strongly consistent reads. How-ever, API calls to read data sometimes do not immediately return, and sometimes fail. What possible causes could there be? (Choose two.)",
   "answerOption" : [ {
-    "option" : "B",
-    "description" : "They want to ensure always-accurate responses, so they have enabled strongly consistent reads. How-ever, API calls to read data sometimes do not immediately return, and sometimes fail. What possible causes could there be? (Choose two.)"
-  }, {
     "option" : "A",
     "description" : "A recent write was made and is not yet complete. As a result, a read operation is delayed waiting on the write operation to complete."
   }, {
@@ -6521,11 +6506,8 @@
   "index" : 272,
   "chapter" : 1,
   "number" : 272,
-  "asking" : "You created a new instance in the default VPC. You want this instance to be publicly ",
+  "asking" : "You created a new instance in the default VPC. You want this instance to be publicly available and serve web content. What steps do you need to take? (Choose two.)",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "You want this instance to be publicly available and serve web content. What steps do you need to take? (Choose two.)"
-  }, {
     "option" : "A",
     "description" : "Create an private IP for the instance."
   }, {
@@ -6548,11 +6530,8 @@
   "index" : 273,
   "chapter" : 1,
   "number" : 273,
-  "asking" : "You created a new instance in a custom VPC. You want this instance to be publicly avail-",
+  "asking" : "You created a new instance in a custom VPC. You want this instance to be publicly avail-able and serve web content. What steps do you need to take? (Choose two.)",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "You want this instance to be publicly avail-able and serve web content. What steps do you need to take? (Choose two.)"
-  }, {
     "option" : "A",
     "description" : "Create an elastic IP for the instance."
   }, {
@@ -7343,11 +7322,8 @@
   "index" : 306,
   "chapter" : 1,
   "number" : 306,
-  "asking" : "You have been asked to troubleshoot a Direct Connect connection between your com-",
+  "asking" : "You have been asked to troubleshoot a Direct Connect connection between your com-pany’s on-site data center and a subnet within a public VPC. You have confirmed that you can reach the instances in the VPC from your data center, but those instances cannot reach back to your data center. What would you investigate? (Choose two.)",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "You have confirmed that you can reach the instances in the VPC from your data center, but those instances cannot reach back to your data center. What would you investigate? (Choose two.)"
-  }, {
     "option" : "A",
     "description" : "The VPC subnet’s routing table"
   }, {
@@ -7514,11 +7490,8 @@
   "index" : 313,
   "chapter" : 1,
   "number" : 313,
-  "asking" : "You are using a NAT instance inside of a VPC to support routing out to the public Inter-",
+  "asking" : "You are using a NAT instance inside of a VPC to support routing out to the public Inter-net from private instances within that VPC. As traffic has increased, the performance of any operations involving the outbound Internet traffic has degraded to unacceptable lev-els. How would you mitigate this problem?",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "As traffic has increased, the performance of any operations involving the outbound Internet traffic has degraded to unacceptable lev-els. How would you mitigate this problem?"
-  }, {
     "option" : "A",
     "description" : "Add an additional internet gateway so the NAT instance can split outbound traffic over two gateways."
   }, {
@@ -7613,11 +7586,8 @@
   "index" : 317,
   "chapter" : 1,
   "number" : 317,
-  "asking" : "You have an existing fleet of EC2 instances in a public subnet of your VPC. You launch ",
+  "asking" : "You have an existing fleet of EC2 instances in a public subnet of your VPC. You launch an additional instance from the same AMI as the existing instances, into the same public subnet. What steps might you need to take to ensure that this instance can reach the pub-lic Internet? (Choose two.)",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "You launch an additional instance from the same AMI as the existing instances, into the same public subnet. What steps might you need to take to ensure that this instance can reach the pub-lic Internet? (Choose two.)"
-  }, {
     "option" : "A",
     "description" : "Assign an elastic IP address to the instance."
   }, {
@@ -8252,10 +8222,7 @@
     "description" : "You have custom plug-ins that will not run in RDS."
   }, {
     "option" : "D",
-    "description" : "You want to ensure that your database is only accessible through your private subnet "
-  }, {
-    "option" : "C",
-    "description" : ""
+    "description" : "You want to ensure that your database is only accessible through your private subnet in a VPC."
   } ],
   "rightAnswer" : {
     "domain" : 2,
@@ -9347,11 +9314,8 @@
   "index" : 389,
   "chapter" : 2,
   "number" : 70,
-  "asking" : "You are an architect working on adding scalability to an application based on EC2 ",
+  "asking" : "You are an architect working on adding scalability to an application based on EC2 instances within a public-facing VPC. You want the maximum amount of flexibility in weighting and load balancing options, as you plan to experiment with various routing types to see which handles load most evenly. Which type of load balancer should you use?",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "You want the maximum amount of flexibility in weighting and load balancing options, as you plan to experiment with various routing types to see which handles load most evenly. Which type of load balancer should you use?"
-  }, {
     "option" : "A",
     "description" : "Classic ELB"
   }, {
@@ -13166,11 +13130,8 @@
   "index" : 548,
   "chapter" : 3,
   "number" : 3,
-  "asking" : "You are creating a bastion host to allow SSH access to a set of EC2 instances in a private ",
+  "asking" : "You are creating a bastion host to allow SSH access to a set of EC2 instances in a private subnet within your organization’s VPC. Which of the following should be done as part of configuring the bastion host? (Choose two.)",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "Which of the following should be done as part of configuring the bastion host? (Choose two.)"
-  }, {
     "option" : "A",
     "description" : "Ensure that the bastion host is exposed directly to the Internet."
   }, {
@@ -13241,11 +13202,8 @@
   "index" : 551,
   "chapter" : 3,
   "number" : 6,
-  "asking" : "Your company is setting up a VPN connection to connect its local network to an AWS ",
+  "asking" : "Your company is setting up a VPN connection to connect its local network to an AWS VPC. Which of the following components are not necessary for this setup? (Choose two.)",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "Which of the following components are not necessary for this setup? (Choose two.)"
-  }, {
     "option" : "A",
     "description" : "A NAT instance"
   }, {
@@ -15500,11 +15458,8 @@
   "index" : 645,
   "chapter" : 3,
   "number" : 100,
-  "asking" : "You have a public subnet within your VPC. Within that subnet are three instances, each ",
+  "asking" : "You have a public subnet within your VPC. Within that subnet are three instances, each running a web-accessible API. Two of the instances are responding to requests from Inter-net clients, but one is not. What could be the problem?",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "Within that subnet are three instances, each running a web-accessible API. Two of the instances are responding to requests from Inter-net clients, but one is not. What could be the problem?"
-  }, {
     "option" : "A",
     "description" : "The VPC needs to be marked as public-facing."
   }, {
@@ -15863,11 +15818,8 @@
   "index" : 660,
   "chapter" : 3,
   "number" : 115,
-  "asking" : "You want to ensure that no incoming traffic reaches any instances in your VPC. Which of ",
+  "asking" : "You want to ensure that no incoming traffic reaches any instances in your VPC. Which of the following is your best option to prevent this type of traffic?",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "Which of the following is your best option to prevent this type of traffic?"
-  }, {
     "option" : "A",
     "description" : "A blacklist"
   }, {
@@ -15890,11 +15842,8 @@
   "index" : 661,
   "chapter" : 3,
   "number" : 116,
-  "asking" : "You want to ensure that no incoming traffic reaches just the database instances in a par-",
+  "asking" : "You want to ensure that no incoming traffic reaches just the database instances in a par-ticular subnet within your VPC. Which of the following is your best option to prevent this type of traffic?",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "Which of the following is your best option to prevent this type of traffic?"
-  }, {
     "option" : "A",
     "description" : "A blacklist"
   }, {
@@ -16085,11 +16034,8 @@
   "index" : 669,
   "chapter" : 3,
   "number" : 124,
-  "asking" : "You have an instance within a custom VPC, and that instance needs to communicate ",
+  "asking" : "You have an instance within a custom VPC, and that instance needs to communicate with an API published by an instance in another VPC. How can you make this possible? (Choose two.)",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "How can you make this possible? (Choose two.)"
-  }, {
     "option" : "A",
     "description" : "Enable cross-VPC communication via the AWS console."
   }, {
@@ -17096,11 +17042,8 @@
   "index" : 711,
   "chapter" : 3,
   "number" : 166,
-  "asking" : "You are building out a site-to-site VPN connection from an on-site network to a private ",
+  "asking" : "You are building out a site-to-site VPN connection from an on-site network to a private subnet within a custom VPC. Which of the following might you need for this connection to function properly? (Choose two.)",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "Which of the following might you need for this connection to function properly? (Choose two.)"
-  }, {
     "option" : "A",
     "description" : "An internet gateway"
   }, {
@@ -17123,11 +17066,8 @@
   "index" : 712,
   "chapter" : 3,
   "number" : 167,
-  "asking" : "You are building out a site-to-site VPN connection from an on-site network to a custom ",
+  "asking" : "You are building out a site-to-site VPN connection from an on-site network to a custom VPC. Which of the following might you need for this connection to function properly? (Choose two.)",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "Which of the following might you need for this connection to function properly? (Choose two.)"
-  }, {
     "option" : "A",
     "description" : "A NAT instance"
   }, {
@@ -17654,11 +17594,8 @@
   "index" : 734,
   "chapter" : 3,
   "number" : 189,
-  "asking" : "You have an existing IAM role in use by several instances in your VPC. You make a ",
+  "asking" : "You have an existing IAM role in use by several instances in your VPC. You make a change in the role, removing permissions to access S3. When does this change take effect on the instances already attached to the role?",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "You make a change in the role, removing permissions to access S3. When does this change take effect on the instances already attached to the role?"
-  }, {
     "option" : "A",
     "description" : "Immediately"
   }, {
@@ -19265,11 +19202,8 @@
   "index" : 801,
   "chapter" : 4,
   "number" : 12,
-  "asking" : "You have a website running on a fleet of EC2 instances behind an ELB. You also have an ",
+  "asking" : "You have a website running on a fleet of EC2 instances behind an ELB. You also have an Auto Scaling group running across multiple availability zones. The instances are serving files from an EFS file system, but you are incurring lag and significant cost from serving these files from disk over and over. What would you recommend as a solution for reducing costs while still handling high traffic without degradation?",
   "answerOption" : [ {
-    "option" : "B",
-    "description" : "You also have an Auto Scaling group running across multiple availability zones. The instances are serving files from an EFS file system, but you are incurring lag and significant cost from serving these files from disk over and over. What would you recommend as a solution for reducing costs while still handling high traffic without degradation?"
-  }, {
     "option" : "A",
     "description" : "Move the files into S3 standard."
   }, {
@@ -21692,11 +21626,8 @@
   "index" : 902,
   "chapter" : 5,
   "number" : 19,
-  "asking" : "Your website has mostly static content, but you are adding a new section driven by an EC2 instance fleet behind an Elastic Load Balancer. You want to create a subdomain and ",
+  "asking" : "Your website has mostly static content, but you are adding a new section driven by an EC2 instance fleet behind an Elastic Load Balancer. You want to create a subdomain and direct all traffic to that subdomain toward the ELB. Which DNS record set would you use?",
   "answerOption" : [ {
-    "option" : "B",
-    "description" : "Which DNS record set would you use?"
-  }, {
     "option" : "A",
     "description" : "CNAME"
   }, {
@@ -21983,11 +21914,8 @@
   "index" : 914,
   "chapter" : 5,
   "number" : 31,
-  "asking" : "VPC A is peered to both VPC B and VPC C. How can you allow traffic to flow from VPC ",
+  "asking" : "VPC A is peered to both VPC B and VPC C. How can you allow traffic to flow from VPC B to VPC C?",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "How can you allow traffic to flow from VPC B to VPC C?"
-  }, {
     "option" : "A",
     "description" : "You can’t; transitive peering relationships are not allowed in AWS."
   }, {
@@ -22010,11 +21938,8 @@
   "index" : 915,
   "chapter" : 5,
   "number" : 32,
-  "asking" : "VPC C has an overlapping CIDR block with VPC D. Given that, which of the following ",
+  "asking" : "VPC C has an overlapping CIDR block with VPC D. Given that, which of the following statements are true? (Choose two.)",
   "answerOption" : [ {
-    "option" : "D",
-    "description" : "Given that, which of the following statements are true? (Choose two.)"
-  }, {
     "option" : "A",
     "description" : "VPC C and VPC D can be peered as is."
   }, {
@@ -22097,10 +22022,7 @@
     "description" : "It does not; transitive VPC peering is not allowed in AWS."
   }, {
     "option" : "D",
-    "description" : "It uses IPv4 for connection from a source VPC to a hub VPC and IPv6 from the hub "
-  }, {
-    "option" : "C",
-    "description" : ""
+    "description" : "It uses IPv4 for connection from a source VPC to a hub VPC and IPv6 from the hub to the origin VPC."
   } ],
   "rightAnswer" : {
     "domain" : 5,
@@ -22784,16 +22706,10 @@
   "index" : 947,
   "chapter" : 6,
   "number" : 7,
-  "asking" : "You are responsible for a large AWS environment, and specifically, several subnets within ",
+  "asking" : "You are responsible for a large AWS environment, and specifically, several subnets within a custom VPC. The VPC contains both public and private subnets. There are approxi-mately 300 EC2 instances within one of the private subnets that uses a NAT device to reach the Internet. Each evening at 11 p.m., the instances push the day’s date to an external data store outside of AWS, available via an API that is Internet accessible. How-ever, you are seeing that not all of the data is getting out each evening, and several of the instances show failed transmissions to the external API. Assuming the API itself is not an issue, what should you consider when attempting to fix this issue? (Choose two.)",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "The VPC contains both public and private subnets. There are approxi-mately 300 EC2 instances within one of the private subnets that uses a NAT device to reach the Internet. Each evening at 11 p.m., the instances push the day’s date to an external data store outside of AWS, available via an API that is Internet accessible. How-ever, you are seeing that not all of the data is getting out each evening, and several of the instances show failed transmissions to the external API. Assuming the API itself is not an issue, what should you consider when attempting to fix this issue? (Choose two.)"
-  }, {
     "option" : "A",
-    "description" : "The instances are saturating the VPC’s internet gateway. Consider attaching an addi-"
-  }, {
-    "option" : "C",
-    "description" : ""
+    "description" : "The instances are saturating the VPC’s internet gateway. Consider attaching an addi-tional internet gateway to the VPC."
   }, {
     "option" : "B",
     "description" : "The NAT device could be a NAT instance that is on an instance size too small to handle the traffic. Reprovision the NAT instance on a larger instance size with more CPU."
@@ -23222,11 +23138,8 @@
   "index" : 965,
   "chapter" : 6,
   "number" : 25,
-  "asking" : "You are the architect for a large migration from on-premises data stores to DynamoDB. ",
+  "asking" : "You are the architect for a large migration from on-premises data stores to DynamoDB. As part of this migration, you need to manage the access and authorization for users, but the organization wants all existing users to maintain their Active Directory usernames. What steps will you need to do in order to facilitate this move? (Choose two.)",
   "answerOption" : [ {
-    "option" : "B",
-    "description" : "As part of this migration, you need to manage the access and authorization for users, but the organization wants all existing users to maintain their Active Directory usernames. What steps will you need to do in order to facilitate this move? (Choose two.)"
-  }, {
     "option" : "A",
     "description" : "Select an identity provider."
   }, {
@@ -23945,11 +23858,8 @@
   "index" : 995,
   "chapter" : 6,
   "number" : 55,
-  "asking" : "You want to create a public subnet in a custom VPC. Which of the following do you not ",
+  "asking" : "You want to create a public subnet in a custom VPC. Which of the following do you not need to accomplish this?",
   "answerOption" : [ {
-    "option" : "C",
-    "description" : "Which of the following do you not need to accomplish this?"
-  }, {
     "option" : "A",
     "description" : "An internet gateway"
   }, {
@@ -24044,11 +23954,8 @@
   "index" : 999,
   "chapter" : 6,
   "number" : 59,
-  "asking" : "You are auditing the EBS volumes of a number of EC2 instances running three web-facing data-intensive applications. You notice that a number of the volumes are configured as ",
+  "asking" : "You are auditing the EBS volumes of a number of EC2 instances running three web-facing data-intensive applications. You notice that a number of the volumes are configured as throughput optimized HDDs rather than General Purpose SSD or Provisioned IOPS SSD. Why might this decision be appropriate? (Choose two.)",
   "answerOption" : [ {
-    "option" : "D",
-    "description" : "Why might this decision be appropriate? (Choose two.)"
-  }, {
     "option" : "A",
     "description" : "Lowered costs is a primary consideration."
   }, {
