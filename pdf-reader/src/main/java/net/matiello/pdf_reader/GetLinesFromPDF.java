@@ -161,7 +161,7 @@ public class GetLinesFromPDF extends PDFTextStripper {
 						}
 					} else if (startRightAnswer) {
 						
-						if(domain != null) {
+						if(isDomainWithNumberPage(line)) {
 							continue;
 						}
 						currentRightAnswer.setDescription(currentRightAnswer.getDescription() + line);
@@ -240,6 +240,18 @@ public class GetLinesFromPDF extends PDFTextStripper {
 		}
 
 		return null;
+	}
+	
+	private static boolean isDomainWithNumberPage(String line) {
+
+		Pattern pattern = Pattern.compile("^Domain\\s([0-9|\\s]+)\\:\\s([^0-9]*)\\s?(\\d*)$");
+		Matcher matcher = pattern.matcher(line);
+
+		if (matcher.find()) {
+			return true;
+		}
+
+		return false;
 	}
 
 	private static RightAnswer isRightAnswer(String line) {

@@ -218,7 +218,7 @@
     "domain" : 1,
     "number" : 9,
     "options" : [ "B" ],
-    "description" : "This is an important distinction when understanding S3 classes. Standard S3, S3-IA, and S3 One Zone-IA all are equally durable, although in One Zone-IA, data will be lost if Domain 1: Design Resilient Architectures 183the availability zone is destroyed. Each class has different availability, though: S3 is 99.99, S3-IA is 99.9, and S3 One Zone-IA is 99.5. Therefore, it is false that all have the same availability (B)."
+    "description" : "This is an important distinction when understanding S3 classes. Standard S3, S3-IA, and S3 One Zone-IA all are equally durable, although in One Zone-IA, data will be lost if the availability zone is destroyed. Each class has different availability, though: S3 is 99.99, S3-IA is 99.9, and S3 One Zone-IA is 99.5. Therefore, it is false that all have the same availability (B)."
   }
 }, {
   "index" : 10,
@@ -728,7 +728,7 @@
     "domain" : 1,
     "number" : 30,
     "options" : [ "A", "B" ],
-    "description" : "Both file and volume gateways offer solutions for connecting to cloud-based storage. A cached gateway isn’t an AWS option, and a virtual private gateway is used in creating VPN connections.Domain 1: Design Resilient Architectures 185"
+    "description" : "Both file and volume gateways offer solutions for connecting to cloud-based storage. A cached gateway isn’t an AWS option, and a virtual private gateway is used in creating VPN connections."
   }
 }, {
   "index" : 31,
@@ -1400,7 +1400,7 @@
     "domain" : 1,
     "number" : 58,
     "options" : [ "C" ],
-    "description" : "By default, all AWS accounts can create up to 100 buckets. However, this limit can easily be raised by AWS if you request an upgrade.Domain 1: Design Resilient Architectures 187"
+    "description" : "By default, all AWS accounts can create up to 100 buckets. However, this limit can easily be raised by AWS if you request an upgrade."
   }
 }, {
   "index" : 59,
@@ -2048,7 +2048,7 @@
     "domain" : 1,
     "number" : 85,
     "options" : [ "A" ],
-    "description" : "This answer simply has to be memorized. MFA Delete authentication codes are pulled from hardware or virtual MFA devices, like Google Authenticator on an iPhone.Domain 1: Design Resilient Architectures 189"
+    "description" : "This answer simply has to be memorized. MFA Delete authentication codes are pulled from hardware or virtual MFA devices, like Google Authenticator on an iPhone."
   }
 }, {
   "index" : 86,
@@ -2744,7 +2744,7 @@
     "domain" : 1,
     "number" : 114,
     "options" : [ "A" ],
-    "description" : "AWS Direct Connect is a dedicated high-speed connection between your on-premises network and AWS. Because of this, a direct connect is almost always a better choice than shipping out a Snowball, loading data to it, and then shipping it back.Domain 1: Design Resilient Architectures 191"
+    "description" : "AWS Direct Connect is a dedicated high-speed connection between your on-premises network and AWS. Because of this, a direct connect is almost always a better choice than shipping out a Snowball, loading data to it, and then shipping it back."
   }
 }, {
   "index" : 115,
@@ -3368,7 +3368,7 @@
     "domain" : 1,
     "number" : 140,
     "options" : [ "C" ],
-    "description" : "You can absolutely deploy to production using Elastic Beanstalk. You simply need to configure different Elastic Beanstalk environments to use different databases.Domain 1: Design Resilient Architectures 193"
+    "description" : "You can absolutely deploy to production using Elastic Beanstalk. You simply need to configure different Elastic Beanstalk environments to use different databases."
   }
 }, {
   "index" : 141,
@@ -4112,7 +4112,7 @@
     "domain" : 1,
     "number" : 171,
     "options" : [ "A" ],
-    "description" : "CloudWatch offers the ability to set up specific metrics (network throughput, requests, disk IO, and so on) and monitor those metrics via dashboards and reports.Domain 1: Design Resilient Architectures 195"
+    "description" : "CloudWatch offers the ability to set up specific metrics (network throughput, requests, disk IO, and so on) and monitor those metrics via dashboards and reports."
   }
 }, {
   "index" : 172,
@@ -4688,7 +4688,7 @@
     "domain" : 1,
     "number" : 195,
     "options" : [ "B", "D" ],
-    "description" : "In OLTP questions, look for the relational databases. In this question, those are Oracle and SQL Server, and therefore the answers. memcache is one of the engines for ElastiCache and DynamoDB is a NoSQL database.Domain 1: Design Resilient Architectures 197"
+    "description" : "In OLTP questions, look for the relational databases. In this question, those are Oracle and SQL Server, and therefore the answers. memcache is one of the engines for ElastiCache and DynamoDB is a NoSQL database."
   }
 }, {
   "index" : 196,
@@ -5336,7 +5336,7 @@
     "domain" : 1,
     "number" : 222,
     "options" : [ "A", "C" ],
-    "description" : "DynamoDB is a NoSQL database and does indeed offer “push-button” scaling (A). You can scale up the size of the database at any time, without needing to change the instance size (as you do with RDS instances). This makes C true.Domain 1: Design Resilient Architectures 199"
+    "description" : "DynamoDB is a NoSQL database and does indeed offer “push-button” scaling (A). You can scale up the size of the database at any time, without needing to change the instance size (as you do with RDS instances). This makes C true."
   }
 }, {
   "index" : 223,
@@ -6035,7 +6035,7 @@
     "domain" : 1,
     "number" : 251,
     "options" : [ "B", "D" ],
-    "description" : "Any spoke in a hub-and-spoke model can only directly communicate with the hub (option B), as well as any other peered VPCs (option D).Domain 1: Design Resilient Architectures 201"
+    "description" : "Any spoke in a hub-and-spoke model can only directly communicate with the hub (option B), as well as any other peered VPCs (option D)."
   }
 }, {
   "index" : 252,
@@ -6713,7 +6713,7 @@
     "domain" : 1,
     "number" : 279,
     "options" : [ "A", "D" ],
-    "description" : "This is pretty tough and is arguably right at the boundary of what the CSA Associate exam might ask. A gateway endpoint handles all traffic for a supported AWS service. Further, it’s not a specific portion of that service, so you can rule out a particular Kinesis data stream (C). That leaves A, B, and D. A and D make sense, while routing private traffic to Route 53 does not.Domain 1: Design Resilient Architectures 203"
+    "description" : "This is pretty tough and is arguably right at the boundary of what the CSA Associate exam might ask. A gateway endpoint handles all traffic for a supported AWS service. Further, it’s not a specific portion of that service, so you can rule out a particular Kinesis data stream (C). That leaves A, B, and D. A and D make sense, while routing private traffic to Route 53 does not."
   }
 }, {
   "index" : 280,
@@ -7388,7 +7388,7 @@
     "domain" : 1,
     "number" : 307,
     "options" : [ "B" ],
-    "description" : "Route propagation is a routing option that automatically propagates routes to the route tables so you don’t need to manually enter VPN routes. It’s most common in a Direct Connect setup. A is too broad a statement—not all routes are automatically copied. C is incorrect, and in D, a storage gateway is not part of a Direct Connect solution (it can be, but isn’t required).Domain 1: Design Resilient Architectures 205"
+    "description" : "Route propagation is a routing option that automatically propagates routes to the route tables so you don’t need to manually enter VPN routes. It’s most common in a Direct Connect setup. A is too broad a statement—not all routes are automatically copied. C is incorrect, and in D, a storage gateway is not part of a Direct Connect solution (it can be, but isn’t required)."
   }
 }, {
   "index" : 308,
@@ -7946,7 +7946,7 @@
     "domain" : 2,
     "number" : 11,
     "options" : [ "A", "B" ],
-    "description" : "A is false because you can create read replicas in the same AZ as the primary instance. There is no requirement to use multiple AZs, as there is with a Multi-AZ setup. B is also false; read replicas provide no disaster recovery options. Both C and D are true.Domain 2: Define Performant Architectures 207"
+    "description" : "A is false because you can create read replicas in the same AZ as the primary instance. There is no requirement to use multiple AZs, as there is with a Multi-AZ setup. B is also false; read replicas provide no disaster recovery options. Both C and D are true."
   }
 }, {
   "index" : 331,
@@ -8453,7 +8453,7 @@
     "domain" : 2,
     "number" : 32,
     "options" : [ "A" ],
-    "description" : "AWS accounts allow you five elastic IP addresses per region by default. As with most AWS defaults, this can be raised by contacting AWS and providing a reasonable justification.Domain 2: Define Performant Architectures 209"
+    "description" : "AWS accounts allow you five elastic IP addresses per region by default. As with most AWS defaults, this can be raised by contacting AWS and providing a reasonable justification."
   }
 }, {
   "index" : 352,
@@ -9005,7 +9005,7 @@
     "domain" : 2,
     "number" : 55,
     "options" : [ "A", "B" ],
-    "description" : "Magnetic volumes are older and generally not used much. They are ideal for saving money (A) or for infrequently accessed data (B).Domain 2: Define Performant Architectures 211"
+    "description" : "Magnetic volumes are older and generally not used much. They are ideal for saving money (A) or for infrequently accessed data (B)."
   }
 }, {
   "index" : 375,
@@ -9704,7 +9704,7 @@
     "domain" : 2,
     "number" : 84,
     "options" : [ "A", "B" ],
-    "description" : "CloudFront can front a number of AWS services: AWS Shield, S3, ELBs (including ALBs), and EC2 instances. It also most recently supports Lambda@Edge as an origin.Domain 2: Define Performant Architectures 213"
+    "description" : "CloudFront can front a number of AWS services: AWS Shield, S3, ELBs (including ALBs), and EC2 instances. It also most recently supports Lambda@Edge as an origin."
   }
 }, {
   "index" : 404,
@@ -10376,7 +10376,7 @@
     "domain" : 2,
     "number" : 112,
     "options" : [ "D" ],
-    "description" : "CloudFront allows all of these as origin servers: S3, EC2 instances, ALBs, etc.Domain 2: Define Performant Architectures 215"
+    "description" : "CloudFront allows all of these as origin servers: S3, EC2 instances, ALBs, etc."
   }
 }, {
   "index" : 432,
@@ -10904,7 +10904,7 @@
     "domain" : 2,
     "number" : 134,
     "options" : [ "B" ],
-    "description" : "Here, the key details are infrequent data access and a geographically distributed customer base. This means that read replicas spread out across the country are the best bet (B). Caching won’t help, so A and D are out, and a storage gateway won’t help customers that aren’t accessing the data on-site.Domain 2: Define Performant Architectures 217"
+    "description" : "Here, the key details are infrequent data access and a geographically distributed customer base. This means that read replicas spread out across the country are the best bet (B). Caching won’t help, so A and D are out, and a storage gateway won’t help customers that aren’t accessing the data on-site."
   }
 }, {
   "index" : 454,
@@ -11672,7 +11672,7 @@
     "domain" : 2,
     "number" : 166,
     "options" : [ "B" ],
-    "description" : "IAM policies are written in JSON.Domain 2: Define Performant Architectures 219"
+    "description" : "IAM policies are written in JSON."
   }
 }, {
   "index" : 486,
@@ -12392,7 +12392,7 @@
     "domain" : 2,
     "number" : 196,
     "options" : [ "D" ],
-    "description" : "IAM users are global to an AWS account and are not region-specific.Domain 2: Define Performant Architectures 221"
+    "description" : "IAM users are global to an AWS account and are not region-specific."
   }
 }, {
   "index" : 516,
@@ -13016,7 +13016,7 @@
     "domain" : 2,
     "number" : 222,
     "options" : [ "A", "B" ],
-    "description" : "This is a case of having a recurring performance issue, which points to using schedule-based scaling. Further, you know that access is centered around the US East regions. C might help the issue, but without knowing more about the application, it’s not possible to tell if caching content would significantly improve performance.Domain 3: Specify Secure Applications and Architectures 223"
+    "description" : "This is a case of having a recurring performance issue, which points to using schedule-based scaling. Further, you know that access is centered around the US East regions. C might help the issue, but without knowing more about the application, it’s not possible to tell if caching content would significantly improve performance."
   }
 }, {
   "index" : 542,
@@ -13502,7 +13502,7 @@
     "domain" : 3,
     "number" : 16,
     "options" : [ "A", "D" ],
-    "description" : "A is false, as security groups don’t provide for deny rules. B and C are both true (and therefore are not correct answers). D is false, because without specific outbound rules, nothing is allowed to flow out. (Note that by default, there is an allowance for all outgoing traffic in security groups, although that can be removed.)Domain 3: Specify Secure Applications and Architectures 225"
+    "description" : "A is false, as security groups don’t provide for deny rules. B and C are both true (and therefore are not correct answers). D is false, because without specific outbound rules, nothing is allowed to flow out. (Note that by default, there is an allowance for all outgoing traffic in security groups, although that can be removed.)"
   }
 }, {
   "index" : 562,
@@ -14126,7 +14126,7 @@
     "domain" : 3,
     "number" : 42,
     "options" : [ "A", "B" ],
-    "description" : "There are four types of data encrypted when an EBS volume is encrypted: data at rest on the volume, data moving between the volume and the instance, any snapshots created from the volume, and any volumes created from those snapshots.Domain 3: Specify Secure Applications and Architectures 227"
+    "description" : "There are four types of data encrypted when an EBS volume is encrypted: data at rest on the volume, data moving between the volume and the instance, any snapshots created from the volume, and any volumes created from those snapshots."
   }
 }, {
   "index" : 588,
@@ -14822,7 +14822,7 @@
     "domain" : 3,
     "number" : 71,
     "options" : [ "B" ],
-    "description" : "NACLs are associated with subnets.Domain 3: Specify Secure Applications and Architectures 229"
+    "description" : "NACLs are associated with subnets."
   }
 }, {
   "index" : 617,
@@ -15593,7 +15593,7 @@
     "domain" : 3,
     "number" : 103,
     "options" : [ "B", "D" ],
-    "description" : "A public subnet is one in which traffic is routed (via a routing table, B) to an internet gateway (D).Domain 3: Specify Secure Applications and Architectures 231"
+    "description" : "A public subnet is one in which traffic is routed (via a routing table, B) to an internet gateway (D)."
   }
 }, {
   "index" : 649,
@@ -16346,7 +16346,7 @@
     "domain" : 3,
     "number" : 134,
     "options" : [ "B" ],
-    "description" : "A private subnet is not accessible without a bastion host or other connection and routing from the public Internet to an accessible host and finally into private instances.Domain 3: Specify Secure Applications and Architectures 233"
+    "description" : "A private subnet is not accessible without a bastion host or other connection and routing from the public Internet to an accessible host and finally into private instances."
   }
 }, {
   "index" : 680,
@@ -17042,7 +17042,7 @@
     "domain" : 3,
     "number" : 163,
     "options" : [ "B" ],
-    "description" : "A NAT instance does not provide automatic scaling, whereas DynamoDB and NAT gateways are managed services and do. There is really no such thing as “scaling” of an SNS topic, although SNS as a service does do some scaling in the background to ensure that demand is met.Domain 3: Specify Secure Applications and Architectures 235"
+    "description" : "A NAT instance does not provide automatic scaling, whereas DynamoDB and NAT gateways are managed services and do. There is really no such thing as “scaling” of an SNS topic, although SNS as a service does do some scaling in the background to ensure that demand is met."
   }
 }, {
   "index" : 709,
@@ -17747,7 +17747,7 @@
     "domain" : 3,
     "number" : 192,
     "options" : [ "A", "D" ],
-    "description" : "You always need to make the actual role changes (A). There are then no more actions required for these changes to take effect on the instances.Domain 3: Specify Secure Applications and Architectures 237"
+    "description" : "You always need to make the actual role changes (A). There are then no more actions required for these changes to take effect on the instances."
   }
 }, {
   "index" : 738,
@@ -18515,7 +18515,7 @@
     "domain" : 3,
     "number" : 224,
     "options" : [ "C" ],
-    "description" : "Users with console access are more privileged users and should be required to use MFA (C). Password policies apply to all users, so A is incorrect. Further, passwords are the mechanism for logging into the console, so B is wrong in that access keys are not used for console login.Domain 3: Specify Secure Applications and Architectures 239"
+    "description" : "Users with console access are more privileged users and should be required to use MFA (C). Password policies apply to all users, so A is incorrect. Further, passwords are the mechanism for logging into the console, so B is wrong in that access keys are not used for console login."
   }
 }, {
   "index" : 770,
@@ -19091,7 +19091,7 @@
     "domain" : 4,
     "number" : 4,
     "options" : [ "C" ],
-    "description" : "This should be an easy correct answer: Spot instances via the spot market are the potentially least expensive option, given that your compute has flexible timing and needs.Domain 4: Design Cost-Optimized Architectures 241"
+    "description" : "This should be an easy correct answer: Spot instances via the spot market are the potentially least expensive option, given that your compute has flexible timing and needs."
   }
 }, {
   "index" : 794,
@@ -19670,7 +19670,7 @@
     "domain" : 4,
     "number" : 28,
     "options" : [ "B" ],
-    "description" : "There are no ingress options here, so nothing is guaranteed to be free. In that case, you should then look for something that moves data within the same availability zone. That’s always the least expensive (and usually free, depending on IP addresses), and in this case, that’s option B: inter-AZ data transfer between instances.Domain 4: Design Cost-Optimized Architectures 243"
+    "description" : "There are no ingress options here, so nothing is guaranteed to be free. In that case, you should then look for something that moves data within the same availability zone. That’s always the least expensive (and usually free, depending on IP addresses), and in this case, that’s option B: inter-AZ data transfer between instances."
   }
 }, {
   "index" : 818,
@@ -20414,7 +20414,7 @@
     "domain" : 4,
     "number" : 59,
     "options" : [ "C" ],
-    "description" : "There are five core Trusted Adviser checks: cost optimization, security, fault tolerance, performance, and service limits. Note: In some places, AWS will say that there are seven checks, but in others, five. The most current documentation indicates the five checks noted here.Domain 4: Design Cost-Optimized Architectures 245"
+    "description" : "There are five core Trusted Adviser checks: cost optimization, security, fault tolerance, performance, and service limits. Note: In some places, AWS will say that there are seven checks, but in others, five. The most current documentation indicates the five checks noted here."
   }
 }, {
   "index" : 849,
@@ -21038,7 +21038,7 @@
     "domain" : 4,
     "number" : 85,
     "options" : [ "C" ],
-    "description" : "Kinesis is intended to handle streaming data sources. It collects and processes data from these streaming sources in real time and would be ideal to replace custom code that handles this same process, as the question asks.Domain 5: Define Operationally Excellent Architectures 247"
+    "description" : "Kinesis is intended to handle streaming data sources. It collects and processes data from these streaming sources in real time and would be ideal to replace custom code that handles this same process, as the question asks."
   }
 }, {
   "index" : 875,
@@ -21614,7 +21614,7 @@
     "domain" : 5,
     "number" : 15,
     "options" : [ "B" ],
-    "description" : "Of the choices available, Amazon Lightsail is the easiest solution for getting simple applications running quickly. EC2 and ECS are both much more complex. While S3 website hosting is a web hosting solution, it does require quite a bit of AWS knowledge (security, permissions, etc.).Domain 5: Define Operationally Excellent Architectures 249"
+    "description" : "Of the choices available, Amazon Lightsail is the easiest solution for getting simple applications running quickly. EC2 and ECS are both much more complex. While S3 website hosting is a web hosting solution, it does require quite a bit of AWS knowledge (security, permissions, etc.)."
   }
 }, {
   "index" : 899,
@@ -22178,7 +22178,7 @@
     "domain" : 5,
     "number" : 38,
     "options" : [ "A", "D" ],
-    "description" : "Default VPCs come with both an internet gateway and public subnets. If you think through this, these two go hand in hand: A public subnet would need an internet gateway to function as public.Domain 5: Define Operationally Excellent Architectures 251"
+    "description" : "Default VPCs come with both an internet gateway and public subnets. If you think through this, these two go hand in hand: A public subnet would need an internet gateway to function as public."
   }
 }, {
   "index" : 922,
