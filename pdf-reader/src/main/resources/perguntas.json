@@ -21278,7 +21278,10 @@
     "description" : "Use the AWS REST APIs with an application key."
   }, {
     "option" : "D",
-    "description" : "All of the aboveE. None of the above"
+    "description" : "All of the above"
+  }, {
+    "option" : "E",
+    "description" : "None of the above"
   } ],
   "rightAnswer" : {
     "domain" : 5,
@@ -22579,8 +22582,8 @@
   "rightAnswer" : {
     "domain" : 6,
     "number" : 1,
-    "options" : [ "Got" ],
-    "description" : "bit.ly/SybexTest."
+    "options" : [ "A", "C" ],
+    "description" : "First, a larger instance with the fastest possible volume type—provisioned IOPS—is generally going to improve overall performance, so A is a good idea. Second, ElastiCache will provide faster responses and reduce database reads over time. A and C are both valid approaches. A Multi-AZ setup is for disaster recovery, and sharding is high overhead and could potentially increase response time, rather than reduce it, in this use case."
   }
 }, {
   "index" : 942,
@@ -22603,8 +22606,8 @@
   "rightAnswer" : {
     "domain" : 6,
     "number" : 2,
-    "options" : [ "Selectyourbookfromth" ],
-    "description" : "list."
+    "options" : [ "B" ],
+    "description" : "redis and memcached are engines available for use by ElastiCache. reddit is an online information site, and Redshift is a data warehousing and OLAP service.Practice Test 253"
   }
 }, {
   "index" : 943,
@@ -22627,8 +22630,8 @@
   "rightAnswer" : {
     "domain" : 6,
     "number" : 3,
-    "options" : [ "Completetherequiredregistrationinformationincludingansweringthesecurit" ],
-    "description" : "verification proving book ownership. You will be emailed a pin code."
+    "options" : [ "B", "C" ],
+    "description" : "AWS allows a number of options for encrypting data at rest. In the supplied solutions, AWS Key Management Service (KMS) is an AWS-managed solution for data encryption, and customer-provided keys are allowed as well. In the latter case, customers provide the keys and AWS handles encryption of data using those keys. ElastiCache for memcached does not support encryption and, further, is not a solution for encrypting data but instead a caching service. AWS Encryptic is not an actual AWS service."
   }
 }, {
   "index" : 944,
@@ -22651,8 +22654,8 @@
   "rightAnswer" : {
     "domain" : 6,
     "number" : 4,
-    "options" : [ "Got" ],
-    "description" : "http://www.wiley.com/go/sybextestprep and find your book on that page and click the “Register or Login” link under your book."
+    "options" : [ "A", "D" ],
+    "description" : "AWS Organizations allows the management of multiple accounts in one place and allows tracking of those individual accounts (D). Additionally, in many cases, AWS will allow discounts based on total services used rather than treating each account individually (A)."
   }
 }, {
   "index" : 945,
@@ -22675,8 +22678,8 @@
   "rightAnswer" : {
     "domain" : 6,
     "number" : 5,
-    "options" : [ "Ifyoualreadyhaveanaccounta" ],
-    "description" : "testbanks.wiley.com, login and then click the “Redeem Access Code” button to add your new book with the pin code you received. If you don’t have an account already, create a new account and use the PIN code you received."
+    "options" : [ "B", "C" ],
+    "description" : "The biggest issue here is that all the users are using the root account, meaning there’s a shared password and that users have far more permissions than they should. These can both be addressed by creating new IAM users for each user (B) and putting those users in predefined groups according to their job function (C). Developers don’t need access to IAM in general, so D is incorrect, and while changing the root password is a good idea, A is also incorrect because a financial manager (and possibly support engineers) may not need the AWS CLI as their access mechanism."
   }
 }, {
   "index" : 946,

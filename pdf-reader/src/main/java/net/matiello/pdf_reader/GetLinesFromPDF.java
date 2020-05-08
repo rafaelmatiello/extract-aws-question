@@ -130,6 +130,10 @@ public class GetLinesFromPDF extends PDFTextStripper {
 					if (isAppendix(line)) {
 						continue;
 					}
+					
+					if(isIndexTitle(line)) {
+						break;
+					}
 
 					Integer domain = isDomain(line);
 					if (domain != null) {
@@ -186,7 +190,7 @@ public class GetLinesFromPDF extends PDFTextStripper {
 	}
 
 	private static AnswerOption isAnswerOptions(String line) {
-		Pattern pattern = Pattern.compile("^(A|B|C|D)\\.\\s*(.*)$");
+		Pattern pattern = Pattern.compile("^(A|B|C|D|E)\\.\\s*(.*)$");
 
 		Matcher matcher = pattern.matcher(line);
 
@@ -275,6 +279,19 @@ public class GetLinesFromPDF extends PDFTextStripper {
 		return null;
 	}
 
+	private static boolean isIndexTitle(String line) {
+
+		Pattern pattern = Pattern.compile("^Index$");
+		Matcher matcher = pattern.matcher(line);
+
+		if (matcher.find()) {
+			return true;
+		}
+
+		return false;
+	}
+
+	
 	private static boolean isAppendix(String line) {
 
 		Pattern pattern = Pattern.compile("[0-9]+\\s(Appendix)\\s.*");
