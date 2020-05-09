@@ -23,6 +23,8 @@ export class QuestionComponent implements OnInit {
   gotoIndex: any;
   showSidebar = false;
   public statistics: any;
+  //fallback
+  private totalQuestion = 1005;
 
 
   constructor(private confirmationService: ConfirmationService,
@@ -37,6 +39,10 @@ export class QuestionComponent implements OnInit {
 
 
     this.loadQuestion();
+
+    this.questionService.getCount().subscribe((quantidadeTotal: any) => {
+        this.totalQuestion = quantidadeTotal;
+    });
 
     this.msgs = [];
 
@@ -147,4 +153,22 @@ export class QuestionComponent implements OnInit {
 
 
   }
+
+  random() {
+    this.gotoIndex = this.randomInt(1, this.totalQuestion);
+    this.goTo();
+  }
+
+  randomWrong() {
+    this.questionService.getIndexWrong().subscribe((quantidadeTotal: any) => {
+      this.gotoIndex = this.randomInt(1, this.totalQuestion);
+      this.goTo();
+    });
+
+  }
+
+  randomInt(min, max) {
+    return min + Math.floor((max - min) * Math.random());
+  }
+
 }

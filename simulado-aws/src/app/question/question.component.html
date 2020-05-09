@@ -23,10 +23,13 @@
       </div>
     </div>
     <div class="ui-g">
-      <div class="ui-g-12 ">
+      <div class="ui-g-6 " style="text-align: left">
         <button pButton type="button"
                 [disabled]="question.rightAnswer.options.length > 1 ? (selectOptionsMulti == null || selectOptionsMulti.length != question.rightAnswer.options.length) : selectOptionsSingle == null "
                 label="Confirmar" (click)="confirm()" class="ui-button-rounded"></button>
+      </div>
+      <div class="ui-g-6 " style="text-align: right">
+        <i class="fas fa-star"></i>
       </div>
     </div>
 
@@ -46,13 +49,23 @@
   <br>
   <p-card>
     <div class="ui-g">
-      <div class="ui-g-12 ui-lg-6 ui-md-12" >
+      <div class="ui-g-3 ui-sm-4">
         <button pButton type="button"
-                label="Resumo" (click)="showStatistics()" class="ui-button-rounded ui-button-success"></button>
+                label="Resultado" (click)="showStatistics()" class="ui-button-rounded ui-button-success"></button>
+      </div>
+      <div class="ui-g-3 ui-sm-8">
         <input type="number" maxlength="9999" style="width: 70px;margin-left: 20px;" pInputText
                [(ngModel)]="gotoIndex"/>
         <button pButton type="button" style="margin-left: 20px"
                 label="Ir" (click)="goTo()" class="ui-button-rounded ui-button-secondary"></button>
+      </div>
+      <div class="ui-g-3 ui-sm-6">
+        <button pButton type="button"
+                label="Sortear" (click)="random()" class="ui-button-rounded ui-button-info"></button>
+      </div>
+      <div class="ui-g-3 ui-sm-6" >
+        <button pButton type="button"
+                label="Sortear errada" (click)="randomWrong()" class="ui-button-rounded ui-button-danger"></button>
       </div>
     </div>
 
@@ -61,25 +74,27 @@
 
   <p-confirmDialog header="Confirmação" icon="pi pi-exclamation-triangle"></p-confirmDialog>
 </div>
-<p-sidebar [(visible)]="showSidebar" styleClass="ui-sidebar-lg" [fullScreen]="true" [baseZIndex]="10000">
-
+<p-sidebar [(visible)]="showSidebar" [fullScreen]="true" [baseZIndex]="10000">
+  <div class="ui-g-12">
+    <h1>Resultado</h1>
+  </div>
   <p-table *ngIf="statistics" [value]="statistics">
     <ng-template pTemplate="header">
       <tr>
-        <th>Capitulo</th>
-        <th>Respostas</th>
+        <th>Capítulo</th>
+        <th>Respondidas</th>
         <th>Certas</th>
         <th>Erradas</th>
         <th>Percentual</th>
       </tr>
     </ng-template>
     <ng-template pTemplate="body" let-stat>
-      <tr>
+      <tr style="text-align: right;">
         <td>{{stat.key}}</td>
         <td>{{stat.answers}}</td>
         <td>{{stat.correct}}</td>
         <td>{{stat.wrong}}</td>
-        <td>{{stat.percent}}</td>
+        <td>{{stat.percent  | number:'2.2-2'}}</td>
       </tr>
     </ng-template>
   </p-table>

@@ -15,4 +15,11 @@ export class QuestionService {
     return this.http.get('http://192.168.0.15:8080/questions/' + index);
   }
 
+  getCount(): Observable<any> {
+    return this.http.get('http://192.168.0.15:8080/questions/count');
+  }
+
+  getIndexWrong() {
+    return this.http.get('http://192.168.0.15:8080/questions/wrong');
+  }
 }
