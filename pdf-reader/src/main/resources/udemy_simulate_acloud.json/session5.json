@@ -1,0 +1,190 @@
+{
+	"count": 7,
+	"next": null,
+	"previous": null,
+	"results": [
+		{
+			"_class": "assessment",
+			"id": 10383222,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>Failover Routing and Simple Routing</p>",
+					"<p>Geoproximity Routing and Geolocation Routing</p>",
+					"<p>Geolocation Routing and Latency-based Routing</p>",
+					"<p>Failover Routing and Latency-based Routing</p>"
+				],
+				"question": "<p>Which of the following Route 53 policies allow you to a) route data to a second resource if the first is unhealthy, and b) route data to resources that have better performance?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					"Failover Routing and Latency-based Routing are the only two correct options, as they consider routing data based on whether the resource is healthy or whether one set of resources is more performant than another.  Any answer containing location based routing (Geoproximity and Geolocation) cannot be correct in this case, as these types only consider where the client or resources are located before routing the data.  They do not take into account whether a resource is online or slow.  Simple Routing can also be discounted as it does not take into account the state of the resources."
+				]
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "Which of the following Route 53 policies allow you to a) route data to a second resource if the first is unhealthy, and b) route data to resources that have better performance?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383224,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				],
+				"question": "<p>Route 53 is Amazon's DNS Service.</p>",
+				"feedbacks": [
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "Route 53 is Amazon's DNS Service.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383226,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>It was invented in 1953.</p>",
+					"<p>Route 66 was already registered with Microsoft.</p>",
+					"<p>The DNS Port is on Port 53 and Route 53 is a DNS Service.</p>",
+					"<p>Beats me – only people in marketing can tell you the reason behind its name.</p>"
+				],
+				"question": "<p>Route 53 is named so because ________.</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "Route 53 is named so because ________.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383228,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>A</p>",
+					"<p>AAAA</p>",
+					"<p>MX</p>",
+					"<p>CNAME</p>"
+				],
+				"question": "<p>You have created a new subdomain for your popular website, and you need this subdomain to point to an Elastic Load Balancer using Route53. Which DNS record set should you create?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "You have created a new subdomain for your popular website, and you need this subdomain to point to an Elastic Load Balancer using Route53. Which DNS record set should you create?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383230,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>True. There is a hard limit of 10 domain names. You cannot go above this number.</p>",
+					"<p>True and False. With Route 53, there is a default limit of 50 domain names. However, this limit can be increased by contacting AWS support.</p>",
+					"<p>False. By default, you can support as many domain names on Route 53 as you want.</p>"
+				],
+				"question": "<p>True or False: There is a limit to the number of domain names that you can manage using Route 53.</p>",
+				"feedbacks": [
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "True or False: There is a limit to the number of domain names that you can manage using Route 53.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383232,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>Failover routing policy</p>",
+					"<p>Geolocation routing policy</p>",
+					"<p>Geoproximity routing policy</p>",
+					"<p>Latency routing policy</p>"
+				],
+				"question": "<p>You are hosting a website and would like visitors from United Kingdom to see a different site than those in Australia. Which Routing Policy would help you to accomplish this?</p>",
+				"feedbacks": [
+					"",
+					"Geolocation routing lets you choose the resources that serve your traffic based on the geographic location of your users, meaning the location that DNS queries originate from. For example, you might want all queries from Europe to be routed to an ELB load balancer in the Frankfurt region.",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You are hosting a website and would like visitors from United Kingdom to see a different site than those in Australia. Which Routing Policy would help you to accomplish this?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383234,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>Simple Routing</p>",
+					"<p>Weighted Routing</p>",
+					"<p>Multivalue Routing</p>",
+					"<p>Latency Routing</p>"
+				],
+				"question": "<p>Your company hosts 10 web servers all serving the same web content in AWS. They want Route 53 to serve traffic to random web servers. Which routing policy will meet this requirement, and provide the best resiliency?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"Multivalue answer routing lets you configure Amazon Route 53 to return multiple values, such as IP addresses for your web servers, in response to DNS queries. Route 53 responds to DNS queries with up to eight healthy records and gives different answers to different DNS resolvers. The choice of which to use is left to the requesting service effectively creating a form or randomization.",
+					""
+				]
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "Your company hosts 10 web servers all serving the same web content in AWS. They want Route 53 to serve traffic to random web servers. Which routing policy will meet this requirement, and provide the best resiliency?",
+			"related_lectures": []
+		}
+	]
+}

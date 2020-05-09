@@ -1,0 +1,1745 @@
+{
+	"count": 77,
+	"next": null,
+	"previous": null,
+	"results": [
+		{
+			"_class": "assessment",
+			"id": 12921236,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Public cloud allows organisations to try out new ideas, new approaches and experiment with little upfront commitment. If it doesn&#39;t work out, organisations have the ability to terminate the resources and stop paying for them.",
+				"answers": [
+					"The ability to try out new ideas and experiment without an upfront commitment",
+					"Not having to deal with the collateral damage of failed experiments",
+					"No special skills required",
+					"Traditional methods that are used for on-premise infrastructure work just as well in cloud"
+				],
+				"question": "Which of the below are factors that have helped make public cloud so powerful? [Select 2]"
+			},
+			"correct_response": [
+				"a",
+				"b"
+			],
+			"section": "",
+			"question_plain": "Which of the below are factors that have helped make public cloud so powerful? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921238,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Both Lambda and EC2 offer computing in the cloud. S3 is a storage offering while VPC is a network service.  ",
+				"answers": [
+					"Lambda",
+					"EC2",
+					"S3",
+					"VPC"
+				],
+				"question": "Which of the below are compute service from AWS? [Select 2]"
+			},
+			"correct_response": [
+				"a",
+				"b"
+			],
+			"section": "",
+			"question_plain": "Which of the below are compute service from AWS? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921240,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "S3 and EFS both provide the ability to store files in the cloud. EC2 provides compute, and is often augmented with other storage services. VPC is a networking service.",
+				"answers": [
+					"S3",
+					"EFS",
+					"EC2",
+					"VPC"
+				],
+				"question": "Which of the below are storage services in AWS? [Select 2]"
+			},
+			"correct_response": [
+				"a",
+				"b"
+			],
+			"section": "",
+			"question_plain": "Which of the below are storage services in AWS? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921242,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "RDS is a service for relational databases provided by AWS. DynamoDB is AWS&#39; fast, flexible, no-sql database service. S3 provides the ability to store files in the cloud and is not suitable for databases, while EC2 is part of the compute family of services. ",
+				"answers": [
+					"RDS",
+					"DynamoDB",
+					"S3",
+					"EC2"
+				],
+				"question": "Which of the below are database services from AWS? [Select 2]"
+			},
+			"correct_response": [
+				"a",
+				"b"
+			],
+			"section": "",
+			"question_plain": "Which of the below are database services from AWS? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921244,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "VPC allows you to provision a logically isolated section of the AWS where you can launch AWS resources in a virtual network. Cloudfront is a fast, highly secure and programmable content delivery network (CDN). EC2 provides compute resources while RDS is Amazon&#39;s Relational Database System.",
+				"answers": [
+					"VPC",
+					"Cloudfront",
+					"EC2",
+					"RDS"
+				],
+				"question": "Which of the following are a part of AWS’ Network and Content Delivery services? [Select 2]"
+			},
+			"correct_response": [
+				"a",
+				"b"
+			],
+			"section": "",
+			"question_plain": "Which of the following are a part of AWS’ Network and Content Delivery services? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921246,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Read the AWS Security Best Practice white paper.  Also note that the IAM account signin URL is different from the Root account signin URL",
+				"answers": [
+					"Create an additional AWS root account for each new user.",
+					"Create individual user accounts with minimum necessary rights and tell the staff to log in to the console using the credentials provided.",
+					"Create a customized sign-in link such as &quot;yourcompany.signin.aws.amazon.com/console&quot; for your new users to use to sign in with.",
+					"Give your users the root account credentials so that they can also sign in."
+				],
+				"question": "You are a developer at a fast-growing startup. Until now, you have used the root account to log in to the AWS console. However, as you have taken on more staff, you will need to stop sharing the root account to prevent accidental damage to your AWS infrastructure. What should you do so that everyone can access the AWS resources they need to do their jobs? [Select 2]"
+			},
+			"correct_response": [
+				"b",
+				"c"
+			],
+			"section": "",
+			"question_plain": "You are a developer at a fast-growing startup. Until now, you have used the root account to log in to the AWS console. However, as you have taken on more staff, you will need to stop sharing the root account to prevent accidental damage to your AWS infrastructure. What should you do so that everyone can access the AWS resources they need to do their jobs? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921248,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "There are three options in the question which can be used to secure access to files stored in S3 and therefore can be considered correct.  Signed URLs and Signed Cookies are different ways to ensure that users attempting access to files in an S3 bucket can be authorised.  One method generates URLs and the other generates special cookies but they both require the creation of an application and policy to generate and control these items. An Origin Access Identity on the other hand, is a virtual user identity that is used to give the CloudFront distribution permission to fetch a private object from an S3 bucket.  Public S3 buckets should never be used unless you are using the bucket to host a public website and therefore this is an incorrect option.",
+				"answers": [
+					"CloudFront Signed Cookies",
+					"CloudFront Signed URLs",
+					"Public S3 buckets",
+					"CloudFront Origin Access Identity"
+				],
+				"question": "Which of the following options allows users to have secure access to private files located in S3? [Select 3]"
+			},
+			"correct_response": [
+				"a",
+				"b",
+				"d"
+			],
+			"section": "",
+			"question_plain": "Which of the following options allows users to have secure access to private files located in S3? [Select 3]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921250,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Trying to use S3 without File Gateway in front would be a major impact to the user environment.  Using File Gateway is the recommended way to use S3 with shared document pools. Life-cycle management and Infrequent Access storage is available for both S3 and EFS. A restriction however is that &#39;Using Amazon EFS with Microsoft Windows is not supported&#39;.  File Gateway does not support iSCSI in the client side. ",
+				"answers": [
+					"Migrate documents to EFS storage and make use of life-cycle using Infrequent Access storage.",
+					"Migrate documents to File Gateway presented as NFS and make use of life-cycle using Infrequent Access storage.",
+					"Migrate the document store to S3 storage and make use of life-cycle using Infrequent Access storage.",
+					"Migrate documents to File Gateway presented as iSCSI and make use of life-cycle using Infrequent Access storage."
+				],
+				"question": "You are consulting to a mid-sized company with a predominantly Mac &amp; Linux desktop environment. In passing they comment that they have over 30TB of unstructured Word and spreadsheet documents of which 85% of these documents don&#39;t get accessed again after about 35 days. They wish that they could find a quick and easy solution to have tiered storage to store these documents in a more cost-effective manner without impacting staff access. What options can you offer them? [Select 2]"
+			},
+			"correct_response": [
+				"a",
+				"b"
+			],
+			"section": "",
+			"question_plain": "You are consulting to a mid-sized company with a predominantly Mac &amp; Linux desktop environment. In passing they comment that they have over 30TB of unstructured Word and spreadsheet documents of which 85% of these documents don&#39;t get accessed again after about 35 days. They wish that they could find a quick and easy solution to have tiered storage to store these documents in a more cost-effective manner without impacting staff access. What options can you offer them? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921252,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "There are a number of ways you can optimise performance above that of choosing the correct EBS type.  One of the easiest options is to drive more I/O throughput than you can provision for a single EBS volume, by striping using RAID 0. You can join multiple gp2, io1, st1, or sc1 volumes together in a RAID 0 configuration to use the available bandwidth for these instances. You can also choose an EC2 instance type that supports EBS optimisation.  This ensures that network traffic cannot contend with traffic between your instance and your EBS volumes.  The final option is to manage your snapshot times, and this only applies to HDD based EBS volumes.  When you create a snapshot of a Throughput Optimized HDD (st1) or Cold HDD (sc1) volume, performance may drop as far as the volume&#39;s baseline value while the snapshot is in progress. This behaviour is specific to these volume types.  Therefore you should ensure that scheduled snapshots are carried at times of low usage.  The one option on the list which is entirely incorrect is the option that states &quot;Never use HDD volumes, always ensure that SSDs are used&quot; as the question first states &quot;In addition to choosing the correct EBS volume type for your specific task&quot;.  HDDs may well be suitable to certain tasks and therefore they shouldn&#39;t be discounted because they may not have the highest specification on paper.",
+				"answers": [
+					"Stripe volumes together in a RAID 0 configuration.",
+					"Ensure that your EC2 instances are types that can be optimized for use with EBS",
+					"Never use HDD volumes, always ensure that SSDs are used",
+					"Schedule snapshots of HDD based volumes for periods of low use"
+				],
+				"question": "In addition to choosing the correct EBS volume type for your specific task, what else can be done to increase the performance of your volume? [Select 3]"
+			},
+			"correct_response": [
+				"a",
+				"b",
+				"d"
+			],
+			"section": "",
+			"question_plain": "In addition to choosing the correct EBS volume type for your specific task, what else can be done to increase the performance of your volume? [Select 3]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921254,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Of all the EBS types, both current and of the previous generation, HDD based volumes will always be less expensive than SSD types.  Therefore, of the options available in the question, the Cold (sc1) and Throughout Optimized (st1) types are HDD based and will be the lowest cost options.",
+				"answers": [
+					"Provisioned IOPS (io1)",
+					"Throughput Optimized (st1)",
+					"Cold (sc1)",
+					"General Purpose (gp2)"
+				],
+				"question": "Which of the following provide the lowest cost EBS options? [Select 2]"
+			},
+			"correct_response": [
+				"b",
+				"c"
+			],
+			"section": "",
+			"question_plain": "Which of the following provide the lowest cost EBS options? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921256,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Until very  recently AWS exclusively used Xen Hypervisors, Recently they started making use of Nitro Hypervisors.",
+				"answers": [
+					"Hyper-V",
+					"ESX",
+					"Nitro",
+					"Xen",
+					"OVM"
+				],
+				"question": "What is the underlying Hypervisor for EC2 ? [Select 2]"
+			},
+			"correct_response": [
+				"c",
+				"d"
+			],
+			"section": "",
+			"question_plain": "What is the underlying Hypervisor for EC2 ? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921258,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "There will always be a charge for provisioning read and write capacity and the storage of data within DynamoDB, therefore these two answers are correct.  There is no charge for the transfer of data into DynamoDB, providing you stay within a single region (if you cross regions, you will be charged at both ends of the transfer.)  There is no charge for the actual number of tables you can create in DynamoDB, providing the RCU and WCU are set to 0, however in practice you cannot set this to anything less than 1 so there always be a nominal fee associated with each table.",
+				"answers": [
+					"The number of tables created",
+					"Read and Write Capacity",
+					"Storage of Data",
+					"Incoming Data Transfer"
+				],
+				"question": "Which of the following DynamoDB features are chargeable, when using a single region? [Select 2]"
+			},
+			"correct_response": [
+				"b",
+				"c"
+			],
+			"section": "",
+			"question_plain": "Which of the following DynamoDB features are chargeable, when using a single region? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921260,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Amazon Athena is an interactive query service that makes it easy to analyse data in Amazon S3, using standard SQL commands.  It will work with a number of data formats including &quot;JSON&quot;, &quot;Apache Parquet&quot;, &quot;Apache ORC&quot; amongst others, but &quot;XML&quot; is not a format that is supported.",
+				"answers": [
+					"JSON",
+					"XML",
+					"Apache Parquet",
+					"Apache ORC"
+				],
+				"question": "Which of the following data formats does Amazon Athena support? [Select 3]"
+			},
+			"correct_response": [
+				"a",
+				"c",
+				"d"
+			],
+			"section": "",
+			"question_plain": "Which of the following data formats does Amazon Athena support? [Select 3]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921262,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "The instruction from the CTO is clear that that the division is based on geography. Latency based routing will approximate geographic balance only when all routes and traffic evenly supported which is rarely the case due to infrastructure and day night variations. You cannot combine blacklisting and whitelisting in CloudFront. Weighted routing is randomized and will not respect Geo boundaries. Geolocation is based on national boundaries and will meet the needs well. Geoproximity is based on Latitude &amp; Longitude and will also provide a good approximation with potentially less configuration.",
+				"answers": [
+					"Route 53 - Geoproximity routing policy",
+					"Route 53 - Geolocation routing policy",
+					"CloudFront - a combination of blacklisting and whitelisting to control which countries go to which site",
+					"Route 53 - Weighted routing policy, calculate the proportion of customers in each and weight the policy to ensure that each location gets a fair load.",
+					"Latency routing policy. This will ensure only customers that are close will go to the India installation."
+				],
+				"question": "You have an enterprise solution that operates Active-Active with facilities in Regions US-West and India. Due to growth in the Asian market you have been directed by the CTO to ensure that only traffic in Asia (between Turkey and Japan) is directed to the India Region. Which of these will deliver that result? [Select 2]"
+			},
+			"correct_response": [
+				"a",
+				"b"
+			],
+			"section": "",
+			"question_plain": "You have an enterprise solution that operates Active-Active with facilities in Regions US-West and India. Due to growth in the Asian market you have been directed by the CTO to ensure that only traffic in Asia (between Turkey and Japan) is directed to the India Region. Which of these will deliver that result? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921264,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Alias Records have special functions that are not present in other DNS servers. Their main function is to provide special functionality and integration into AWS services. Unlike CNAME records, they can also be used at the Zone Apex, where CNAME records cannot. Alias Records can also point to AWS Resources that are hosted in other accounts by manually entering the ARN",
+				"answers": [
+					"Alias Records provide a Route 53–specific extension to DNS functionality",
+					"Route 53 allows you to create a CNAME record at the top node of a DNS namespace (zone apex)",
+					"Alias Records can point at any resources in AWS, but only within the same account",
+					"Alias Records can point at any resource with a Canonical Name.",
+					"A CNAME record assigns an Alias name to an IP address.",
+					"Route 53 allows you to create an Alias record at the top node of a DNS namespace (zone apex)"
+				],
+				"question": "In AWS Route 53, which of the following are true? [Select 2]"
+			},
+			"correct_response": [
+				"a",
+				"f"
+			],
+			"section": "",
+			"question_plain": "In AWS Route 53, which of the following are true? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921266,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "AWS provides various services to cope with many security related issues and because of this, there are a number of options which are correct.  AWS Shield has two options listed above, but only one is correct.  AWS Shield operates on layer 3 and 4 of the ISO network model and its primary purpose is to protect against DDoS attacks.  It does not have any affect against SQL Injection attacks which are dealt with by AWS WAF.  WAF also protects against Cross Site Scripting and can block traffic from IP addresses based on rules and therefore these options are also correct.  Finally, Amazon Macie tackles a different problem related to Data Loss Prevention and protects sensitive data and so this answer is also correct.",
+				"answers": [
+					"AWS Shield protects from Distributed Denial-of-Service attacks",
+					"AWS WAF protects from Cross-site Scripting attacks",
+					"Amazon Macie uses Machine Learning to protect sensitive data",
+					"AWS Shield protects from SQL Injection attacks",
+					"AWS WAF blocks IP addresses based on rules"
+				],
+				"question": "AWS provides a number of security-related managed services.  From the options below, select which AWS service is related to protecting your infrastructure from which security issue. [Select 4]"
+			},
+			"correct_response": [
+				"a",
+				"b",
+				"c",
+				"e"
+			],
+			"section": "",
+			"question_plain": "AWS provides a number of security-related managed services.  From the options below, select which AWS service is related to protecting your infrastructure from which security issue. [Select 4]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921268,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "There are many features which are native to the KMS service. However, of the above, only import your own keys, disable and re-enable keys and define key management roles in IAM are valid. Importing keys into a custom key store and migrating keys from the default key store to a custom key store are not possible.  Lastly operating as a private, native HSM is a function of CloudHSM and is not possible directly within KMS.",
+				"answers": [
+					"Generate keys, disable and re-enable keys and import keys into a custom key store",
+					"Import your own keys, disable and re-enable keys and define key management roles in IAM",
+					"Import your own keys, disable and re-enable keys and migrate keys between the default KMS key store and a custom key store",
+					"Generate keys, disable and delete keys, operate as a private, native Hardware Security Module (HSM)"
+				],
+				"question": "Your company has asked you to investigate the use of KMS for storing and managing keys in AWS.  From the options listed below, what key management features are available in KMS?"
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "Your company has asked you to investigate the use of KMS for storing and managing keys in AWS.  From the options listed below, what key management features are available in KMS?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921270,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "",
+				"answers": [
+					"Your user will receive a 404 error.",
+					"CloudFront will query the origin server and then cache the resource on the edge location.",
+					"The request will be put on hold until the resource has been cached at the edge location",
+					"The request will be sent to the nearest available edge location that contains that resource"
+				],
+				"question": "A user of your web-site makes an HTTP request to access a static resource on your server. The request is automatically redirected to the nearest CloudFront server. For some reason, the requested resource does not exist on the CloudFront server. Which of the following is true?"
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "A user of your web-site makes an HTTP request to access a static resource on your server. The request is automatically redirected to the nearest CloudFront server. For some reason, the requested resource does not exist on the CloudFront server. Which of the following is true?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921272,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "",
+				"answers": [
+					"Change your region to Korea and then create the bucket &quot;testbucket&quot;.",
+					"Raise a ticket with AWS and ask them to release the name &quot;testbucket&quot; to you.",
+					"Bucket names are global, not regional. This is a popular bucket name and is already taken. You must choose another bucket name.",
+					"Run a WHOIS request on the bucket name and get the registered owners email address. Contact the owner and ask if you can purchase the rights to the bucket."
+				],
+				"question": "You are a solutions architect at a large digital media company. The company has decided that they want to operate within the Japanese region, and they need a bucket called &quot;testbucket&quot; set up immediately for testing purposes. You log in to the AWS console and try to create this bucket in the Japanese region. However, you are told that the bucket name is already taken. What should you do to resolve this?"
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "You are a solutions architect at a large digital media company. The company has decided that they want to operate within the Japanese region, and they need a bucket called &quot;testbucket&quot; set up immediately for testing purposes. You log in to the AWS console and try to create this bucket in the Japanese region. However, you are told that the bucket name is already taken. What should you do to resolve this?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921274,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "The Question describes a situation where low cost OneZone-IA would be perfect. However it also says that there is a high licence cost with each meme generation.  The storage savings between IA and OneZone-IA are about $0.0025 this is small compared to the $10 for licensing. Therefore you may well be better to pay for full S3-IA.  ",
+				"answers": [
+					"S3",
+					"S3 - IA",
+					"S3 - RRS",
+					"S3 - OneZone-IA",
+					"Glacier"
+				],
+				"question": "You run a meme creation website that stores the original images in S3 and each meme&#39;s metadata in DynamoDB. You need to decide upon a low-cost storage option for the memes, themselves. If a meme object is unavailable or lost, a Lambda function will automatically recreate it but at a $10 licensing cost per creation. Which storage solution should you use to store the memes in the most cost-effective way?"
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You run a meme creation website that stores the original images in S3 and each meme&#39;s metadata in DynamoDB. You need to decide upon a low-cost storage option for the memes, themselves. If a meme object is unavailable or lost, a Lambda function will automatically recreate it but at a $10 licensing cost per creation. Which storage solution should you use to store the memes in the most cost-effective way?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921276,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "",
+				"answers": [
+					"Attach an additional IGW to your VPC.",
+					"Increase the class size of the NAT instance from an m4.medium to an m4.xLarge.",
+					"Instead of using a NAT, use Direct Connect to route all traffic through your VPC and back out to the Internet.",
+					"Use an Elastic Load Balancer and forward traffic out through this ELB. The ELB will automatically scale on-demand as traffic increases."
+				],
+				"question": "A single m4.medium NAT instance inside a VPC supports a company of 100 people. This NAT instance allows individual EC2 instances in private subnets to communicate out to the internet without being directly accessible via the internet. As the company has grown over the last year, they are finding that the additional traffic through the NAT instance is causing serious performance degradation. What might you do to solve this problem?"
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "A single m4.medium NAT instance inside a VPC supports a company of 100 people. This NAT instance allows individual EC2 instances in private subnets to communicate out to the internet without being directly accessible via the internet. As the company has grown over the last year, they are finding that the additional traffic through the NAT instance is causing serious performance degradation. What might you do to solve this problem?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921278,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "",
+				"answers": [
+					"Configure Auto Scaling to terminate your oldest instances first, then adjust your CloudWatch alarm.",
+					"Configure Auto Scaling to terminate your newest instances first, then adjust your CloudWatch alarm.",
+					"Change your Auto Scaling policy so that it only scales at scheduled times.",
+					"Modify the Auto Scaling group cool-down timers &amp; modify the Amazon CloudWatch alarm period that triggers your Auto Scaling scale down policy."
+				],
+				"question": "You work for a toy company that has a busy online store. As you are approaching Christmas, you find that your store is getting more and more traffic. You ensure that the web tier of your store is behind an Auto Scaling group. However, you notice that the web tier is frequently scaling, sometimes multiple times in an hour, only to scale back after peak usage. You need to keep Auto Scaling from scaling up and down so rapidly. Which of the following options would help you to achieve this?"
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "You work for a toy company that has a busy online store. As you are approaching Christmas, you find that your store is getting more and more traffic. You ensure that the web tier of your store is behind an Auto Scaling group. However, you notice that the web tier is frequently scaling, sometimes multiple times in an hour, only to scale back after peak usage. You need to keep Auto Scaling from scaling up and down so rapidly. Which of the following options would help you to achieve this?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921280,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "You need to work through each case to find which will provide you with the required number of running instances even if one AZ is lost. Hint: always assume that the AZ you lose is the one with the most instances. Remember that the client has stipulated that they must have 100% fault tolerance.",
+				"answers": [
+					"Solution 1 - Us-west-2a with two EC2 instances, us-west-2b with two EC2 instances, and us-west-2c with two EC2 instances. Solution 2 - Us-west-2a with six EC2 instances, us-west-2b with six EC2 instances, and us-west-2c with no EC2 instances",
+					"Solution 1 - Us-west-2a with six EC2 instances, us-west-2b with six EC2 instances, and us-west-2c with no EC2 instances. Solution 2 - Us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with three EC2 instances.",
+					"Solution 1 - Us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with no EC2 instances. Solution 2 - Us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with three EC2 instances.",
+					"Solution 1 - Us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with three EC2 instances. Solution 2 - Us-west-2a with four EC2 instances, us-west-2b with two EC2 instances, and us-west-2c with two EC2 instances."
+				],
+				"question": "You have developed a new web application in us-west-2 that requires six Amazon Elastic Compute Cloud (EC2) instances running at all times. You have three availability zones available in that region (us-west-2a, us-west-2b, and us-west-2c). You need 100 percent fault tolerance if any single Availability Zone in us-west-2 becomes unavailable. Which of the following answers offers two correct solutions to this scenario?"
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You have developed a new web application in us-west-2 that requires six Amazon Elastic Compute Cloud (EC2) instances running at all times. You have three availability zones available in that region (us-west-2a, us-west-2b, and us-west-2c). You need 100 percent fault tolerance if any single Availability Zone in us-west-2 becomes unavailable. Which of the following answers offers two correct solutions to this scenario?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921282,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "",
+				"answers": [
+					"Make sure the interns can only access data on S3 using signed URLs.",
+					"Enable S3 versioning on the bucket &amp; enable MFA Delete on the bucket.",
+					"Use S3 Infrequently Accessed storage to store the data on.",
+					"Create an IAM bucket policy that disables deletes."
+				],
+				"question": "You are a solutions architect working for a biotech company who is pioneering research in immunotherapy. They have developed a new cancer treatment that may be able to cure up to 94% of cancers. They store their research data on S3. However, an intern recently deleted some critical files accidentally. You&#39;ve been asked to prevent this from happening in the future. Which of the following solutions can be used to prevent accidental data loss?"
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You are a solutions architect working for a biotech company who is pioneering research in immunotherapy. They have developed a new cancer treatment that may be able to cure up to 94% of cancers. They store their research data on S3. However, an intern recently deleted some critical files accidentally. You&#39;ve been asked to prevent this from happening in the future. Which of the following solutions can be used to prevent accidental data loss?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921284,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "The essence of a stateless installation is that the scalable components are disposable, and configuration is stored away from the disposable components.  The best way to solve this type of problem is by elimination.  Storage Gateway offers no advantage in this situation. CloudWatch is a reporting tool and will not help. An ELB will distribute load but will not really specific to stateless design.  Elasticache is well suited for very short fast cycle data and is very suitable to replace in memory or on disk state data previously held on the web servers.  RDS is well suited to structured and long cycle data, and DynamoDB is well suited for unstructured and medium cycle data.  Both can be used for certain types of stateful data either in partner with or instead of Elasticache.",
+				"answers": [
+					"AWS Storage Gateway, ElastiCache, and ELB",
+					"ELB, ElastiCache, and RDS",
+					"Cloudwatch, RDS for structured data, and DynamoDb for unstructured data",
+					"RDS for structured data, DynamoDB for unstructured data, and ElastiCache"
+				],
+				"question": "You&#39;ve been tasked with building a new application with a stateless web tier for a company that produces reusable rocket parts. Which three services could you use to achieve this?"
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "You&#39;ve been tasked with building a new application with a stateless web tier for a company that produces reusable rocket parts. Which three services could you use to achieve this?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921286,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "",
+				"answers": [
+					"Has at least one route in its routing table that uses an Internet Gateway (IGW).",
+					"Has at least one route in its routing table that routes via a Network Address Translation (NAT) instance.",
+					"Where the Network Access Control List (NACL) is permitting outbound traffic to 0.0.0.0/0.",
+					"Has had the public subnet checkbox ticked when setting up this subnet in the VPC console."
+				],
+				"question": "By definition, a public subnet within a VPC is one that ________."
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "By definition, a public subnet within a VPC is one that ________.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921288,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "",
+				"answers": [
+					"Save the API credentials locally to each EC2 instance.",
+					"Don&#39;t save your API credentials. Instead, create a role in IAM and assign this role to an EC2 instance when you first create it.",
+					"Save your API credentials in a public Github repository. ",
+					"Get the API credentials using the EC2 instances User Data."
+				],
+				"question": "You are working in the media industry, and you have created a web application where users will be able to upload photos they create to your website. This web application must be able to call the S3 API in order to be able to function. Where should you store your API credentials whilst maintaining the maximum level of security."
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You are working in the media industry, and you have created a web application where users will be able to upload photos they create to your website. This web application must be able to call the S3 API in order to be able to function. Where should you store your API credentials whilst maintaining the maximum level of security.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921290,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "",
+				"answers": [
+					"For all new AWS accounts, there is a soft limit of 20 EC2 instances per region. You should submit the limit increase form and retry the template after your limit has been increased. ",
+					"For all new AWS accounts, there is a soft limit of 20 EC2 instances per availability zone. You should submit the limit increase form and retry the template after your limit has been increased. ",
+					"You cannot launch more than 20 instances in your default VPC. Instead, reconfigure the CloudFormation template to provision the instances in a custom VPC. ",
+					"Your CloudFormation template is configured to use the parent account and not the new account. Change the account number in the CloudFormation template and relaunch the template."
+				],
+				"question": "Your company has decided to set up a new AWS account for test and dev purposes. They already use AWS for production, but would like a new account dedicated for test and dev so as to not accidentally break the production environment. You launch an exact replica of your production environment using a CloudFormation template that your company uses in production. However, CloudFormation fails. You use the exact same CloudFormation template in production, so the failure is something to do with your new AWS account. The CloudFormation template is trying to launch 60 new EC2 instances in a single availability zone. After some research, you discover that the problem is ________."
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "Your company has decided to set up a new AWS account for test and dev purposes. They already use AWS for production, but would like a new account dedicated for test and dev so as to not accidentally break the production environment. You launch an exact replica of your production environment using a CloudFormation template that your company uses in production. However, CloudFormation fails. You use the exact same CloudFormation template in production, so the failure is something to do with your new AWS account. The CloudFormation template is trying to launch 60 new EC2 instances in a single availability zone. After some research, you discover that the problem is ________.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921292,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "Remember under the shared security model that AWS can see the instance, but not inside the instance to what it is doing.  AWS can see that you have Memory, but how much of the memory is being used cannot be seen by AWS.  In the case of CPU AWS can see how much of CPU you are using, but cannot see what you are using if for.",
+				"answers": [
+					"CPU Usage",
+					"Memory usage",
+					"Disk read operations",
+					"Network in"
+				],
+				"question": "You are a systems administrator and you need to monitor the health of your production environment. You decide to do this using CloudWatch. However, you notice that you cannot see the health of every important metric in the default dashboard. When monitoring the health of your EC2 instances, for which of the following metrics do you need to design a custom CloudWatch metric?"
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You are a systems administrator and you need to monitor the health of your production environment. You decide to do this using CloudWatch. However, you notice that you cannot see the health of every important metric in the default dashboard. When monitoring the health of your EC2 instances, for which of the following metrics do you need to design a custom CloudWatch metric?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921344,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "The aim is to direct sessions to the host that will provide the correct language. Geolocation is the best option because it is based on national borders. Geoproximity routing is another option where the decision can be based on distance.  While latency-based routing will usually direct the client to the correct host, connectivity issues with the US Regions might direct traffic to AP. In this case, the word &quot;ensure&quot; is operative: users MUST connect to the English-language site. Watch the wording in the exam: a requirement may be presented very casually in the wording of the question. However, understanding that requirement is mandatory if you&#39;re going to arrive at the correct answer.",
+				"answers": [
+					"Weighted Routing",
+					"Simple Routing",
+					"Geoproximity Routing",
+					"Latency Based Routing",
+					"Geolocation",
+					"Failover Routing"
+				],
+				"question": "You are a solutions architect working for a busy media company with offices in Japan and the United States. Your production environment is hosted both in US-EAST-1 and AP-NORTHEAST-1. Your European users have been connecting to the production environment in Japan, and are seeing the site in Japanese rather than in English. You need to ensure that they view the English language version. Which of the routing policies could help you achieve this? [Select 2]"
+			},
+			"correct_response": [
+				"c",
+				"e"
+			],
+			"section": "",
+			"question_plain": "You are a solutions architect working for a busy media company with offices in Japan and the United States. Your production environment is hosted both in US-EAST-1 and AP-NORTHEAST-1. Your European users have been connecting to the production environment in Japan, and are seeing the site in Japanese rather than in English. You need to ensure that they view the English language version. Which of the routing policies could help you achieve this? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921346,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Network Access Control Lists are stateless; updates are applied near instantaneously.",
+				"answers": [
+					"Network Access Control lists are stateful.",
+					"Network Access Control lists are stateless.",
+					"Updates to network access control lists can take time to propagate.",
+					"You need to create an outbound rule allowing RDP response traffic to go back out again."
+				],
+				"question": "You are a solutions architect working for a large anti-virus company and your job is to secure your company’s production AWS environment. A new policy dictates that a particular public-facing subnet needs to allow RDP on port 3389 at the network ACL layer. You create an inbound rule allowing traffic to port 3389 on the ACL level. However, users complain that they still cannot connect. Which of the following answers may represent the root cause of the connectivity issues? [Select 2]"
+			},
+			"correct_response": [
+				"b",
+				"d"
+			],
+			"section": "",
+			"question_plain": "You are a solutions architect working for a large anti-virus company and your job is to secure your company’s production AWS environment. A new policy dictates that a particular public-facing subnet needs to allow RDP on port 3389 at the network ACL layer. You create an inbound rule allowing traffic to port 3389 on the ACL level. However, users complain that they still cannot connect. Which of the following answers may represent the root cause of the connectivity issues? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921348,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "You should consider; using ElastiCache, using RDS Read Replicas Scaling up may also resolve the contention, however it may be more expensive than offloading the read activities to cache or Read-Replicas. RDS Multi-AZ is for resilience only.",
+				"answers": [
+					"Use ElastiCache to cache the frequently read, static data.",
+					"Shard the MySQL database into multiple copies.",
+					"Provision a larger instance size with provisioned IOPS.",
+					"Add an RDS Multi-AZ for increased read performance.",
+					"Add an RDS Read Replica for increased read performance."
+				],
+				"question": "You work for a popular media outlet about to release a story that is expected to go viral. During load testing on the website, you discover that there is read contention on the database tier of your application. Your RDS instance consists of a MySQL database on an extra large instance. Which of the following approaches would be best to further scale this instance to meet the anticipated increase in traffic your viral story will generate? [Select 3]"
+			},
+			"correct_response": [
+				"a",
+				"c",
+				"e"
+			],
+			"section": "",
+			"question_plain": "You work for a popular media outlet about to release a story that is expected to go viral. During load testing on the website, you discover that there is read contention on the database tier of your application. Your RDS instance consists of a MySQL database on an extra large instance. Which of the following approaches would be best to further scale this instance to meet the anticipated increase in traffic your viral story will generate? [Select 3]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921350,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "A /28 subnet will only have 16 addresses available. AWS reserve both the first four and last IP addresses in each subnet’s CIDR block. It is likely that your autoscaling group has provisioned too many EC2 instances and you have run out of internal private IP addresses.",
+				"answers": [
+					"Your internet gateway (IGW) on your VPC has provisioned too many EC2 instances.",
+					"Your Autoscaling Group (ASG) has provisioned too many EC2 instances and has exhausted the number of internal IP addresses available in the subnet.",
+					"AWS reserves both the first four and the last IP address in each subnet&#39;s CIDR block.",
+					"AWS reserves both the first three and the last two IP addresses in each subnet&#39;s CIDR block.",
+					"AWS reserves both the first two and the last two IP addresses in each subnet&#39;s CIDR block."
+				],
+				"question": "You have provisioned a custom VPC with a subnet that has a CIDR block of 10.0.3.0/28 address range. Inside this subnet, you have 2 webservers, 2 application servers, 2 database servers, and a NAT. You have configured an Autoscaling group on the two web servers to automatically scale when the CPU utilization goes above 90%. Several days later you notice that autoscaling is no longer deploying new instances into the subnet, despite the CPU utilization of all web servers being at 100%. Which of the following answers may offer an explanation? [Select 2]"
+			},
+			"correct_response": [
+				"b",
+				"c"
+			],
+			"section": "",
+			"question_plain": "You have provisioned a custom VPC with a subnet that has a CIDR block of 10.0.3.0/28 address range. Inside this subnet, you have 2 webservers, 2 application servers, 2 database servers, and a NAT. You have configured an Autoscaling group on the two web servers to automatically scale when the CPU utilization goes above 90%. Several days later you notice that autoscaling is no longer deploying new instances into the subnet, despite the CPU utilization of all web servers being at 100%. Which of the following answers may offer an explanation? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921352,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "RDS supports the MariaDB, PostgreSQL, MySQL, SQLServer, Oracle, and Aurora database engines.",
+				"answers": [
+					"MariaDB",
+					"DynamoDB",
+					"Oracle",
+					"Aurora",
+					"DB2"
+				],
+				"question": "Which of the following database technologies are supported by RDS. [Select 3]"
+			},
+			"correct_response": [
+				"a",
+				"c",
+				"d"
+			],
+			"section": "",
+			"question_plain": "Which of the following database technologies are supported by RDS. [Select 3]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921354,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "There are two issues here: how to handle stale data to avoid paying for high provisioned throughput for infrequently used data, and how to design a partition key that will distribute IO from sequential data across partitions evenly to avoid performance bottlenecks.",
+				"answers": [
+					"Don&#39;t worry about it: AWS will optimize the table and partitions to meet our needs.",
+					"Use a Date-based partition key to avoid having to hop from partition to partition.",
+					"Create a new table each day, and reconfigure the old table for infrequent use after the summation is complete.",
+					"Use a time-based partition key so that it is easy to query and analyze.",
+					"Insert a calculated hash in front of the Date/Time value in the partition key to force DynamoDB to use partitions in parallel."
+				],
+				"question": "You are leading a design team to implement an urgently needed collection and analysis project. You will be collecting data for an array of 50,000 anonymous data collectors which will be summarized each day and then rarely used again. The data will be pulled from collectors approximately once an hour. The Dev responsible for the DynamoDB design is concerned about how to design the Partition and Local keys to ensure efficient use of the DynamoDB tables. What advice would you provide. [Select 2]"
+			},
+			"correct_response": [
+				"c",
+				"e"
+			],
+			"section": "",
+			"question_plain": "You are leading a design team to implement an urgently needed collection and analysis project. You will be collecting data for an array of 50,000 anonymous data collectors which will be summarized each day and then rarely used again. The data will be pulled from collectors approximately once an hour. The Dev responsible for the DynamoDB design is concerned about how to design the Partition and Local keys to ensure efficient use of the DynamoDB tables. What advice would you provide. [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921356,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "EC2 Key Pairs, Security Groups, and ELBs are region-specific.",
+				"answers": [
+					"EC2 Key Pairs",
+					"Identity Access Management Roles",
+					"Route 53",
+					"Security Groups",
+					"Elastic Load Balancers"
+				],
+				"question": "You have been asked by your employer to create an identical copy of your production environment in another Region for disaster recovery purposes. In the list below, which AWS resources would you NOT need to recreate, because they are available universally across the console? [Select 2]"
+			},
+			"correct_response": [
+				"b",
+				"c"
+			],
+			"section": "",
+			"question_plain": "You have been asked by your employer to create an identical copy of your production environment in another Region for disaster recovery purposes. In the list below, which AWS resources would you NOT need to recreate, because they are available universally across the console? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921358,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "When interacting with DynamoDB directly, there is a short list of header attributes that are required ",
+				"answers": [
+					"host",
+					"MD5-Hash",
+					"x-amz-date",
+					"x-amz-target",
+					"content-type",
+					"x-amz-meta-"
+				],
+				"question": "If you don&#39;t use one of the AWS SDKs, you can perform DynamoDB operations over HTTP using the POST request method. The POST method requires you to specify the operation in the header of the request and provide the data for the operation in JSON format in the body of the request. Which of the following are valid DynamoDB Headers attributes? [Select 4]"
+			},
+			"correct_response": [
+				"a",
+				"c",
+				"d",
+				"e"
+			],
+			"section": "",
+			"question_plain": "If you don&#39;t use one of the AWS SDKs, you can perform DynamoDB operations over HTTP using the POST request method. The POST method requires you to specify the operation in the header of the request and provide the data for the operation in JSON format in the body of the request. Which of the following are valid DynamoDB Headers attributes? [Select 4]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921360,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "AWS networking is implemented differently from most conventional data centers.",
+				"answers": [
+					"The Public IP address can be managed via the instance MetaData at http://169.254.169.254/latest/meta-data/local-ipv4.",
+					"The Public IP address can be managed via the instance MetaData at http://169.254.169.254/latest/meta-data/public-ipv4.",
+					"The Public IP address is not managed on the instance: It is, instead, an alias applied as a network address translation of the Private IP address.",
+					"For security reasons, the Public IP address is a hidden value."
+				],
+				"question": "How is the Public IP address managed in an instance session via the instance GUI/RDP or Terminal/SSH session?"
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "How is the Public IP address managed in an instance session via the instance GUI/RDP or Terminal/SSH session?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921362,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Security and Auditing in AWS needs to be considered during the Design phase.",
+				"answers": [
+					"Set up a traffic logging rule on the VPC firewall appliance and direct the log to CloudWatch or S3.",
+					"Set up a Flow Log for the group of instances and forward them to CloudWatch.",
+					"Make use of an OS level logging tools such as iptables and log events to CloudWatch or S3.",
+					"Use Event Log filters to trigger alerts that are forwarded to CloudWatch.",
+					"Set up a Flow Log for the group of instances and forward them to S3."
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					"",
+					""
+				],
+				"relatedLectureIds": "",
+				"question": "<p>A client is concerned that someone other than approved administrators is trying to gain access to the Linux web app instances in their VPC. She asks what sort of network access logging can be added. Which of the following might you recommend? [Select 3]</p>"
+			},
+			"correct_response": [
+				"b",
+				"c",
+				"e"
+			],
+			"section": "",
+			"question_plain": "A client is concerned that someone other than approved administrators is trying to gain access to the Linux web app instances in their VPC. She asks what sort of network access logging can be added. Which of the following might you recommend? [Select 3]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921364,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "The term consistency has specific meaning in relationship to DynamoDB.",
+				"answers": [
+					"To ask the development team to implement a checksum algorithm to confirm that the data is consistent across all the AZs.",
+					"To ask the development team to code for Strongly Consistent Reads, as it will impact the read times slightly, but not the budget.",
+					"To ask the development team to code a Lambda function to check data consistency after each write.",
+					"To ask the development team to code an maintenance task to run on a schedule to check consistency.",
+					"To ask the development team to code for strongly consistent reads. As the consultant, you will advise the CTO of the increased cost.",
+					"To ask the development team to code to check for a successful completion code (200) at the completion of every write."
+				],
+				"question": "You are a consultant planning to deploy DynamoDB across three AZs. Your lead DBA is concerned about data consistency. Which of the following do you advise the lead DBA to do?"
+			},
+			"correct_response": [
+				"e"
+			],
+			"section": "",
+			"question_plain": "You are a consultant planning to deploy DynamoDB across three AZs. Your lead DBA is concerned about data consistency. Which of the following do you advise the lead DBA to do?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921366,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "To see the process by which federated users are granted access to the AWS console, please follow the link, below.",
+				"answers": [
+					"The client browser is immediately directed to the AWS Console.",
+					"The portal first verifies the user&#39;s identity in your organization, then generates a SAML authentication response.",
+					"The portal acknowledges a SAML authentication response, then verifies the user&#39;s identity in your organization.",
+					"After the client browser posts the SAML assertion, AWS sends the sign-in URL as a redirect, and the client browser is redirected to the Console."
+				],
+				"question": "With SAML-enabled single sign-on, ________. [Select 2]"
+			},
+			"correct_response": [
+				"b",
+				"d"
+			],
+			"section": "",
+			"question_plain": "With SAML-enabled single sign-on, ________. [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921368,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "VPC peering only routes traffic between source and destination VPCs. VPC peering does not support edge to edge routing.",
+				"answers": [
+					"Yes: VPC Peering is designed to route traffic between the VPCs.",
+					"VPC peering does not support edge to edge routing.",
+					"Instances in VPC-A will be able to access the Internet, but not the corporate office.",
+					"Instances in VPC-A will be able to access the corporate office, but not the Internet."
+				],
+				"question": "You successfully configure VPC Peering between VPC-A  and VPC-B. You then establish an IGW and a Direct-Connect connection in VPC-B. Can instances in VPC-A connect to your corporate office via the Direct-Connect service, and connect to the Internet via the IGW?"
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You successfully configure VPC Peering between VPC-A  and VPC-B. You then establish an IGW and a Direct-Connect connection in VPC-B. Can instances in VPC-A connect to your corporate office via the Direct-Connect service, and connect to the Internet via the IGW?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921370,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "You need to ensure that your application in your custom VPC can communicate back to the on-premise data center. You can do this by either using a site to site VPN or Direct Connect. It will be using an internal IP address range, so you must make sure that your internal IP addresses do not overlap.",
+				"answers": [
+					"You should configure the VPC subnet in which the application sits so that it does not have an IP address range that conflicts with that of the on-premise VLAN in which the back end services sit.",
+					"You should ensure the VPC has an internet gateway attached to it. That way, you can establish a site-to-site VPN with the on-premise environment.",
+					"You should attach an Elastic IP address to the VPC so that it will be able to communicate with the on-premise site.",
+					"You should configure your Elastic Load Balancer to act as a reverse proxy so that the EC2 instance can communicate back to the on-premise data center.",
+					"You should configure an AWS Direct Connect link between the VPC and the site with the on-premise solution."
+				],
+				"question": "You are a solutions architect with a manufacturing company running several legacy applications. One of these applications needs to communicate with services that are currently hosted on-premise. The people who wrote this application have left the company, and there is no documentation describing how the application works. You need to ensure that this application can be hosted in a bespoke VPC, but remains able to communicate to the back-end services hosted on-premise. Which of the following answers will allow the application to communicate back to the on premise equipment without the need to reprogram the application? [Select 3]"
+			},
+			"correct_response": [
+				"a",
+				"b",
+				"e"
+			],
+			"section": "",
+			"question_plain": "You are a solutions architect with a manufacturing company running several legacy applications. One of these applications needs to communicate with services that are currently hosted on-premise. The people who wrote this application have left the company, and there is no documentation describing how the application works. You need to ensure that this application can be hosted in a bespoke VPC, but remains able to communicate to the back-end services hosted on-premise. Which of the following answers will allow the application to communicate back to the on premise equipment without the need to reprogram the application? [Select 3]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921372,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "You should consider either increasing the bid price for the task nodes so that your nodes are not terminated or even converting the task nodes to on demand instances so as to ensure they are not prematurely terminated.",
+				"answers": [
+					"Change the core nodes to spot instances and lower the spot price.",
+					"Change the task nodes to on-demand instances.",
+					"Increase the bid price for the core nodes.",
+					"Increase the bid price for the task nodes so that you have a greater threshold before the task nodes are terminated."
+				],
+				"question": "You work for a genomics company that is developing a cure for motor neuron disease by using advanced gene therapies. As a part of their research, they take extremely large data sets (usually in the terabytes) and analyze these data sets using Elastic Map Reduce. In order to keep costs low, they run the analysis for only a few hours in the early hours of the morning, using spot instances for the task nodes. The core nodes are on-demand instances. Lately however the EMR jobs have been failing. This is due to spot instances being unexpectedly terminated. Which of the following remedies would both keep costs manageable and mitigate the issues caused by terminated spot instances? [Select 2]"
+			},
+			"correct_response": [
+				"b",
+				"d"
+			],
+			"section": "",
+			"question_plain": "You work for a genomics company that is developing a cure for motor neuron disease by using advanced gene therapies. As a part of their research, they take extremely large data sets (usually in the terabytes) and analyze these data sets using Elastic Map Reduce. In order to keep costs low, they run the analysis for only a few hours in the early hours of the morning, using spot instances for the task nodes. The core nodes are on-demand instances. Lately however the EMR jobs have been failing. This is due to spot instances being unexpectedly terminated. Which of the following remedies would both keep costs manageable and mitigate the issues caused by terminated spot instances? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921374,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Additional clones of your production environment, ElastiCache, and CloudFront can all help improve your site performance. Changing your autoscaling policies will not help improve performance times as it is much more likely that the performance issue is with the database back end rather than the front end. The Provisioned IOPS would also not help, as the bottleneck is with the memory, not the storage",
+				"answers": [
+					"Change your Auto Scaling Group so that it will scale when CPU Utilization is only 50%, rather than 70%.",
+					"Set up a clone of your production environment in the Asia Pacific region and configure latency based routing on Route 53.",
+					"Use ElastiCache to cache the most commonly accessed DB queries.",
+					"Setup CloudFront with dynamic content support to enable the caching of re-usable content from the media rich website.",
+					"Increase the Provisioned IOPS on the EBS Volume."
+				],
+				"question": "You are running a media-rich website with a global audience from us-east-1 for a customer in the publishing industry. The website updates every 20 minutes. The web-tier of the site sits on three EC2 instances inside an Auto Scaling Group. The Auto Scaling group is configured to scale when CPU utilization of the instances is greater than 70%. The Auto Scaling group sits behind an Elastic Load Balancer, and your static content lives in S3 and is distributed globally by CloudFront. Your RDS database is already the largest instance size available. CloudWatch metrics show that your RDS instance usually has around 2GB of memory free, and an average CPU utilization of 75%. Currently, it is taking your users in Japan and Australia approximately 3 - 5 seconds to load your website, and you have been asked to help reduce these load-times. How might you improve your page load times? [Select 3]"
+			},
+			"correct_response": [
+				"b",
+				"c",
+				"d"
+			],
+			"section": "",
+			"question_plain": "You are running a media-rich website with a global audience from us-east-1 for a customer in the publishing industry. The website updates every 20 minutes. The web-tier of the site sits on three EC2 instances inside an Auto Scaling Group. The Auto Scaling group is configured to scale when CPU utilization of the instances is greater than 70%. The Auto Scaling group sits behind an Elastic Load Balancer, and your static content lives in S3 and is distributed globally by CloudFront. Your RDS database is already the largest instance size available. CloudWatch metrics show that your RDS instance usually has around 2GB of memory free, and an average CPU utilization of 75%. Currently, it is taking your users in Japan and Australia approximately 3 - 5 seconds to load your website, and you have been asked to help reduce these load-times. How might you improve your page load times? [Select 3]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921376,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "There is no route connecting your VPC back to the on premise data center. You need to add this route to the route table and then enable propagation on the Virtual Private Gateway.",
+				"answers": [
+					"Enable route propagation on your Customer Gateway (CGW).",
+					"Use an IPSEC VPN and add this route to the route table with the VPN being the target.",
+					"Enable route propagation on your Virtual Private Gateway (VPG).",
+					"Edit the VPC subnet route table, adding a route back to the on-premise data center.",
+					"Configure a new route from the NAT to the on-premise data center."
+				],
+				"question": "You have created a Direct Connect Link from your on premise data center to your Amazon VPC. The link is now active and routes are being advertised from the on-premise data center. You can connect to EC2 instances from your data center; however, you cannot connect to your on premise servers from your EC2 instances. Which of the following solutions would remedy this issue? [Select 2]"
+			},
+			"correct_response": [
+				"c",
+				"d"
+			],
+			"section": "",
+			"question_plain": "You have created a Direct Connect Link from your on premise data center to your Amazon VPC. The link is now active and routes are being advertised from the on-premise data center. You can connect to EC2 instances from your data center; however, you cannot connect to your on premise servers from your EC2 instances. Which of the following solutions would remedy this issue? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921378,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "AWS does not copy launch permissions, user-defined tags, or Amazon S3 bucket permissions from the source AMI to the new AMI.",
+				"answers": [
+					"Create a new instance in us-west-1, making certain the instance in the failover region shares a security group with the instance in the default region.",
+					"Nothing: AMIs are specific to an account, and they can be used anywhere.",
+					"Copy the AMI from us-west-2, manually apply launch permissions, user-defined tags, and Amazon S3 bucket permissions of the default AMI to the new instance, and launch the instance.",
+					"Copy the AMI from us-west-2 to us-west-1 and launch as-is."
+				],
+				"question": "You&#39;re building out a single-region application in us-west-2. However, disaster recovery is a strong consideration, and you need to build the application so that if us-west-2 becomes unavailable, you can fail-over to us-west-1. Your application relies exclusively on pre-built AMI&#39;s. In order to share those AMI&#39;s with the region you&#39;re using as a backup, which process would you follow?"
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "You&#39;re building out a single-region application in us-west-2. However, disaster recovery is a strong consideration, and you need to build the application so that if us-west-2 becomes unavailable, you can fail-over to us-west-1. Your application relies exclusively on pre-built AMI&#39;s. In order to share those AMI&#39;s with the region you&#39;re using as a backup, which process would you follow?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921380,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "DynamoDB allows for the storage of large text and binary objects, but there is a limit of 400 KB.",
+				"answers": [
+					"The Name must not exceed 64 KB and the Value must not exceed 500 KB.",
+					"The combined Value and Name combined must not exceed 500 KB.",
+					"The Name must not exceed 64 KB and the Value must not exceed 400 KB.",
+					"The combined Value and Name combined must not exceed 400 KB.",
+					"The Name must not exceed 64 KB and the Value must not exceed 255 KB.",
+					"The combined Value and Name combined must not exceed 255 KB."
+				],
+				"question": "At the monthly product meeting, one of the Product Owners proposes an idea to address an immediate shortcoming of the product system: storing a copy of the customer price schedule in the customer record in the database. You know that you can store large text or binary objects in DynamoDB. You give a tentative OK to do a Minimal Viable Product test, but stipulate that it must comply with the size limitation on the Attribute Name &amp; Value. Which is the correct limitation?"
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "At the monthly product meeting, one of the Product Owners proposes an idea to address an immediate shortcoming of the product system: storing a copy of the customer price schedule in the customer record in the database. You know that you can store large text or binary objects in DynamoDB. You give a tentative OK to do a Minimal Viable Product test, but stipulate that it must comply with the size limitation on the Attribute Name &amp; Value. Which is the correct limitation?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921382,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Network throughput is the obvious bottleneck. You are not told in this question whether the proxy server is in a public or private subnet.  If it is in a public subnet, the proxy server instance size itself may not be large enough to cope with the current network throughput. If the proxy server is in a private subnet, then it must be using a NAT instance or NAT gateway to communicate out to the internet. If it is a NAT instance, this may also be inadequately provisioned in terms of size. You should therefore increase the size of the proxy server and/or the NAT solution.",
+				"answers": [
+					"The proxy server is on an inadequately sized EC2 instance and does not have sufficient network throughput to handle all updates simultaneously. You should increase the instance size or type of the EC2 instance for the proxy server.",
+					"The proxy server has only one elastic IP address added to it. To increase network throughput, you should add additional elastic IP addresses.",
+					"The proxy server has an inadequately sized EBS volume attached to it. The network buffer is stored on the EBS volume, and it is running out of disk space when trying to buffer the 500 simultaneous connections. You should provision an EBS volume with provisioned IOPS.",
+					"The proxy server is in a private subnet and uses a NAT instance to connect to the internet. However, this instance is too small to handle the required network traffic. You should re-provision the NAT solution so that it&#39;s able to handle the throughput.",
+					"Your proxy server is blacklisting the address from which the updates are being downloaded, resulting in failed downloads."
+				],
+				"question": "You work for a large software company in Seattle. They have their production environment provisioned on AWS inside a custom VPC. The VPC contains both a public and private subnet. The company tests their applications on custom EC2 instances inside a private subnet. There are approximately 500 instances, and they communicate to the outside world via a proxy server. At 3am every night, the EC2 instances pull down OS updates, which are usually 150MB or so. They then apply these updates and reboot: if the software has not downloaded within half an hour, then the update will attempt to download the following day. You notice that a number of EC2 instances are continually failing to download the updates in the allotted time. Which of the following answers might explain this failure? [Select 2]"
+			},
+			"correct_response": [
+				"a",
+				"d"
+			],
+			"section": "",
+			"question_plain": "You work for a large software company in Seattle. They have their production environment provisioned on AWS inside a custom VPC. The VPC contains both a public and private subnet. The company tests their applications on custom EC2 instances inside a private subnet. There are approximately 500 instances, and they communicate to the outside world via a proxy server. At 3am every night, the EC2 instances pull down OS updates, which are usually 150MB or so. They then apply these updates and reboot: if the software has not downloaded within half an hour, then the update will attempt to download the following day. You notice that a number of EC2 instances are continually failing to download the updates in the allotted time. Which of the following answers might explain this failure? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921384,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "An Elastic Load Balancer can help you deliver stateful services, but not stateless. Elastic Map Reduce is a data crunching services and is not related to servicing web traffic.",
+				"answers": [
+					"DynamoDB",
+					"RDS",
+					"EMR",
+					"ELB",
+					"ElastiCache."
+				],
+				"question": "You work for a games development company that are re-architecting their production environment. They have decided to make all web servers stateless. Which of the following the AWS services will help them achieve this goal? [Select 3]"
+			},
+			"correct_response": [
+				"a",
+				"b",
+				"e"
+			],
+			"section": "",
+			"question_plain": "You work for a games development company that are re-architecting their production environment. They have decided to make all web servers stateless. Which of the following the AWS services will help them achieve this goal? [Select 3]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921386,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "You cannot tag individual folders within an S3 bucket. If you create an individual user for each staff member, there will be no way to keep their active directory credentials synched when they change their password. You should either create a federation proxy or identity provider and then use AWS security token service to create temporary tokens. You will then need to create the appropriate IAM role for which the users will assume when writing to the S3 bucket.",
+				"answers": [
+					"Create an IAM role.",
+					"Tag each folder with the staff members&#39; ID.",
+					"Create either a federation proxy or identity provider.",
+					"Use AWS security token service to create temporary tokens.",
+					"Create an IAM user for each member of staff and use their existing active directory password for the account."
+				],
+				"question": "You work for a large media organization who has traditionally stored all their media on large SAN arrays. After evaluating AWS, they have decided to move their storage to the cloud. Staff will store their personal data on S3, and will have to use their Active Directory credentials in order to authenticate. These items will be stored in a single S3 bucket, and each staff member will have their own folder within that bucket named after their employee ID. Which of the following steps should you take in order to help set this up? [Select 3]"
+			},
+			"correct_response": [
+				"a",
+				"c",
+				"d"
+			],
+			"section": "",
+			"question_plain": "You work for a large media organization who has traditionally stored all their media on large SAN arrays. After evaluating AWS, they have decided to move their storage to the cloud. Staff will store their personal data on S3, and will have to use their Active Directory credentials in order to authenticate. These items will be stored in a single S3 bucket, and each staff member will have their own folder within that bucket named after their employee ID. Which of the following steps should you take in order to help set this up? [Select 3]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921388,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "The tenancy of an instance can only be change between variants of ‘dedicated&#39; tenancy hosting. It cannot be changed from or to default tenancy hosting.",
+				"answers": [
+					"Host &amp; Default",
+					"Dedicated &amp; Default",
+					"Dedicated &amp; Host",
+					"Non-Dedicated &amp; Dedicated"
+				],
+				"question": "When using EC2 instances with Dedicated Hosting, which of the following modes are you able to transition between by stopping the instance and starting it again?"
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "When using EC2 instances with Dedicated Hosting, which of the following modes are you able to transition between by stopping the instance and starting it again?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921390,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "Basic good DB architecture.",
+				"answers": [
+					"AWS maintain a schedule of incremental backups and log shipping.",
+					"DynamoDB supports user Snapshots to S3.",
+					"DynamoDB data is automatically replicated across multiple AZs."
+				],
+				"question": "How does AWS deliver high durability for DynamoDB?"
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "How does AWS deliver high durability for DynamoDB?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921294,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "Spread placement groups have a specific limitation that you can only have a maximum of 7 running instances per Availability Zone and therefore this is the only correct option.  Deploying instances in a single Availability Zone is unique to Cluster Placement Groups only and therefore is not correct.  The last two remaining options are common to all placement group types and so are not specific to Spread Placement Groups.",
+				"answers": [
+					"Instances must be deployed in a single Availability Zone",
+					"The name of your placement group must be unique within your AWS Account",
+					"The placement group can only have 7 running instances per Availability Zone",
+					"There is no charge for creating a placement group"
+				],
+				"question": "Which of the following features only relate to Spread Placement Groups?"
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "Which of the following features only relate to Spread Placement Groups?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921296,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "EBS, S3 and EFS all allow the user to configure encryption at rest using either the AWS Key Management Service (KMS) or, in some cases, using customer provided keys.  The exception on the list is Elasticache for Memcached which does not offer a native encryption service, although Elasticache for Redis does.",
+				"answers": [
+					"Elastic Block Store (EBS)",
+					"Elasticache for Memcached",
+					"S3",
+					"Elastic File System (EFS)"
+				],
+				"question": "Which of the following AWS services allow native encryption of data, while at rest?  [Select 3]"
+			},
+			"correct_response": [
+				"a",
+				"c",
+				"d"
+			],
+			"section": "",
+			"question_plain": "Which of the following AWS services allow native encryption of data, while at rest?  [Select 3]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921298,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Consolidated Billing is a feature of AWS Organisations.  Once enabled and configured, you will receive a bill containing the costs and charges for all of the AWS accounts within the Organisation.  Although each of the individual AWS accounts are combined into a single bill, they can still be tracked individually and the cost data can be downloaded in a separate file.  Using Consolidated Billing may ultimately reduce the amount you pay, as you may qualify for Volume Discounts.  There is no charge for using Consolidated Billing.",
+				"answers": [
+					"A single bill is issued containing the charges for all AWS Accounts",
+					"Charging is based per VPC",
+					"Account charges can be tracked individually",
+					"Multiple standalone accounts are combined and may reduce your overall bill"
+				],
+				"question": "Choose the features of Consolidated Billing. [Select 3]"
+			},
+			"correct_response": [
+				"a",
+				"c",
+				"d"
+			],
+			"section": "",
+			"question_plain": "Choose the features of Consolidated Billing. [Select 3]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921300,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "Currently the S3 Classes are; Standard, Standard-Infrequent Access, One Zone-Infrequent Access, Reduced Redundancy Storage and for archive, Glacier &amp; Glacier Deep Archive.  Reduced Redundancy Storage is the only S3 Class that does not offer 99.999999999% durability and therefore any of the answers that contain Reduced Redundancy Storage cannot be correct.",
+				"answers": [
+					"Reduced Redundancy Storage, Standard, One Zone-Infrequent Access",
+					"Standard, Glacier, Reduced Redundancy Storage",
+					"Standard-Infrequent Access, One Zone-Infrequent Access, Reduced Redundancy Storage",
+					"Standard, Standard-Infrequent Access, One Zone-Infrequent Access"
+				],
+				"question": "Which of the following Amazon S3 Storage Classes offer 99.999999999% (11 x 9s) durability?"
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "Which of the following Amazon S3 Storage Classes offer 99.999999999% (11 x 9s) durability?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921302,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Both the Oracle and SQL Server database engines have limits to how many databases that can run per instance.  Primarily, this is due to the underlying technology being proprietary and requiring specific licensing to operate.  The database engines based on Open Source technology such as Aurora, MySQL, MariaDB or PostgreSQL have no such limits.",
+				"answers": [
+					"SQL Server",
+					"Amazon Aurora",
+					"PostgreSQL",
+					"Oracle"
+				],
+				"question": "Which of the following RDS database engines have a limit to the number of databases that can run per instance? [Select 2]"
+			},
+			"correct_response": [
+				"a",
+				"d"
+			],
+			"section": "",
+			"question_plain": "Which of the following RDS database engines have a limit to the number of databases that can run per instance? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921304,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "In total there are 9 valid sections allowed within a CloudFormation template.  In the answers above, only &quot;Parameters&quot;, &quot;Resources&quot; and &quot;Outputs&quot; are considered valid.  &quot;Options&quot; is not a template section.",
+				"answers": [
+					"Options",
+					"Parameters",
+					"Resources",
+					"Outputs"
+				],
+				"question": "Which of the following are not valid CloudFormation template sections?"
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "Which of the following are not valid CloudFormation template sections?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921306,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "Availability Zone names are unique per account and do not represent a specific set of physical resources.",
+				"answers": [
+					"The names of the AZs are randomly applied, so &quot;eu-west-1b&quot; is not necessarily the same physical location for all three accounts.",
+					"You have incorrectly configured the cross-account authentication policies in Account C, adding latency to those instances.",
+					"Account C has been allocated to an older section of the Data Hall with slower networking. ",
+					"The instances for Account C are on an overloaded Host. Stop all the Account C instances and then start them together so that they run on a new host.",
+					"You have accidentally set up account C in &quot;us-west-1b&quot;."
+				],
+				"question": "You have three AWS accounts (A, B &amp; C) that share data. In an attempt to maximize performance between the accounts, you deploy the instances owned by these three accounts in &#39;eu-west-1b&#39;. During testing, you find inconsistent results in transfer latency between the instances. Transfer between accounts A and B is excellent, but transfers between accounts B and C, and C and A, are slower. What could be the problem?"
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "You have three AWS accounts (A, B &amp; C) that share data. In an attempt to maximize performance between the accounts, you deploy the instances owned by these three accounts in &#39;eu-west-1b&#39;. During testing, you find inconsistent results in transfer latency between the instances. Transfer between accounts A and B is excellent, but transfers between accounts B and C, and C and A, are slower. What could be the problem?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921308,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "",
+				"answers": [
+					"1 Day",
+					"12 Hours",
+					"15 Minutes",
+					"1 Hour"
+				],
+				"question": "What is the maximum response time for a Business Level &#39;production down&#39; Support Case?"
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "What is the maximum response time for a Business Level &#39;production down&#39; Support Case?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921310,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "Remember that &#39;Free Tier&#39; is a billing rebate. It is not an account type or support type.",
+				"answers": [
+					"It&#39;s an IAAS platform, so there is no support.",
+					"Free, Bronze, Silver, and Gold",
+					"Basic, Startup, Business, and Enterprise",
+					"Basic, Developer, Business, and Enterprise"
+				],
+				"question": "What are the four levels of AWS premium support?"
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "What are the four levels of AWS premium support?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921312,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Route 53 has the following routing policies - Simple, Weighted, Latency, Failover, Multivalue answer, Geoproximity. and Geolocation",
+				"answers": [
+					"Simple",
+					"Multitarget answer",
+					"Complex",
+					"Weighted",
+					"Latency",
+					"Shortest First"
+				],
+				"question": "Which of the following are valid Route 53 routing policies? [Select 3]"
+			},
+			"correct_response": [
+				"a",
+				"d",
+				"e"
+			],
+			"section": "",
+			"question_plain": "Which of the following are valid Route 53 routing policies? [Select 3]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921314,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "DynamoDB makes use of parallel processing to achieve predictable performance. You visualise each partition as an independent DB server of fixed size. Each responsible for a defined block of data. In SQL terminology it is called sharding. The documentation is specific about the SSDs, but makes no mention of read-replicas or EBS-Optimised.  Caching in-front of DDB is an option (DAX), but it is not inherent to DDB.",
+				"answers": [
+					"Data is stored on Solid State Disks.",
+					"AWS deploys Read Replicas of the database to balance the load.",
+					"The Database is partitioned across a number of nodes.",
+					"DynamoDB instances can be configured with EBS-Optimised connections.",
+					"AWS deploy caching instances in front of the DynamoDB cluster."
+				],
+				"question": "Which of the following strategies does AWS use to deliver the promised levels of DynamoDB performance? [Select 2]"
+			},
+			"correct_response": [
+				"a",
+				"c"
+			],
+			"section": "",
+			"question_plain": "Which of the following strategies does AWS use to deliver the promised levels of DynamoDB performance? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921316,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "The study of AWS Billing is a discipline unto itself. For more information, please see the AWS Cost Control Course on the A Cloud Guru platform.",
+				"answers": [
+					"You leap across the meeting table and slap him for insulting you in front of your peers.",
+					"You acknowledge the problem and propose that you could downsize the instances so that the workload over the hour consumes the full instance capacity for the full hour. You might also propose closer monitoring and automation to allow you to up-size and down-size the instance each hour over the day to match the instance performance to the anticipated workload.",
+					"You thank him for his concern, and advise him that he has misinterpreted the pricing document: Windows instances are billed by the full hour, and partial hours are billed as such. Additionally, storage charges are incurred even if the Db instance sits idle. Taking into account productivity losses, stopping and restarting Db instances may actually result in additional costs. As such, your solution is fine as it now stands.",
+					"You grudgingly acknowledge his point and change your scheduling and tuning settings."
+				],
+				"question": "Your company has hired a young and enthusiastic accountant. After reviewing the AWS documentation and usage graphs, he announces that you are wasting vast amounts of money running your Windows servers for a full hour instead of spinning them up only when they are needed and down again as soon as they are idle for 1 minute. He cites the AWS claim that you only pay for what you use, and that as a senior engineer, you should be more conscious of wasting company money. How do you respond?"
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "Your company has hired a young and enthusiastic accountant. After reviewing the AWS documentation and usage graphs, he announces that you are wasting vast amounts of money running your Windows servers for a full hour instead of spinning them up only when they are needed and down again as soon as they are idle for 1 minute. He cites the AWS claim that you only pay for what you use, and that as a senior engineer, you should be more conscious of wasting company money. How do you respond?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921318,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "<p>AutoScaling scales-in according to a hierarchy of decisions. Please see the link for further details.&nbsp; &nbsp; &nbsp;http://docs.aws.amazon.com/AutoScaling/latest/DeveloperGuide/AutoScalingBehavior.InstanceTermination.html</p>",
+				"answers": [
+					"The instance with the fewest current sessions will terminate first.",
+					"The instance that has been running longest will terminate first.",
+					"The instance in AZ -C that has the oldest launch configuration will terminate first.",
+					"The instance in AZ -C that has been running the longest will terminate first.",
+					"The instance in AZ -C that has the least number of sessions will terminate first."
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					"",
+					""
+				],
+				"relatedLectureIds": "",
+				"question": "You have been monitoring a sensitive autoscaling group, and you expect it to scale-in as you enter a period of holiday downtime. The auto scaling group is distributed over three AZs ( AZ - A &amp; -B have two instances each, and AZ -C has three instances). All instances have different CPU and Memory utilization, and all instances have been running for a different number of days. All instances come from different versions of a root AMI, and all instances have different numbers of sessions connected. Which instance will be the 1st to shut down?"
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "You have been monitoring a sensitive autoscaling group, and you expect it to scale-in as you enter a period of holiday downtime. The auto scaling group is distributed over three AZs ( AZ - A &amp; -B have two instances each, and AZ -C has three instances). All instances have different CPU and Memory utilization, and all instances have been running for a different number of days. All instances come from different versions of a root AMI, and all instances have different numbers of sessions connected. Which instance will be the 1st to shut down?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921320,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "You should generate a password for each user and give these passwords to your system administrators. You should then have each user set up multi factor authentication once they have been able to log in to the console. You cannot use the secret access key and access key id to log in to the AWS console; rather, these credentials are used to call Amazon API’s.",
+				"answers": [
+					"Generate a password for each user and give these passwords to your system administrators.",
+					"Have each user set up multi-factor authentication once they have logged in to the console.",
+					"Give the system administrators the secret access key and access key id, and tell them to use these credentials to log in to the AWS console.",
+					"Get the systems administrators to download the CLI and configure this on their laptop, using their user names and passwords."
+				],
+				"question": "You are a solutions architect working for a construction company. Your company is migrating their production estate to AWS, and you are in the process of setting up access to the AWS console using Identity Access Management (IAM). You have created 15 users for your system administrators. What further steps do you need to take to enable your system administrators to get access to the AWS console in a secure fashion? [Select 2]"
+			},
+			"correct_response": [
+				"a",
+				"b"
+			],
+			"section": "",
+			"question_plain": "You are a solutions architect working for a construction company. Your company is migrating their production estate to AWS, and you are in the process of setting up access to the AWS console using Identity Access Management (IAM). You have created 15 users for your system administrators. What further steps do you need to take to enable your system administrators to get access to the AWS console in a secure fashion? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921322,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "With a Standard queue, delivery is &quot;at-least-once&quot;, and FIFO delivery is not guaranteed. If FIFO delivery is required, A FIFO queue should be used.",
+				"answers": [
+					"SQS has been set up to prioritize messages in the queue based on keywords.",
+					"As the SQS service gets busy, some of the hosts will automatically swap from FIFO to LIFO to provide a better workload balance and clearance rate.",
+					"The support staff are probably using the provided admin tools to amend the priority in the SQS queue based on their experience and insights about the issues.",
+					"SQS uses multiple hosts, and each host holds only a portion of all the messages. When a staff member calls for their next message, the consumer process does not see all the hosts or all the messages. As such, messages are not necessarily delivered in the order in which they were generated.",
+					"If an agent abandons a message or takes a break before finishing with a message, it will be offered in the queue again.  In order to ensure that no message is lost, a message will persist in the SQS queue until it is processed successfully."
+				],
+				"question": "The Customer Experience manager comes to see you about some odd behaviors with the ticketing system: messages presented to the support team are not arriving in the order in which they were generated. You know that this is due to the way that the underlying SQS standard queue service is being used to manage messages. Which of the following are correct explanations? [Select 2]"
+			},
+			"correct_response": [
+				"d",
+				"e"
+			],
+			"section": "",
+			"question_plain": "The Customer Experience manager comes to see you about some odd behaviors with the ticketing system: messages presented to the support team are not arriving in the order in which they were generated. You know that this is due to the way that the underlying SQS standard queue service is being used to manage messages. Which of the following are correct explanations? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921324,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "The visibility timeout controls how long a message is invisible in the queue while it is being worked on by a processing instance. This interval should not be confused with how long the message can remain in the queue.",
+				"answers": [
+					"14 days",
+					"1 day",
+					"1 hour",
+					"12 hours"
+				],
+				"question": "What is the maximum VisibilityTimeout of an SQS message in a FIFO queue?"
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "What is the maximum VisibilityTimeout of an SQS message in a FIFO queue?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921328,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Gateway-Stored volumes store your primary data locally, while asynchronously backing up that data to AWS. Depending on the Cache allocated you can achieve the same with File Gateway",
+				"answers": [
+					"Gateway-VTL",
+					"File Gateways",
+					"Gateway-Snapshot",
+					"Gateway-Cached",
+					"Gateway-Stored"
+				],
+				"question": "Your company likes the idea of storing files on AWS. However, low-latency service of the majority of files is important to customer service. Which Storage Gateway configuration would you use to achieve both of these ends? [Select 2]"
+			},
+			"correct_response": [
+				"b",
+				"e"
+			],
+			"section": "",
+			"question_plain": "Your company likes the idea of storing files on AWS. However, low-latency service of the majority of files is important to customer service. Which Storage Gateway configuration would you use to achieve both of these ends? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921330,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "",
+				"answers": [
+					"String Match Conditions",
+					"Termination Conditions",
+					"IP Match Conditions",
+					"Size Constraint Conditions",
+					"SQL Rejection Match Conditions",
+					"URL Match Conditions"
+				],
+				"question": "Your server logs are full of what appear to be application-layer attacks, so you deploy AWS Web Application Firewall. Which of the following conditions may you set when configuring AWS WAF? [Select 3]"
+			},
+			"correct_response": [
+				"a",
+				"c",
+				"d"
+			],
+			"section": "",
+			"question_plain": "Your server logs are full of what appear to be application-layer attacks, so you deploy AWS Web Application Firewall. Which of the following conditions may you set when configuring AWS WAF? [Select 3]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921332,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Caching content is not always effective. Sometimes, optimal solutions cannot be achieved; so you need to figure out the next best way to keep the show going.",
+				"answers": [
+					"Move the metadata to a DynamoDB solution, permitting real-time scaling of Read IOPS to match demand.",
+					"Create RDS Read-Replicas and additional Web/App instances across all the available AZs.",
+					"Evaluate the risks and benefits associated with an RDS instance upgrade.",
+					"Move the images to S3 to reduce DataBase IO.",
+					"Install an ElastiCache cluster in front of the RDS installation.",
+					"Use CloudFront to accelerate presentation of the PDF images."
+				],
+				"question": "You have been engaged as a consultant by a company that generates utility bills and publishes them online. PDF images are generated, then stored on a high-performance RDS instance. Customarily, invoices are viewed by customers once per month. Recently, the number of customers has increased threefold, and the wait-time necessary to view invoices has increased unacceptably. The CTO is unwilling to alter the codebase more than necessary this quarter, but needs to return performance to an acceptable level before the end-of-the-month print run. Which of the following solutions would you feel comfortable proposing to the CTO and GM? [Select 2]"
+			},
+			"correct_response": [
+				"b",
+				"c"
+			],
+			"section": "",
+			"question_plain": "You have been engaged as a consultant by a company that generates utility bills and publishes them online. PDF images are generated, then stored on a high-performance RDS instance. Customarily, invoices are viewed by customers once per month. Recently, the number of customers has increased threefold, and the wait-time necessary to view invoices has increased unacceptably. The CTO is unwilling to alter the codebase more than necessary this quarter, but needs to return performance to an acceptable level before the end-of-the-month print run. Which of the following solutions would you feel comfortable proposing to the CTO and GM? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921334,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "Security Groups are stateful and updates are applied immediately.",
+				"answers": [
+					"Security Groups are stateful.",
+					"Security Groups are stateless.",
+					"Updates to security groups are applied immediately.",
+					"Updates to security groups are not applied immediately, however they are applied within the hour in which they are made."
+				],
+				"question": "When it comes to Security Groups within a custom VPC, which of the following statements are correct? [Select 2]"
+			},
+			"correct_response": [
+				"a",
+				"c"
+			],
+			"section": "",
+			"question_plain": "When it comes to Security Groups within a custom VPC, which of the following statements are correct? [Select 2]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921336,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "The valid ways of encrypting data on S3 are Server Side Encryption (SSE)-S3, SSE-C, SSE-KMS or a client library such as Amazon S3 Encryption Client.",
+				"answers": [
+					"Server-side Encryption (SSE)-S3.",
+					"SSE-C.",
+					"SSE-KMS.",
+					"A client library such as Amazon S3 Encryption Client.",
+					"Open SSL."
+				],
+				"question": "Which of the following are valid S3 data encryption options? [Select 4]"
+			},
+			"correct_response": [
+				"a",
+				"b",
+				"c",
+				"d"
+			],
+			"section": "",
+			"question_plain": "Which of the following are valid S3 data encryption options? [Select 4]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921338,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "The Owner concept comes into play especially when setting or locking down access to various objects.",
+				"answers": [
+					"The Owner is the IAM user who created the object via the GUI, CLI, or API.",
+					"The Owner is IAM Role used to create the object via the GUI, CLI, or API.",
+					"There is no special concept of &quot;Owner&quot; in AWS.",
+					"The &quot;Owner&quot; refers to the identity and email address used to create the AWS account."
+				],
+				"question": "When editing permissions (policies and ACLs), to whom does the concept of the &quot;Owner&quot; refer?"
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "When editing permissions (policies and ACLs), to whom does the concept of the &quot;Owner&quot; refer?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921340,
+			"assessment_type": "multi-select",
+			"prompt": {
+				"explanation": "EBS volumes can be encrypted, but they are not encrypted by default. SSL certificates will only be useful to encrypt data in transit, not data at rest.",
+				"answers": [
+					"Use third party volume encryption tools.",
+					"Encrypt your data inside your application, before storing it on EBS.",
+					"Install SSL certificates on the servers so as to encrypt your data",
+					"EBS Volumes are encrypted by default. You do not need to do anything.",
+					"Encrypt the data using native encryption tools available in the operating system (such as Windows BitLocker)."
+				],
+				"question": "​Your company has a policy of encrypting all data at rest. You host your production environment on EC2 in a bespoke VPC. Attached to your EC2 instances are multiple EBS volumes, and you must ensure this data is encrypted. Which of the following options will allow you to do this? [Select 3]"
+			},
+			"correct_response": [
+				"a",
+				"b",
+				"e"
+			],
+			"section": "",
+			"question_plain": "​Your company has a policy of encrypting all data at rest. You host your production environment on EC2 in a bespoke VPC. Attached to your EC2 instances are multiple EBS volumes, and you must ensure this data is encrypted. Which of the following options will allow you to do this? [Select 3]",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 12921342,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"explanation": "SQS long polling doesnt return a response until a message arrives in the queue, reducing your overall cost over time. Short polling WILL return empty responses.",
+				"answers": [
+					"Enable long polling by setting the ReceiveMessageWaitTimeSeconds to a number &gt; 0.",
+					"Enable short polling by setting the ReceiveMessageWaitTimeMinutes to a number &gt; 0.",
+					"Enable short polling by setting the ReceiveMessageWaitTimeSeconds to a number &gt; 0.",
+					"Enable long polling by setting the ReceiveMessageWaitTimeMinutes to a number &gt; 0."
+				],
+				"question": "Your company provides an online image recognition service and uses SQS to decouple system components. Your EC2 instances poll the image queue as often as possible to keep end-to-end throughput as high as possible, but you realize that all this polling is resulting in both a large number of CPU cycles and skyrocketing costs. How can you reduce cost without compromising service?"
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "Your company provides an online image recognition service and uses SQS to decouple system components. Your EC2 instances poll the image queue as often as possible to keep end-to-end throughput as high as possible, but you realize that all this polling is resulting in both a large number of CPU cycles and skyrocketing costs. How can you reduce cost without compromising service?",
+			"related_lectures": []
+		}
+	]
+}

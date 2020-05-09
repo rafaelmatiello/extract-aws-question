@@ -1,0 +1,268 @@
+{
+	"count": 7,
+	"next": null,
+	"previous": null,
+	"results": [
+		{
+			"_class": "assessment",
+			"id": 10373974,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"feedbacks": [
+					"",
+					"VPC stands for Virtual Private Cloud.",
+					"",
+					""
+				],
+				"relatedLectureIds": [
+					"13886076"
+				],
+				"answers": [
+					"<p>Virtual Public Compute</p>",
+					"<p>Virtual Private Cloud</p>",
+					"<p>Virtual Public Cloud</p>",
+					"<p>Virtual Private Compute</p>"
+				],
+				"question": "<p>What is an Amazon VPC?</p>"
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "What is an Amazon VPC?",
+			"related_lectures": [
+				{
+					"_class": "lecture",
+					"id": 13886076,
+					"title": "AWS - 10,000 Foot Overview",
+					"created": "2019-03-04T09:54:29Z",
+					"asset": {
+						"_class": "asset",
+						"id": 17185998,
+						"asset_type": "Video",
+						"title": "S2_L2_The_10000_Foot_Overview.mp4",
+						"created": "2019-03-19T05:33:31Z"
+					},
+					"object_index": 6,
+					"url": "/course/aws-certified-solutions-architect-associate/learn/lecture/13886076"
+				}
+			]
+		},
+		{
+			"_class": "assessment",
+			"id": 10373990,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"feedbacks": [
+					"",
+					"",
+					"A Virtual Private Cloud (VPC) is a virtual network dedicated to a single AWS account. It is logically isolated from other virtual networks in the AWS cloud, providing compute resources with security and robust networking functionality.",
+					""
+				],
+				"relatedLectureIds": [
+					"13886076"
+				],
+				"answers": [
+					"<p>Global Infrastructure</p>",
+					"<p>Database Services</p>",
+					"<p>Networking Services</p>",
+					"<p>Compute Services</p>"
+				],
+				"question": "<p>An AWS VPC is a component of which group of AWS services?</p>"
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "An AWS VPC is a component of which group of AWS services?",
+			"related_lectures": [
+				{
+					"_class": "lecture",
+					"id": 13886076,
+					"title": "AWS - 10,000 Foot Overview",
+					"created": "2019-03-04T09:54:29Z",
+					"asset": {
+						"_class": "asset",
+						"id": 17185998,
+						"asset_type": "Video",
+						"title": "S2_L2_The_10000_Foot_Overview.mp4",
+						"created": "2019-03-19T05:33:31Z"
+					},
+					"object_index": 6,
+					"url": "/course/aws-certified-solutions-architect-associate/learn/lecture/13886076"
+				}
+			]
+		},
+		{
+			"_class": "assessment",
+			"id": 10374076,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"feedbacks": [
+					"",
+					"",
+					"",
+					"Each region is a separate geographic area. Each region has multiple, isolated locations known as Availability Zones. "
+				],
+				"question": "<p>What does an AWS Region consist of?</p>",
+				"answers": [
+					"<p>A console that gives you a quick, global picture of your cloud computing environment.</p>",
+					"<p>A collection of databases that can only be accessed from a specific geographic region.</p>",
+					"<p>A collection of data centers that is spread evenly around a specific continent.</p>",
+					"<p>A distinct location within a geographic area designed to provide high availability to a specific geography.</p>"
+				],
+				"relatedLectureIds": [
+					"13886076"
+				]
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "What does an AWS Region consist of?",
+			"related_lectures": [
+				{
+					"_class": "lecture",
+					"id": 13886076,
+					"title": "AWS - 10,000 Foot Overview",
+					"created": "2019-03-04T09:54:29Z",
+					"asset": {
+						"_class": "asset",
+						"id": 17185998,
+						"asset_type": "Video",
+						"title": "S2_L2_The_10000_Foot_Overview.mp4",
+						"created": "2019-03-19T05:33:31Z"
+					},
+					"object_index": 6,
+					"url": "/course/aws-certified-solutions-architect-associate/learn/lecture/13886076"
+				}
+			]
+		},
+		{
+			"_class": "assessment",
+			"id": 10374084,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"feedbacks": [
+					"",
+					"",
+					"There is no stipulation that it is 2 zones.  the number of AZ per Region varies.  Plus there is no 'automatic' synchronization involved.",
+					"An Availability Zone (AZ) is a distinct location within an AWS Region. Each Region comprises at least two AZs."
+				],
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>A Content Distribution Network used to distribute content to users.</p>",
+					"<p>Restricted areas designed specifically for the creation of Virtual Private Clouds.</p>",
+					"<p>Two zones containing compute resources that are designed to automatically maintain synchronized copies of each other's data.</p>",
+					"<p>Distinct locations from within an AWS region that are engineered to be isolated from failures.</p>"
+				],
+				"question": "<p>Which statement best describes Availability Zones?</p>"
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "Which statement best describes Availability Zones?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10374090,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"feedbacks": [
+					"",
+					"A region is a geographical area divided into Availability Zones. Each region contains at least two Availability Zones.",
+					"",
+					""
+				],
+				"relatedLectureIds": [
+					"13886076"
+				],
+				"answers": [
+					"<p>A region is an independent data center, located in different countries around the globe.</p>",
+					"<p>A region is a geographical area divided into Availability Zones. Each region contains at least two Availability Zones.</p>",
+					"<p>A region is a collection of Edge Locations available in specific countries.</p>",
+					"<p>A region is a subset of AWS technologies. For example, the Compute region consists of EC2, ECS, Lambda, etc.</p>"
+				],
+				"question": "<p>What is an AWS region?</p>"
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "What is an AWS region?",
+			"related_lectures": [
+				{
+					"_class": "lecture",
+					"id": 13886076,
+					"title": "AWS - 10,000 Foot Overview",
+					"created": "2019-03-04T09:54:29Z",
+					"asset": {
+						"_class": "asset",
+						"id": 17185998,
+						"asset_type": "Video",
+						"title": "S2_L2_The_10000_Foot_Overview.mp4",
+						"created": "2019-03-19T05:33:31Z"
+					},
+					"object_index": 6,
+					"url": "/course/aws-certified-solutions-architect-associate/learn/lecture/13886076"
+				}
+			]
+		},
+		{
+			"_class": "assessment",
+			"id": 10374100,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"feedbacks": [
+					"",
+					"",
+					"The number of Edge Locations is greater than the number of Availability Zones, which is greater than the number of Regions.",
+					""
+				],
+				"answers": [
+					"<p># of Regions &gt; # of Availability Zones &gt; # of Edge Locations</p>",
+					"<p># of Availability Zones &gt; # of Regions &gt; # of Edge Locations</p>",
+					"<p># of Edge Locations &gt; # of Availability Zones &gt; # of Regions</p>",
+					"<p># of Availability Zones &gt; # of Edge Locations &gt; # of Regions</p>"
+				],
+				"question": "<p>Which of the following is correct?</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "Which of the following is correct?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10374106,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"feedbacks": [
+					"",
+					"",
+					"CloudFront content is cached in Edge Locations.",
+					""
+				],
+				"relatedLectureIds": "",
+				"question": "<p>In which of the following is CloudFront content cached?</p>",
+				"answers": [
+					"<p>Availability Zone</p>",
+					"<p>Region</p>",
+					"<p>Edge Location</p>",
+					"<p>Data Center</p>"
+				]
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "In which of the following is CloudFront content cached?",
+			"related_lectures": []
+		}
+	]
+}

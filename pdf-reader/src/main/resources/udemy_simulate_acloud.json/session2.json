@@ -1,0 +1,1006 @@
+{
+	"count": 37,
+	"next": null,
+	"previous": null,
+	"results": [
+		{
+			"_class": "assessment",
+			"id": 10380472,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>Implement Multi-Factor Authentication for all accounts.</p>",
+					"<p>Store the access key id and secret access key of all users in a publicly accessible plain text document on S3 of which only you and members of your organization know the address.</p>",
+					"<p>Configure the AWS Console so that you can only log in to it from a specific IP Address range</p>",
+					"<p>Configure the AWS Console so that you can only log in to it from your internal network IP address range.</p>"
+				],
+				"question": "<p>What is an additional way to secure the AWS accounts of both the root account and new users alike?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "What is an additional way to secure the AWS accounts of both the root account and new users alike?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10380478,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>Roles</p>",
+					"<p>Users</p>",
+					"<p>Groups</p>",
+					"<p>Organizational Units</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>Which of the following is not a component of IAM?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "Which of the following is not a component of IAM?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10385702,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>Will be able to log in to the console anywhere in the world, using their access key ID and secret access key</p>",
+					"<p>Will be able to interact with AWS using their access key ID and secret access key using the API, CLI, or the AWS SDKs</p>",
+					"<p>Will only be able to log in to the console in the region in which that user was created</p>",
+					"<p>Will be able to log in to the console only after multi-factor authentication is enabled on their account</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>When you create a new user, that user ________.</p>",
+				"feedbacks": [
+					"",
+					"To access the console you use an account and password combination. To access AWS programmatically you use a Key and Secret Key combination",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "When you create a new user, that user ________.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10385708,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>IAM allows you to manage users, groups, roles, and their corresponding level of access to the AWS Platform.</p>",
+					"<p>IAM allows you to manage users' passwords only. AWS staff must create new users for your organization. This is done by raising a ticket.</p>",
+					"<p>IAM allows you to manage permissions for AWS resources only.</p>",
+					"<p>IAM stands for Improvised Application Management, and it allows you to deploy and manage applications in the AWS Cloud.</p>"
+				],
+				"question": "<p>Which statement best describes IAM?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "Which statement best describes IAM?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696388,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				],
+				"question": "<p>Using SAML (Security Assertion Markup Language 2.0), you can give your federated users single sign-on (SSO) access to the AWS Management Console.</p>",
+				"feedbacks": [
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "Using SAML (Security Assertion Markup Language 2.0), you can give your federated users single sign-on (SSO) access to the AWS Management Console.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10385734,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>Python</p>",
+					"<p>JSON</p>",
+					"<p>Node.js</p>",
+					"<p>Java</p>"
+				],
+				"question": "<p>In what language are policy documents written?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "In what language are policy documents written?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10385758,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>Read-only access to all AWS services.</p>",
+					"<p>No access to any AWS services.</p>",
+					"<p>Administrator access to all AWS services.</p>",
+					"<p>Power user access to all AWS services.</p>"
+				],
+				"question": "<p>What is the default level of access a newly created IAM User is granted?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "What is the default level of access a newly created IAM User is granted?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10385772,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>IAM offers centralized control of your AWS account.</p>",
+					"<p>IAM integrates with existing active directory account allowing single sign-on.</p>",
+					"<p>IAM offers fine-grained access control to AWS resources.</p>",
+					"<p>IAM allows you to set up biometric authentication, so that no passwords are required.</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>Which of the following is not a feature of IAM?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "Which of the following is not a feature of IAM?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10385776,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>Set up an account using Cloud Search.</p>",
+					"<p>Set up an account using their company email address.</p>",
+					"<p>Set up an account via SQS (Simple Queue Service).</p>",
+					"<p>Set up an account via SNS (Simple Notification Service).</p>"
+				],
+				"question": "<p>You have a client who is considering a move to AWS. In establishing a new account, what is the first thing the company should do?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You have a client who is considering a move to AWS. In establishing a new account, what is the first thing the company should do?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10385788,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>Grant her Administrator access by adding her to the Administrators' group.</p>",
+					"<p>Require multi-factor authentication for her user account.</p>",
+					"<p>Ensure she is logging in to the AWS console from your corporate network and not the normal internet.</p>",
+					"<p>Tell her to log out and try logging back in again.</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>A new employee has just started work, and it is your job to give her administrator access to the AWS console. You have given her a user name, an access key ID, a secret access key, and you have generated a password for her. She is now able to log in to the AWS console, but she is unable to interact with any AWS services. What should you do next?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "A new employee has just started work, and it is your job to give her administrator access to the AWS console. You have given her a user name, an access key ID, a secret access key, and you have generated a password for her. She is now able to log in to the AWS console, but she is unable to interact with any AWS services. What should you do next?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10385794,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>Read-only Access</p>",
+					"<p>Power User Access</p>",
+					"<p>Administrator Access</p>",
+					"<p>No Access</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>What level of access does the \"root\" account have?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "What level of access does the \"root\" account have?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696408,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>Full Access to all AWS services and resources.</p>",
+					"<p>Read-only access to all AWS services and resources.</p>",
+					"<p>Access to all AWS services except the management of groups and users within IAM.</p>",
+					"<p>Users to inspect the source code of the AWS platform.</p>"
+				],
+				"question": "<p>Power User Access allows ________.</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "Power User Access allows ________.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696414,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>You will then need to configure Users and Policy Documents for each region, respectively.</p>",
+					"<p>You will need to configure Users and Policy Documents only once, as these are applied globally.</p>",
+					"<p>You will need to configure your users regionally, however your policy documents are global.</p>",
+					"<p>You will need to configure your policy documents regionally, however your users are global.</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>You are a solutions architect working for a large engineering company that are moving from a legacy infrastructure to AWS. You have configured the company's first AWS account and you have set up IAM. Your company is based in Andorra, but there will be a small subsidiary operating out of South Korea, so that office will need its own AWS environment. Which of the following statements is true?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You are a solutions architect working for a large engineering company that are moving from a legacy infrastructure to AWS. You have configured the company's first AWS account and you have set up IAM. Your company is based in Andorra, but there will be a small subsidiary operating out of South Korea, so that office will need its own AWS environment. Which of the following statements is true?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696418,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>You have not applied the \"log in from console\" policy document to the user. You must apply this first so that they can log in.</p>",
+					"<p>Your user is trying to log in from the AWS console from outside the corporate network. This is not possible.</p>",
+					"<p>You have not yet activated multi-factor authentication for the user, so by default they will not be able to log in.</p>",
+					"<p>You cannot log in to the AWS console using the Access Key ID / Secret Access Key pair. Instead, you must generate a password for the user, and supply the user with this password and your organization's unique AWS console login URL.</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>You are a security administrator working for a hotel chain. You have a new member of staff who has started as a systems administrator, and she will need full access to the AWS console. You have created the user account and generated the access key id and the secret access key. You have moved this user into the group where the other administrators are, and you have provided the new user with their secret access key and their access key id. However, when she tries to log in to the AWS console, she cannot. Why might that be?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "You are a security administrator working for a hotel chain. You have a new member of staff who has started as a systems administrator, and she will need full access to the AWS console. You have created the user account and generated the access key id and the secret access key. You have moved this user into the group where the other administrators are, and you have provided the new user with their secret access key and their access key id. However, when she tries to log in to the AWS console, she cannot. Why might that be?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696420,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>Full Permissions</p>",
+					"<p>Partial Permissions</p>",
+					"<p>No Permissions</p>"
+				],
+				"question": "<p>Every user you create in the IAM systems starts with ________.</p>",
+				"feedbacks": [
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "Every user you create in the IAM systems starts with ________.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696424,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>Policy</p>",
+					"<p>User</p>",
+					"<p>Group</p>",
+					"<p>Role</p>"
+				],
+				"question": "<p>A __________ is a document that provides a formal statement of one or more permissions.</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "A __________ is a document that provides a formal statement of one or more permissions.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696426,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>Enact a strong password policy: user passwords must be changed every 45 days, with each password containing a combination of capital letters, lower case letters, numbers, and special symbols.</p>",
+					"<p>Require users only to be able to log in using biometric authentication.</p>",
+					"<p>Restrict login to the corporate network only.</p>",
+					"<p>Give all users the same password so that if they forget their password they can just ask their co-workers.</p>"
+				],
+				"question": "<p>You have created a new AWS account for your company, and you have also configured multi-factor authentication on the root account. You are about to create your new users. What strategy should you consider in order to ensure that there is good security on this account.</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "You have created a new AWS account for your company, and you have also configured multi-factor authentication on the root account. You are about to create your new users. What strategy should you consider in order to ensure that there is good security on this account.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696430,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>Refine the key hashing to randomise the name Key to achieve the potential of 300 PUTs per second.</p>",
+					"<p>Change the trigger level to around 3000 as S3 can now accommodate much higher PUT and GET levels.</p>",
+					"<p>Upgrade all buckets to S3 provisioned IOPS to achieve better performance.</p>",
+					"<p>Set up multiple accounts so that the per account hard limit on S3 buckets is avoided.</p>"
+				],
+				"question": "<p>You have been asked to advise on a scaling concern. The client has an elegant solution that works well. As the information base grows they use CloudFormation to spin up another stack made up of an S3 bucket and supporting compute instances. The trigger for creating a new stack is when the PUT rate approaches 100 PUTs per second. The problem is that as the business grows that number of buckets is growing into the hundreds and will soon be in the thousands. You have been asked what can be done to reduce the number of buckets without changing the basic architecture.</p>",
+				"feedbacks": [
+					"",
+					"Until 2018 there was a hard limit on S3 puts of 100 PUTs per second.  To achieve this care needed to be taken with the structure of the name Key to ensure parallel processing.  As of July 2018 the limit was raised to 3500 and the need for the Key design was basically eliminated. Disk IOPS is not the issue with the problem. The account limit is not the issue with the problem.",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You have been asked to advise on a scaling concern. The client has an elegant solution that works well. As the information base grows they use CloudFormation to spin up another stack made up of an S3 bucket and supporting compute instances. The trigger for creating a new stack is when the PUT rate approaches 100 PUTs per second. The problem is that as the business grows that number of buckets is growing into the hundreds and will soon be in the thousands. You have been asked what can be done to reduce the number of buckets without changing the basic architecture.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696434,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>S3</p>",
+					"<p>S3 – IA</p>",
+					"<p>S3 – 1Zone-IA</p>",
+					"<p>S3 – RRS</p>",
+					"<p>Glacier</p>"
+				],
+				"question": "<p>You run a meme creation website where users can create memes and then download them for use on their own sites. The original images are stored in S3 and each meme's metadata in DynamoDB. You need to decide upon a low-cost storage option for the memes, themselves. If a meme object is unavailable or lost, a Lambda function will automatically recreate it using the original file from S3 and the metadata from DynamoDB. Which storage solution should you use to store the non-critical, easily reproducible memes in the most cost-effective way?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"S3 – OneZone-IA is the recommended storage for when you want cheaper storage for infrequently accessed objects. It has the same durability but less availability.  There can be cost implications if you use it frequently or use it for short lived storage. Glacier is cheaper, but has a long retrieval time. RRS has effectively been deprecated. It still exists but is not a service that AWS want to sell anymore.",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "You run a meme creation website where users can create memes and then download them for use on their own sites. The original images are stored in S3 and each meme's metadata in DynamoDB. You need to decide upon a low-cost storage option for the memes, themselves. If a meme object is unavailable or lost, a Lambda function will automatically recreate it using the original file from S3 and the metadata from DynamoDB. Which storage solution should you use to store the non-critical, easily reproducible memes in the most cost-effective way?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696440,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>HTTP 404</p>",
+					"<p>HTTP 501</p>",
+					"<p>HTTP 200</p>",
+					"<p>HTTP 307</p>"
+				],
+				"question": "<p>You have uploaded a file to S3. Which HTTP code would indicate that the upload was successful?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "You have uploaded a file to S3. Which HTTP code would indicate that the upload was successful?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696442,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>PUTS of new Objects and DELETES</p>",
+					"<p>Overwrite PUTS and DELETES</p>",
+					"<p>PUTS of new objects and UPDATES</p>",
+					"<p>UPDATES and DELETES</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>S3 has eventual consistency for which HTTP Methods?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "S3 has eventual consistency for which HTTP Methods?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696448,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>A tool that allows you to \"freeze\" an EBS volume.</p>",
+					"<p>An AWS service designed for long term data archival.</p>",
+					"<p>A highly secure firewall designed to keep everything out.</p>",
+					"<p>It is a tool used to resurrect deleted EC2 snapshots.</p>"
+				],
+				"question": "<p>What is Amazon Glacier?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "What is Amazon Glacier?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696452,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>S3</p>",
+					"<p>S3 – IA</p>",
+					"<p>S3 – OneZone-IA</p>",
+					"<p>S3 – RRS</p>",
+					"<p>Glacier</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>You work for a health insurance company that amasses a large number of patients' health records. Each record will be used once when assessing a customer, and will then need to be securely stored for a period of 7 years. In some rare cases, you may need to retrieve this data within 24 hours of a claim being lodged. Given these requirements, which type of AWS storage would deliver the least expensive solution?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					"",
+					"The recovery rate is a key decider.  The record shortage must be; safe, durable, low cost, and the recovery can be slow. All features of Glacier. "
+				]
+			},
+			"correct_response": [
+				"e"
+			],
+			"section": "",
+			"question_plain": "You work for a health insurance company that amasses a large number of patients' health records. Each record will be used once when assessing a customer, and will then need to be securely stored for a period of 7 years. In some rare cases, you may need to retrieve this data within 24 hours of a claim being lodged. Given these requirements, which type of AWS storage would deliver the least expensive solution?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696454,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>The difference between S3 and EBS is that EBS is object-based whereas S3 is block-based.</p>",
+				"feedbacks": [
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "The difference between S3 and EBS is that EBS is object-based whereas S3 is block-based.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696458,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>99.90%</p>",
+					"<p>99.50%</p>",
+					"<p>99.99%</p>",
+					"<p>100%</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>What is the availability of S3 – OneZone-IA?</p>",
+				"feedbacks": [
+					"",
+					"OneZone-IA is only stored in one Zone.  While it has the same Durability, it may be less Available than normal S3 or S3-IA.",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "What is the availability of S3 – OneZone-IA?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696456,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>Design your application to use the Multipart Upload API for all objects.</p>",
+					"<p>Design your application to use large object upload API for this object.</p>",
+					"<p>Raise a ticket with AWS to increase your maximum object size.</p>",
+					"<p>Log in to the S3 console, click on the bucket and then click properties. You can then increase your maximum object size to 1TB.</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>One of your users is trying to upload a 7.5GB file to S3. However, they keep getting the following error message: \"Your proposed upload exceeds the maximum allowed object size.\". What solution to this problem does AWS recommend?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "One of your users is trying to upload a 7.5GB file to S3. However, they keep getting the following error message: \"Your proposed upload exceeds the maximum allowed object size.\". What solution to this problem does AWS recommend?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696590,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>Use CloudFront to serve the static content.</p>",
+					"<p>Remove the ability for images to be served publicly to the site and then use signed URLs with expiry dates.</p>",
+					"<p>Use security groups to blacklist the IP addresses of the sites that link directly to your S3 bucket.</p>",
+					"<p>Use EBS rather than S3 to store the content.</p>"
+				],
+				"relatedLectureIds": "",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>You run a popular photo-sharing website that depends on S3 to store content. Paid advertising is your primary source of revenue. However, you have discovered that other websites are linking directly to the images in your buckets, not to the HTML pages that serve the content. This means that people are not seeing the paid advertising, and you are paying AWS unnecessarily to serve content directly from S3. How might you resolve this issue?</p>"
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You run a popular photo-sharing website that depends on S3 to store content. Paid advertising is your primary source of revenue. However, you have discovered that other websites are linking directly to the images in your buckets, not to the HTML pages that serve the content. This means that people are not seeing the paid advertising, and you are paying AWS unnecessarily to serve content directly from S3. How might you resolve this issue?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696714,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<pre class=\"prettyprint linenums\">https://my-bucket.amazonaws.com/lazycat.docx</pre>",
+					"<p>https://my-bucket.s3.us-west-2.amazonaws.com/fastpuppy.csv</p>",
+					"<p>https://s3.us-west-2.amazonaws.com/my-bucket/slowpuppy.tar</p>",
+					"<p>http://my-bucket.s3-website.us-east-2.amazonaws.com/index.htm</p>",
+					"<p>http://my-bucket.s3-website-ap-southeast-2.amazonaws.com/index.php</p>"
+				],
+				"relatedLectureIds": "",
+				"feedbacks": [
+					"",
+					"Virtual style puts your bucket name 1st, s3 2nd, and the region 3rd.  Path style puts s3 1st and your bucket as a sub domain. Legacy Global endpoint has no region.  S3 static hosting can be your own domain or your bucket name 1st, s3-website 2nd, followed by the region. AWS are in the process of phasing out Path style, and support for Legacy Global Endpoint format is limited and discouraged.  However it is still useful to be able to recognize them should they show up in logs.  https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html",
+					"",
+					"",
+					""
+				],
+				"question": "<p>AWS S3 has four different URLs styles that it can be used to access content in S3.&nbsp; The Virtual Hosted Style URL,&nbsp;the Path-Style Access URL, the Static web site URL, and the&nbsp;Legacy Global Endpoint URL.&nbsp; Which of these represents a correct formatting of the&nbsp; Virtual Hosted Style URL&nbsp; style</p>"
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "AWS S3 has four different URLs styles that it can be used to access content in S3.&nbsp; The Virtual Hosted Style URL,&nbsp;the Path-Style Access URL, the Static web site URL, and the&nbsp;Legacy Global Endpoint URL.&nbsp; Which of these represents a correct formatting of the&nbsp; Virtual Hosted Style URL&nbsp; style",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696720,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>S3 – Infrequently Accessed Storage</p>",
+					"<p>S3 – One Zone-Infrequent Access</p>",
+					"<p>S3 – Reduced Redundancy Storage (RRS)</p>",
+					"<p>Glacier</p>",
+					"<p>S3 – Provisioned IOPS</p>"
+				],
+				"relatedLectureIds": "",
+				"feedbacks": [
+					"",
+					"The key driver here is cost, so an awareness of cost is necessary to answer this.  Full S3 is quite expensive at around $0.023 per GB for the lowest band. S3 standard IA is $0.0125 per GB, S3 One-Zone-IA is $0.01 per GB, and Legacy S3-RRS is around $0.024 per GB for the lowest band. Of the offered solutions  SS3 One-Zone-IA is the cheapest suitable option.  Glacier cannot be considered as it is not intended for direct access, however it comes in at around $0.004 per GB. Of course you spotted that RRS is being deprecated, and there is no such thing as S3 – Provisioned IOPS. In this case OneZone",
+					"",
+					"",
+					""
+				],
+				"question": "<p>You work for a major news network in Europe. They have just released a new mobile app that allows users to post their photos of newsworthy events in real-time, which are then reviewed by your editors before being copied to your website and made public. Your organization expects this app to grow very quickly, essentially doubling its user base each month. The app uses S3 to store the images, and you are expecting sudden and sizable increases in traffic to S3 when a major news event takes place (as users will be uploading large amounts of content.) You need to keep your storage costs to a minimum, and it does not matter if some objects are lost. With these factors in mind, which storage media should you use to keep costs as low as possible?</p>"
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You work for a major news network in Europe. They have just released a new mobile app that allows users to post their photos of newsworthy events in real-time, which are then reviewed by your editors before being copied to your website and made public. Your organization expects this app to grow very quickly, essentially doubling its user base each month. The app uses S3 to store the images, and you are expecting sudden and sizable increases in traffic to S3 when a major news event takes place (as users will be uploading large amounts of content.) You need to keep your storage costs to a minimum, and it does not matter if some objects are lost. With these factors in mind, which storage media should you use to keep costs as low as possible?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696724,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>10</p>",
+					"<p>20</p>",
+					"<p>50</p>",
+					"<p>100</p>"
+				],
+				"relatedLectureIds": "",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>How many S3 buckets can I have per account by default?</p>"
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "How many S3 buckets can I have per account by default?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696726,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>S3</p>",
+					"<p>S3 – IA</p>",
+					"<p>S3 – 1Zone-IA</p>",
+					"<p>S3 – RRS</p>",
+					"<p>Glacier</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>You work for a busy digital marketing company who currently store their data on-premise. They are looking to migrate to AWS S3 and to store their data in buckets. Each bucket will be named after their individual customers, followed by a random series of letters and numbers. Once written to S3 the data is rarely changed, as it has already been sent to the end customer for them to use as they see fit. However, on some occasions, customers may need certain files updated quickly, and this may be for work that has been done months or even years ago. You would need to be able to access this data immediately to make changes in that case, but you must also keep your storage costs extremely low. The data is not easily reproducible if lost. Which S3 storage class should you choose to minimize costs and to maximize retrieval times?</p>",
+				"feedbacks": [
+					"",
+					"The need to immediate access is an important requirement along with cost. Glacier has a long recovery time at a low cost or a shorter recovery time at a high cost, and 1Zone-IA has a lower Availability level which means that it may not be available when needed.",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You work for a busy digital marketing company who currently store their data on-premise. They are looking to migrate to AWS S3 and to store their data in buckets. Each bucket will be named after their individual customers, followed by a random series of letters and numbers. Once written to S3 the data is rarely changed, as it has already been sent to the end customer for them to use as they see fit. However, on some occasions, customers may need certain files updated quickly, and this may be for work that has been done months or even years ago. You would need to be able to access this data immediately to make changes in that case, but you must also keep your storage costs extremely low. The data is not easily reproducible if lost. Which S3 storage class should you choose to minimize costs and to maximize retrieval times?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696728,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>99%</p>",
+					"<p>99.90%</p>",
+					"<p>99.99%</p>",
+					"<p>100%</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>What is the availability of objects stored in S3?</p>"
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "What is the availability of objects stored in S3?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696734,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>Read After Write Consistency</p>",
+					"<p>Write After Read Consistency</p>",
+					"<p>Eventual Consistency</p>",
+					"<p>Usual Consistency</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>S3 has what consistency model for PUTS of new objects?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "S3 has what consistency model for PUTS of new objects?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696736,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>Simple SQL Service</p>",
+					"<p>Simple Storage Service</p>",
+					"<p>Simplified Serial Sequence</p>",
+					"<p>Straight Storage Service</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>What does S3 stand for?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "What does S3 stand for?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696738,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>Change your region to Korea and then create the bucket \"testbucket\".</p>",
+					"<p>Raise a ticket with AWS and ask them to release the name \"testbucket\" to you.</p>",
+					"<p>Bucket names are global, not regional. This is a popular bucket name and is already taken. You should choose another bucket name.</p>",
+					"<p>Run a WHOIS request on the bucket name and get the registered owners email address. Contact the owner and ask if you can purchase the rights to the bucket.</p>"
+				],
+				"relatedLectureIds": "",
+				"question": "<p>You are a solutions architect who works with a large digital media company. The company has decided that they want to operate within the Japanese region and they need a bucket called \"testbucket\" set up immediately to test their web application on. You log in to the AWS console and try to create this bucket in the Japanese region however you are told that the bucket name is already taken. What should you do to resolve this?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "You are a solutions architect who works with a large digital media company. The company has decided that they want to operate within the Japanese region and they need a bucket called \"testbucket\" set up immediately to test their web application on. You log in to the AWS console and try to create this bucket in the Japanese region however you are told that the bucket name is already taken. What should you do to resolve this?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696740,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>1KB</p>",
+					"<p>1MB</p>",
+					"<p>0 bytes</p>",
+					"<p>1 byte</p>"
+				],
+				"relatedLectureIds": "",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>What is the minimum file size that I can store on S3?</p>"
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "What is the minimum file size that I can store on S3?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696742,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>It is a physical or virtual appliance that can be used to cache S3 locally at a customer's site.</p>",
+					"<p>It allows large scale import/exports into the AWS cloud without the use of an internet connection.</p>",
+					"<p>It allows a direct MPLS connection into AWS.</p>",
+					"<p>None of the above.</p>"
+				],
+				"relatedLectureIds": "",
+				"feedbacks": [
+					"At its heart it is a way of using AWS S3 managed storage to supplement on-premise storage. It can also be used within a VPC in a similar way.",
+					"",
+					"",
+					""
+				],
+				"question": "<p>What is AWS Storage Gateway?</p>"
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "What is AWS Storage Gateway?",
+			"related_lectures": []
+		}
+	]
+}

@@ -1,0 +1,288 @@
+{
+	"count": 11,
+	"next": null,
+	"previous": null,
+	"results": [
+		{
+			"_class": "assessment",
+			"id": 10383400,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>SQS sends messages to people on topics, whereas SNS manages tasks.</p>",
+					"<p>SNS pulls (polls), whereas SQS is push-based message service.</p>",
+					"<p>SQS and SNS are basically the same service.</p>",
+					"<p>SNS is a push notification service, whereas SQS is message system that requires worker nodes to poll a queue.</p>"
+				],
+				"question": "<p>What is the difference between SNS and SQS?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					"SNS is a notification service for sending text based communication of different types to different destinations. SQS is a queue system for asynchronously manages tasks (called messages)."
+				]
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "What is the difference between SNS and SQS?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383402,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>Manage user identification and authorization</p>",
+					"<p>Coordinate synchronous and asynchronous tasks</p>",
+					"<p>Secure their VPCs</p>",
+					"<p>Store file-based objects</p>"
+				],
+				"question": "<p>Amazon SWF is designed to help users ________.</p>",
+				"feedbacks": [
+					"",
+					"Similar to SQS, SWF manages queues of work, however unlike SQS it can have out-of-band parallel and sequential task to be completed by humans and non AWS services.",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "Amazon SWF is designed to help users ________.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383508,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				],
+				"question": "<p>Amazon SWF restricts me to the use of specific programming languages.</p>",
+				"feedbacks": [
+					"",
+					"While there are a limited range of SDKs available for SWF, AWS provides an HTTP based API which allows you to interact using any language as long as you phrase the interactions in HTTP requests."
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "Amazon SWF restricts me to the use of specific programming languages.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383510,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				],
+				"question": "<p>Amazon SWF ensures that a task is assigned only once and is never duplicated.</p>",
+				"feedbacks": [
+					"One time only completion is a key feature of SWF.  At one time this was a key distinction from SQS, however with SQS FiFo queues, this is no longer a distinguishing feature.",
+					""
+				]
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "Amazon SWF ensures that a task is assigned only once and is never duplicated.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383512,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>SNS</p>",
+					"<p>SWF</p>",
+					"<p>SQS</p>",
+					"<p>SES</p>"
+				],
+				"question": "<p>What application service allows you to decouple your infrastructure using messaged based queues?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"In IT the term 'message' can be used in the common sense, or to describe a piece of data of Task in an asynchronous queueing system such as MQseries, RabbitMQ or SQS.",
+					""
+				]
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "What application service allows you to decouple your infrastructure using messaged based queues?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383514,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>The topic will terminate your EC2 instances that aren't identified by tags.</p>",
+					"<p>Nothing, as topics are specific to Amazon SQS.</p>",
+					"<p>You cannot create a topic on SNS.</p>",
+					"<p>An Amazon Resource Name is created.</p>"
+				],
+				"question": "<p>What happens when you create a topic on Amazon SNS?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "What happens when you create a topic on Amazon SNS?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383516,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				],
+				"question": "<p>Amazon's SQS service guarantees a message will be delivered at least once.</p>",
+				"feedbacks": [
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "Amazon's SQS service guarantees a message will be delivered at least once.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383518,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>A specialized security group configuration.</p>",
+					"<p>A special type of worker instance.</p>",
+					"<p>The DNS record for the Amazon SWF service.</p>",
+					"<p>A collection of related workflows.</p>"
+				],
+				"question": "<p>In SWF, what does a \"domain\" refer to?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "In SWF, what does a \"domain\" refer to?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383520,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>Simple Wireless Forms</p>",
+					"<p>Simple Web Form</p>",
+					"<p>Simple Work Flow</p>",
+					"<p>Simple Web Flow</p>"
+				],
+				"question": "<p>What does Amazon SWF stand for?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "What does Amazon SWF stand for?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383522,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				],
+				"question": "<p>By default, EC2 instances pull SQS messages from a standard SQS queue on a FIFO (first in first out) basis.</p>",
+				"feedbacks": [
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "By default, EC2 instances pull SQS messages from a standard SQS queue on a FIFO (first in first out) basis.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383528,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"answers": [
+					"<p>Software Enabled Server</p>",
+					"<p>Simple Email Service</p>",
+					"<p>Simple Elastic Server</p>",
+					"<p>Software Email Solution</p>"
+				],
+				"question": "<p>What does Amazon SES stand for?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "What does Amazon SES stand for?",
+			"related_lectures": []
+		}
+	]
+}

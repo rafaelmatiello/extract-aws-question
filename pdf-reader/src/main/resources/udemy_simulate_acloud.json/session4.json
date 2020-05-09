@@ -1,0 +1,637 @@
+{
+	"count": 24,
+	"next": null,
+	"previous": null,
+	"results": [
+		{
+			"_class": "assessment",
+			"id": 10382892,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>The ability to perform operations by using a user-defined primary key.</p>",
+					"<p>Data reads that are either eventually consistent or strongly consistent.</p>",
+					"<p>The primary key can either be a single-attribute or a composite.</p>",
+					"<p>The ability to store relational-based data.</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					"DynamoDB is the AWS managed NoSQL database service.  It has many features that are being added to constantly, but it is not an RDBMS service and therefore it will never have the ability to store relational data.  All of the other options listed are valid features of DynamoDB."
+				],
+				"question": "<p>Which of the following is not a feature of DynamoDB?</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "Which of the following is not a feature of DynamoDB?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382894,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>I/O may be briefly suspended while the backup process initializes (typically under a few seconds), and you may experience a brief period of elevated latency.</p>",
+					"<p>Nothing.</p>",
+					"<p>I/O operations to the database are sent to a secondary instance of a multi-AZ installation (for the duration of the snapshot.)</p>",
+					"<p>I/O operations will function normally.</p>"
+				],
+				"feedbacks": [
+					"I/O may be briefly suspended while the backup process initializes (typically under a few seconds), and you may experience a brief period of elevated latency.",
+					"",
+					"",
+					""
+				],
+				"question": "<p>What happens to the I/O operations of a single-AZ RDS instance during a database snapshot or backup?</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "What happens to the I/O operations of a single-AZ RDS instance during a database snapshot or backup?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382896,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"feedbacks": [
+					"",
+					""
+				],
+				"question": "<p>You can RDP or SSH into an RDS instance to see what is going on with the operating system.</p>",
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You can RDP or SSH into an RDS instance to see what is going on with the operating system.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382898,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>RDS</p>",
+					"<p>DynamoDB</p>",
+					"<p>MongoDB</p>",
+					"<p>MySQL</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>AWS's NoSQL product offering is known as ________.</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "AWS's NoSQL product offering is known as ________.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382900,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>Aurora, MySQL, SQL Server, Cassandra</p>",
+					"<p>PostgreSQL, MariaDB, MongoDB, Aurora</p>",
+					"<p>MariaDB, SQL Server, MySQL, Cassandra</p>",
+					"<p>Oracle, SQL Server, MySQL, PostgreSQL</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>Which set of RDS database engines is currently available?</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "Which set of RDS database engines is currently available?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382902,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"feedbacks": [
+					"",
+					""
+				],
+				"question": "<p>When creating an RDS instance, you can select the Availability Zone into which you deploy it.</p>",
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				]
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "When creating an RDS instance, you can select the Availability Zone into which you deploy it.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382904,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"feedbacks": [
+					"",
+					""
+				],
+				"question": "<p>RDS Reserved instances are available for multi-AZ deployments.</p>",
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				]
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "RDS Reserved instances are available for multi-AZ deployments.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382906,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				],
+				"feedbacks": [
+					"",
+					""
+				],
+				"question": "<p>With new RDS DB instances, automated backups are enabled by default.</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "With new RDS DB instances, automated backups are enabled by default.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382908,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>In RDS, what is the maximum value I can set for my backup retention period?</p>",
+				"answers": [
+					"<p>15 Days</p>",
+					"<p>30 Days</p>",
+					"<p>35 Days</p>",
+					"<p>45 Days</p>"
+				]
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "In RDS, what is the maximum value I can set for my backup retention period?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382910,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>If I wanted to run a database on an EC2 instance, which of the following storage options would Amazon recommend?</p>",
+				"answers": [
+					"<p>RDS</p>",
+					"<p>S3</p>",
+					"<p>Glacier</p>",
+					"<p>EBS</p>"
+				]
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "If I wanted to run a database on an EC2 instance, which of the following storage options would Amazon recommend?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382912,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>3</p>",
+					"<p>6</p>",
+					"<p>2</p>",
+					"<p>1</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>How many copies of my data does RDS – Aurora store by default?</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "How many copies of my data does RDS – Aurora store by default?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382914,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>MySQL installations default to port number ________.</p>",
+				"answers": [
+					"<p>1433</p>",
+					"<p>3306</p>",
+					"<p>3389</p>",
+					"<p>80</p>"
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "MySQL installations default to port number ________.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382916,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>Incorrect</p>",
+					"<p>Error</p>",
+					"<p>Abort</p>",
+					"<p>Exit</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>If you want your application to check RDS for an error, have it look for an ______ node in the response from the Amazon RDS API.</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "If you want your application to check RDS for an error, have it look for an ______ node in the response from the Amazon RDS API.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382918,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>ElastiCache</p>",
+					"<p>RDS</p>",
+					"<p>DynamoDB</p>",
+					"<p>Redshift</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>Which AWS DB platform is most suitable for OLTP?</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "Which AWS DB platform is most suitable for OLTP?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382922,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>ElastiCache</p>",
+					"<p>RDS</p>",
+					"<p>DynamoDB</p>",
+					"<p>Redshift</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					"Redshift would be the most suitable for online analytics processing."
+				],
+				"question": "<p>Which of the following is most suitable for OLAP?</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "Which of the following is most suitable for OLAP?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382924,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>Elastic Beanstalk</p>",
+					"<p>ElastiCache</p>",
+					"<p>DynamoDB</p>",
+					"<p>Redshift</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>Which AWS service is ideal for Business Intelligence Tools/Data Warehousing?</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "Which AWS service is ideal for Business Intelligence Tools/Data Warehousing?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382926,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>The charge is double the standard data transfer charge.</p>",
+					"<p>The charge is the same as the standard data transfer charge.</p>",
+					"<p>There is no charge associated with this action.</p>",
+					"<p>The charge is half of the standard data transfer charge.</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>What data transfer charge is incurred when replicating data from your primary RDS instance to your secondary RDS instance?</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "What data transfer charge is incurred when replicating data from your primary RDS instance to your secondary RDS instance?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382928,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>Under what circumstances would I choose provisioned IOPS over standard storage when creating an RDS instance?</p>",
+				"answers": [
+					"<p>If you use online transaction processing in your production environment.</p>",
+					"<p>If you have workloads that are not sensitive to latency/lag.</p>",
+					"<p>If your business was trying to save money.</p>",
+					"<p>If this was a test DB.</p>"
+				]
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "Under what circumstances would I choose provisioned IOPS over standard storage when creating an RDS instance?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382930,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>500GB</p>",
+					"<p>1TB</p>",
+					"<p>32TB</p>",
+					"<p>16TB</p>",
+					"<p>6TB</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>If you are using Amazon RDS Provisioned IOPS storage with a Microsoft SQL Server database engine, what is the maximum size RDS volume you can have by default?</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "If you are using Amazon RDS Provisioned IOPS storage with a Microsoft SQL Server database engine, what is the maximum size RDS volume you can have by default?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382932,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>RDS</p>",
+					"<p>Redshift</p>",
+					"<p>DynamoDB</p>",
+					"<p>ElastiCache</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>Which of the following AWS services is a non-relational database?</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "Which of the following AWS services is a non-relational database?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382934,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>Migrate the database to an S3 bucket.</p>",
+					"<p>Migrate the database to Glacier.</p>",
+					"<p>Add 4 additional EBS SSD volumes and create a RAID 10 using these volumes.</p>",
+					"<p>Use CloudFront to cache the database.</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>You are hosting a MySQL database on the root volume of an EC2 instance. The database is using a large number of IOPS, and you need to increase the number of IOPS available to it. What should you do?</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "You are hosting a MySQL database on the root volume of an EC2 instance. The database is using a large number of IOPS, and you need to increase the number of IOPS available to it. What should you do?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382936,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>In RDS, changes to the backup window take effect ________.</p>",
+				"answers": [
+					"<p>After 30 minutes</p>",
+					"<p>The next day</p>",
+					"<p>Immediately</p>",
+					"<p>You cannot back up in RDS</p>"
+				]
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "In RDS, changes to the backup window take effect ________.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382938,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"answers": [
+					"<p>Redis &amp; Memory</p>",
+					"<p>Reddit &amp; Memcrush</p>",
+					"<p>Redis &amp; Memcached</p>",
+					"<p>MyISAM &amp; InnoDB</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"question": "<p>Amazon's ElastiCache uses which two engines?</p>",
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "Amazon's ElastiCache uses which two engines?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382940,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"relatedLectureIds": "",
+				"feedbacks": [
+					"",
+					"Technically a destination port number is needed, however with a DB security group the RDS instance port number is automatically applied to the RDS DB Security Group."
+				],
+				"question": "<p>When you add a rule to an RDS DB security group, you must specify a port number or protocol.</p>",
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				]
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "When you add a rule to an RDS DB security group, you must specify a port number or protocol.",
+			"related_lectures": []
+		}
+	]
+}

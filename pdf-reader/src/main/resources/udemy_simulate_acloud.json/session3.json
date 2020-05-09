@@ -1,0 +1,602 @@
+{
+	"count": 23,
+	"next": null,
+	"previous": null,
+	"results": [
+		{
+			"_class": "assessment",
+			"id": 10382794,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>Can Spread Placement Groups be deployed across multiple Availability Zones?</p>",
+				"feedbacks": [
+					"Spread Placement Groups can be deployed across availability zones since they spread the instances further apart. Cluster Placement Groups can only exist in one Availabiity Zone since they are focused on keeping instances together, which you cannot do across Availability Zones",
+					"",
+					"",
+					""
+				],
+				"answers": [
+					"<p>Yes.</p>",
+					"<p>Only in Us-East-1.</p>",
+					"<p>Yes, but only using the AWS API.</p>",
+					"<p>No.</p>"
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "Can Spread Placement Groups be deployed across multiple Availability Zones?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382648,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>When creating a new security group, all inbound traffic is allowed by default.</p>",
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				],
+				"feedbacks": [
+					"",
+					"There are slight differences between a normal 'new' Security Group and a 'default' security group in the default VPC.  For an 'new' security group nothing is allowed in by default."
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "When creating a new security group, all inbound traffic is allowed by default.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382834,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>To help you manage your Amazon EC2 instances, you can assign your own metadata in the form of ________.</p>",
+				"answers": [
+					"<p>Wildcards</p>",
+					"<p>Certificates</p>",
+					"<p>Tags</p>",
+					"<p>Notes</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"Tagging is a key part of managing an environment.  Even in a lab, it is easy to lose track of the purpose of a resources, and tricky determine why it was created and if it is still needed. This can rapidly translate into lost time and lost money.",
+					""
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "To help you manage your Amazon EC2 instances, you can assign your own metadata in the form of ________.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 11696750,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>Which of the following features only relate to Spread Placement Groups?</p>",
+				"answers": [
+					"<p>Instances must be deployed in a single Availability Zone.</p>",
+					"<p>The name of your placement group must be unique within your AWS Account.</p>",
+					"<p>The placement group can only have 7 running instances per Availability Zone.</p>",
+					"<p>There is no charge for creating a placement group.</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"Spread placement groups have a specific limitation that you can only have a maximum of 7 running instances per Availability Zone and therefore this is the only correct option.  Deploying instances in a single Availability Zone is unique to Cluster Placement Groups only and therefore is not correct.  The last two remaining options are common to all placement group types and so are not specific to Spread Placement Groups.",
+					""
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "Which of the following features only relate to Spread Placement Groups?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382848,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>In order to enable encryption at rest using EC2 and Elastic Block Store, you must ________.</p>",
+				"answers": [
+					"<p>Configure encryption when creating the EBS volume</p>",
+					"<p>Configure encryption using the appropriate Operating Systems file system</p>",
+					"<p>Configure encryption using X.509 certificates</p>",
+					"<p>Mount the EBS volume in to S3 and then encrypt the bucket using a bucket policy</p>"
+				],
+				"feedbacks": [
+					"The use of encryption at rest is default requirement for many industry compliance certifications.  Using AWS managed keys to provide EBS encryption at rest is a relatively painless and reliable way to protect assets and demonstrate your professionalism in any commercial situation.",
+					"",
+					"",
+					""
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "In order to enable encryption at rest using EC2 and Elastic Block Store, you must ________.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382854,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>Can I move a reserved instance from one region to another?</p>",
+				"feedbacks": [
+					"",
+					"Depending on you type of RL you can You can modify the AZ, scope, network platform, or instance size (within the same instance type), but not Region. In some circumstances you can sell RIs, but only if you have a US bank account.",
+					"",
+					""
+				],
+				"answers": [
+					"<p>Yes.</p>",
+					"<p>No.</p>",
+					"<p>It depends on the region.</p>",
+					"<p>Only in the US.</p>"
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "Can I move a reserved instance from one region to another?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382858,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>You need to know both the private IP address and public IP address of your EC2 instance. You should ________.</p>",
+				"answers": [
+					"<p>Run IPCONFIG (Windows) or IFCONFIG (Linux)</p>",
+					"<p>Retrieve the instance Metadata from http://169.254.169.254/latest/meta-data/</p>",
+					"<p>Retrieve the instance User Data from http://169.254.169.254/latest/meta-data/</p>",
+					"<p>Use the following command: AWS EC2 DisplayIP</p>"
+				],
+				"feedbacks": [
+					"",
+					"Instance Metadata and User Data can be retrieved from within the instance via a special URL.  Similar information can be extracted by using the API via the CLI or an SDK.",
+					"",
+					""
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You need to know both the private IP address and public IP address of your EC2 instance. You should ________.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382860,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>Amazon's EBS volumes are ________.</p>",
+				"feedbacks": [
+					"",
+					"EBS, EFS, and FSx are all storage services based on block storage.",
+					"",
+					""
+				],
+				"answers": [
+					"<p>Object-based storage</p>",
+					"<p>Block-based storage</p>",
+					"<p>Encrypted by default</p>",
+					"<p>Not suitable for databases</p>"
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "Amazon's EBS volumes are ________.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382862,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>If an Amazon EBS volume is an additional partition (not the root volume), can I detach it without stopping the instance?</p>",
+				"feedbacks": [
+					"",
+					""
+				],
+				"answers": [
+					"<p>Yes, although it may take some time.</p>",
+					"<p>No, you will need to stop the instance.</p>"
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "If an Amazon EBS volume is an additional partition (not the root volume), can I detach it without stopping the instance?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382864,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>You can add multiple volumes to an EC2 instance and then create your own RAID 5/RAID 10/RAID 0 configurations using those volumes.</p>",
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				],
+				"feedbacks": [
+					"",
+					""
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "You can add multiple volumes to an EC2 instance and then create your own RAID 5/RAID 10/RAID 0 configurations using those volumes.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382866,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>Individual instances are provisioned ________.</p>",
+				"answers": [
+					"<p>In Regions</p>",
+					"<p>In Availability Zones</p>",
+					"<p>Globally</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					""
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "Individual instances are provisioned ________.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382868,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>Spread Placement Groups can be deployed across multiple Availability Zones</p>",
+				"feedbacks": [
+					"Spread Placement Groups can be deployed across availability zones since they spread the instances further apart. Cluster Placement Groups can only exist in one Availabiity Zone since they are focused on keeping instances together, which you cannot do across Availability Zones",
+					""
+				],
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "Spread Placement Groups can be deployed across multiple Availability Zones",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382870,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>Is it possible to perform actions on an existing Amazon EBS Snapshot?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"answers": [
+					"<p>Yes, through the AWS APIs, CLI, and AWS Console.</p>",
+					"<p>No.</p>",
+					"<p>It depends on the region.</p>",
+					"<p>EBS does not have snapshot functionality.</p>"
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "Is it possible to perform actions on an existing Amazon EBS Snapshot?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382872,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>You have developed a new web application in the US-West-2 Region that requires six Amazon Elastic Compute Cloud (EC2) instances to be running at all times. US-West-2 comprises three Availability Zones (us-west-2a, us-west-2b, and us-west-2c). You need 100 percent fault tolerance: should any single Availability Zone in us-west-2 become unavailable, the application must continue to run. How would you make sure 6 servers are ALWAYS available? NOTE: each answer has 2 possible deployment configurations. Select the answer that gives TWO satisfactory solutions to this scenario.</p>",
+				"feedbacks": [
+					"",
+					"You need to work through each case to find which will provide you with the required number of running instances even if one AZ is lost.  Hint: always assume that the AZ you lose is the one with the most instances. Remember that the client has stipulated that they MUST have 100% fault tolerance.",
+					"",
+					""
+				],
+				"answers": [
+					"<p>Solution 1: us-west-2a with two EC2 instances, us-west-2b with two EC2 instances, and us-west-2c with two EC2 instances. Solution 2: us-west-2a with six EC2 instances, us-west-2b with six EC2 instances, and us-west-2c with no EC2 instances.</p>",
+					"<p>Solution 1: us-west-2a with six EC2 instances, us-west-2b with six EC2 instances, and us-west-2c with no EC2 instances. Solution 2: us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with three EC2 instances.</p>",
+					"<p>Solution 1: us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with no EC2 instances. Solution 2: us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with three EC2 instances.</p>",
+					"<p>Solution 1: us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with three EC2 instances. Solution 2: us-west-2a with four EC2 instances, us-west-2b with two EC2 instances, and us-west-2c with two EC2 instances.</p>"
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"b"
+			],
+			"section": "",
+			"question_plain": "You have developed a new web application in the US-West-2 Region that requires six Amazon Elastic Compute Cloud (EC2) instances to be running at all times. US-West-2 comprises three Availability Zones (us-west-2a, us-west-2b, and us-west-2c). You need 100 percent fault tolerance: should any single Availability Zone in us-west-2 become unavailable, the application must continue to run. How would you make sure 6 servers are ALWAYS available? NOTE: each answer has 2 possible deployment configurations. Select the answer that gives TWO satisfactory solutions to this scenario.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382874,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>The use of a cluster placement group is ideal _______.</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					"Cluster Placement Groups are primarily about keeping you compute resources within one network hop of each other on high speed rack switches.  This is only helpful when you have compute loads with network loads that are either very high or very sensitive to latency. "
+				],
+				"answers": [
+					"<p>When you need to distribute content on a CDN network</p>",
+					"<p>When you need to deploy EC2 instances that require high disk IO</p>",
+					"<p>Your fleet of EC2 Instances requires low latency and high network throughput across multiple availability zones</p>",
+					"<p>Your fleet of EC2 instances requires high network throughput and low latency within a single availability zone</p>"
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "The use of a cluster placement group is ideal _______.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382876,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>EBS Snapshots are backed up to S3 in what manner?</p>",
+				"answers": [
+					"<p>Incrementally</p>",
+					"<p>Exponentially</p>",
+					"<p>Decreasingly</p>",
+					"<p>EBS snapshots are not stored on S3.</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "EBS Snapshots are backed up to S3 in what manner?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382878,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>Can I delete a snapshot of an EBS Volume that is used as the root device of a registered AMI?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"answers": [
+					"<p>No.</p>",
+					"<p>Yes.</p>",
+					"<p>Only via the Command Line.</p>",
+					"<p>Only using the AWS API.</p>"
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "Can I delete a snapshot of an EBS Volume that is used as the root device of a registered AMI?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382880,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>Which AWS CLI command should I use to create a snapshot of an EBS volume?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"answers": [
+					"<p>aws ec2 create-snapshot</p>",
+					"<p>aws ec2 fresh-snapshot</p>",
+					"<p>aws ec2 deploy-snapshot</p>",
+					"<p>aws ec2 new-snapshot</p>"
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "Which AWS CLI command should I use to create a snapshot of an EBS volume?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382882,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>I can change the permissions of a role, even if that role is already assigned to an existing EC2 instance, and these changes will take effect immediately.</p>",
+				"feedbacks": [
+					"",
+					""
+				],
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "I can change the permissions of a role, even if that role is already assigned to an existing EC2 instance, and these changes will take effect immediately.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382884,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>To retrieve instance metadata or user data you will need to use the following IP Address:</p>",
+				"feedbacks": [
+					"",
+					"",
+					"",
+					""
+				],
+				"answers": [
+					"<p>http://127.0.0.1</p>",
+					"<p>http://192.168.0.254</p>",
+					"<p>http://10.0.0.1</p>",
+					"<p>http://169.254.169.254</p>"
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"d"
+			],
+			"section": "",
+			"question_plain": "To retrieve instance metadata or user data you will need to use the following IP Address:",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382886,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>Will an Amazon EBS root volume persist independently from the life of the terminated EC2 instance to which it was previously attached? In other words, if I terminated an EC2 instance, would that EBS root volume persist?</p>",
+				"feedbacks": [
+					"",
+					"",
+					"You can control whether an EBS root volume is deleted when its associated instance is terminated. The default delete-on-termination behaviour depends on whether the volume is a root volume, or an additional volume. By default, the DeleteOnTermination attribute for root volumes is set to 'true.' However, this attribute may be changed at launch by using either the AWS Console or the command line. For an instance that is already running, the DeleteOnTermination attribute must be changed using the CLI.",
+					""
+				],
+				"answers": [
+					"<p>Yes.</p>",
+					"<p>No.</p>",
+					"<p>Only if I specify (using either the AWS Console or the CLI) that it should do so.</p>",
+					"<p>It depends on the region in which the EC2 instance is provisioned.</p>"
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "Will an Amazon EBS root volume persist independently from the life of the terminated EC2 instance to which it was previously attached? In other words, if I terminated an EC2 instance, would that EBS root volume persist?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382888,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>I can use the AWS Console to add a role to an EC2 instance after that instance has been created and powered-up.</p>",
+				"feedbacks": [
+					"",
+					""
+				],
+				"answers": [
+					"<p>TRUE</p>",
+					"<p>FALSE</p>"
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "I can use the AWS Console to add a role to an EC2 instance after that instance has been created and powered-up.",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10382890,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>Can you attach an EBS volume to more than one EC2 instance at the same time?</p>",
+				"answers": [
+					"<p>Yes.</p>",
+					"<p>No.</p>",
+					"<p>If that EC2 volume is part of an AMI.</p>",
+					"<p>Depends on which region.</p>"
+				],
+				"feedbacks": [
+					"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes.html",
+					"As of Feb 2020 you can attach certain types of EBS volumes to multiple EC2 instances. https://aws.amazon.com/blogs/aws/new-multi-attach-for-provisioned-iops-io1-amazon-ebs-volumes/",
+					"",
+					""
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "Can you attach an EBS volume to more than one EC2 instance at the same time?",
+			"related_lectures": []
+		}
+	]
+}

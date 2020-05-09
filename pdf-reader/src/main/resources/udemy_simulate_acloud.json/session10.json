@@ -1,0 +1,142 @@
+{
+	"count": 5,
+	"next": null,
+	"previous": null,
+	"results": [
+		{
+			"_class": "assessment",
+			"id": 10383536,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>You have created a simple serverless website using S3, Lambda, API Gateway and DynamoDB. Your website will process the contact details of your customers, predict an expected delivery date of their order and store their order in DynamoDB. You test the website before deploying it into production and you notice that although the page executes, and the lambda function is triggered, it is unable to write to DynamoDB. What could be the cause of this issue?</p>",
+				"answers": [
+					"<p>The availability zone that DynamoDB is hosted in is down.</p>",
+					"<p>The availability zone that Lambda is hosted in is down.</p>",
+					"<p>Your lambda function does not have sufficient Identity Access Management (IAM) permissions to write to DynamoDB.</p>",
+					"<p>You have written your function in Python which is not supported as a runtime environment for Lambda.</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"Like any services in AWS, Lambda needs to have a role associated with it that provide credentials with rights to other services. This is exactly the same as needing a role on an EC2 instance to access S3 or DDB.",
+					""
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "You have created a simple serverless website using S3, Lambda, API Gateway and DynamoDB. Your website will process the contact details of your customers, predict an expected delivery date of their order and store their order in DynamoDB. You test the website before deploying it into production and you notice that although the page executes, and the lambda function is triggered, it is unable to write to DynamoDB. What could be the cause of this issue?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383542,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>In which direction(s) does Lambda scale automatically?</p>",
+				"answers": [
+					"<p>Up</p>",
+					"<p>Up and out</p>",
+					"<p>Out</p>",
+					"<p>None - Lambda does not scale automatically</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"Lambda scales out automatically - each time your function is triggered, a new, separate instance of that function is started. There are limits, but these can be adjusted on request.",
+					""
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "In which direction(s) does Lambda scale automatically?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383546,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>What AWS service can be used to help resolve an issue with a lambda function?</p>",
+				"answers": [
+					"<p>API Gateway</p>",
+					"<p>CloudTrail</p>",
+					"<p>AWS X-Ray</p>",
+					"<p>DynamoDB</p>"
+				],
+				"feedbacks": [
+					"",
+					"",
+					"AWS X-Ray helps developers analyze and debug production, distributed applications, such as those built using a microservices & serverless architectures.",
+					""
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"c"
+			],
+			"section": "",
+			"question_plain": "What AWS service can be used to help resolve an issue with a lambda function?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383550,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>You have created a serverless application to add metadata to images that are uploaded to a specific S3 bucket. To do this, your lambda function is configured to trigger whenever a new image is created in the bucket. What will happen when multiple users upload multiple different images at the same time?</p>",
+				"answers": [
+					"<p>Multiple instances of the Lambda function will be triggered, one for each image.</p>",
+					"<p>A single Lambda functions will be triggered, which will process all images at the same time.</p>",
+					"<p>Multiple Lambda functions will trigger, one after the other, until all images are processed.</p>",
+					"<p>A single Lambda function will be triggered, that will process all images that have finished uploading one at a time.</p>"
+				],
+				"feedbacks": [
+					"Each time a Lambda function is triggered, an isolated instance of that function is invoked. Multiple triggers result in multiple concurrent invocations, one for each time it is triggered.",
+					"",
+					"",
+					""
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "You have created a serverless application to add metadata to images that are uploaded to a specific S3 bucket. To do this, your lambda function is configured to trigger whenever a new image is created in the bucket. What will happen when multiple users upload multiple different images at the same time?",
+			"related_lectures": []
+		},
+		{
+			"_class": "assessment",
+			"id": 10383558,
+			"assessment_type": "multiple-choice",
+			"prompt": {
+				"question": "<p>As a DevOps engineer you are told to prepare complete solution to run a piece of code that required multi-threaded processing. The code has been running on an old custom-built server based around a 4 core Intel Xeon processor. Which of these best describe the AWS compute services that could be used?</p>",
+				"answers": [
+					"<p>EC2, ECS, and Lambda.</p>",
+					"<p>ECS and EC2.</p>",
+					"<p>None of the above.</p>",
+					"<p>Only a EC2 'bare steel' server.</p>"
+				],
+				"feedbacks": [
+					"The exact ratio of cores to memory has varied over time for Lambda instances, however Lambda like EC2 and ECS supports hyper-threading on one or more virtual CPUs (if your code supports hyper-threading).",
+					"",
+					"",
+					""
+				],
+				"relatedLectureIds": ""
+			},
+			"correct_response": [
+				"a"
+			],
+			"section": "",
+			"question_plain": "As a DevOps engineer you are told to prepare complete solution to run a piece of code that required multi-threaded processing. The code has been running on an old custom-built server based around a 4 core Intel Xeon processor. Which of these best describe the AWS compute services that could be used?",
+			"related_lectures": []
+		}
+	]
+}
