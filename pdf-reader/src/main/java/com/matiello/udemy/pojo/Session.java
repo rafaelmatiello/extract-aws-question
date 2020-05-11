@@ -60,6 +60,12 @@ public class Session {
 		return results;
 	}
 
+	@Override
+	public String toString() {
+		return "Session [count=" + count + ", next=" + next + ", previous=" + previous + ", results=" + results
+				+ ", additionalProperties=" + additionalProperties + "]";
+	}
+
 	@JsonProperty("results")
 	public void setResults(List<Result> results) {
 		this.results = results;

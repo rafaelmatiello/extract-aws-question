@@ -21,7 +21,7 @@
 					"<p>Yes, but only using the AWS API.</p>",
 					"<p>No.</p>"
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"
@@ -44,7 +44,7 @@
 					"",
 					"There are slight differences between a normal 'new' Security Group and a 'default' security group in the default VPC.  For an 'new' security group nothing is allowed in by default."
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"b"
@@ -71,7 +71,7 @@
 					"Tagging is a key part of managing an environment.  Even in a lab, it is easy to lose track of the purpose of a resources, and tricky determine why it was created and if it is still needed. This can rapidly translate into lost time and lost money.",
 					""
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"c"
@@ -98,7 +98,7 @@
 					"Spread placement groups have a specific limitation that you can only have a maximum of 7 running instances per Availability Zone and therefore this is the only correct option.  Deploying instances in a single Availability Zone is unique to Cluster Placement Groups only and therefore is not correct.  The last two remaining options are common to all placement group types and so are not specific to Spread Placement Groups.",
 					""
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"c"
@@ -125,7 +125,7 @@
 					"",
 					""
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"
@@ -152,7 +152,7 @@
 					"<p>It depends on the region.</p>",
 					"<p>Only in the US.</p>"
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"b"
@@ -179,7 +179,7 @@
 					"",
 					""
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"b"
@@ -206,7 +206,7 @@
 					"<p>Encrypted by default</p>",
 					"<p>Not suitable for databases</p>"
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"b"
@@ -229,7 +229,7 @@
 					"<p>Yes, although it may take some time.</p>",
 					"<p>No, you will need to stop the instance.</p>"
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"
@@ -252,7 +252,7 @@
 					"",
 					""
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"
@@ -277,7 +277,7 @@
 					"",
 					""
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"b"
@@ -300,7 +300,7 @@
 					"<p>TRUE</p>",
 					"<p>FALSE</p>"
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"
@@ -327,7 +327,7 @@
 					"<p>It depends on the region.</p>",
 					"<p>EBS does not have snapshot functionality.</p>"
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"
@@ -354,7 +354,7 @@
 					"<p>Solution 1: us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with no EC2 instances. Solution 2: us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with three EC2 instances.</p>",
 					"<p>Solution 1: us-west-2a with three EC2 instances, us-west-2b with three EC2 instances, and us-west-2c with three EC2 instances. Solution 2: us-west-2a with four EC2 instances, us-west-2b with two EC2 instances, and us-west-2c with two EC2 instances.</p>"
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"b"
@@ -381,7 +381,7 @@
 					"<p>Your fleet of EC2 Instances requires low latency and high network throughput across multiple availability zones</p>",
 					"<p>Your fleet of EC2 instances requires high network throughput and low latency within a single availability zone</p>"
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"d"
@@ -408,7 +408,7 @@
 					"",
 					""
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"
@@ -435,7 +435,7 @@
 					"<p>Only via the Command Line.</p>",
 					"<p>Only using the AWS API.</p>"
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"
@@ -462,7 +462,7 @@
 					"<p>aws ec2 deploy-snapshot</p>",
 					"<p>aws ec2 new-snapshot</p>"
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"
@@ -485,7 +485,7 @@
 					"<p>TRUE</p>",
 					"<p>FALSE</p>"
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"
@@ -512,7 +512,7 @@
 					"<p>http://10.0.0.1</p>",
 					"<p>http://169.254.169.254</p>"
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"d"
@@ -539,7 +539,7 @@
 					"<p>Only if I specify (using either the AWS Console or the CLI) that it should do so.</p>",
 					"<p>It depends on the region in which the EC2 instance is provisioned.</p>"
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"c"
@@ -562,7 +562,7 @@
 					"<p>TRUE</p>",
 					"<p>FALSE</p>"
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"
@@ -589,7 +589,7 @@
 					"",
 					""
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"

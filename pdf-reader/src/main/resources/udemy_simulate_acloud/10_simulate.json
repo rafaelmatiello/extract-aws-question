@@ -869,7 +869,7 @@
 					"",
 					""
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"question": "<p>A client is concerned that someone other than approved administrators is trying to gain access to the Linux web app instances in their VPC. She asks what sort of network access logging can be added. Which of the following might you recommend? [Select 3]</p>"
 			},
 			"correct_response": [
@@ -1480,7 +1480,7 @@
 					"",
 					""
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"question": "You have been monitoring a sensitive autoscaling group, and you expect it to scale-in as you enter a period of holiday downtime. The auto scaling group is distributed over three AZs ( AZ - A &amp; -B have two instances each, and AZ -C has three instances). All instances have different CPU and Memory utilization, and all instances have been running for a different number of days. All instances come from different versions of a root AMI, and all instances have different numbers of sessions connected. Which instance will be the 1st to shut down?"
 			},
 			"correct_response": [

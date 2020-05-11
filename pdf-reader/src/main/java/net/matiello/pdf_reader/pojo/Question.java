@@ -11,7 +11,9 @@ public class Question {
 	private String asking;
 
 	private List<AnswerOption> answerOption = new ArrayList<AnswerOption>(4);
-	
+
+	private List<AnswerOption> feedbacks = new ArrayList<AnswerOption>(1);
+
 	private RightAnswer rightAnswer;
 
 	public int getNumber() {
@@ -32,7 +34,7 @@ public class Question {
 
 	@Override
 	public String toString() {
-		return number + ". " + asking + "\n" + getAnswerOption() ;
+		return number + ". " + asking + "\n" + getAnswerOption();
 	}
 
 	public List<AnswerOption> getAnswerOption() {
@@ -66,4 +68,13 @@ public class Question {
 	public void setIndex(int index) {
 		this.index = index;
 	}
+
+	public List<AnswerOption> getFeedbacks() {
+		return feedbacks;
+	}
+
+	public void setFeedbacks(List<AnswerOption> feedbacks) {
+		this.feedbacks = feedbacks;
+	}
+
 }

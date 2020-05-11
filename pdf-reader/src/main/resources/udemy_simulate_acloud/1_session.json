@@ -149,7 +149,7 @@
 					"There is no stipulation that it is 2 zones.  the number of AZ per Region varies.  Plus there is no 'automatic' synchronization involved.",
 					"An Availability Zone (AZ) is a distinct location within an AWS Region. Each Region comprises at least two AZs."
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>A Content Distribution Network used to distribute content to users.</p>",
 					"<p>Restricted areas designed specifically for the creation of Virtual Private Clouds.</p>",
@@ -228,7 +228,7 @@
 					"<p># of Availability Zones &gt; # of Edge Locations &gt; # of Regions</p>"
 				],
 				"question": "<p>Which of the following is correct?</p>",
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"c"
@@ -248,7 +248,7 @@
 					"CloudFront content is cached in Edge Locations.",
 					""
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"question": "<p>In which of the following is CloudFront content cached?</p>",
 				"answers": [
 					"<p>Availability Zone</p>",

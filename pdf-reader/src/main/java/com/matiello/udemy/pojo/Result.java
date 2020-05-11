@@ -124,4 +124,11 @@ public class Result {
 		this.additionalProperties.put(name, value);
 	}
 
+	@Override
+	public String toString() {
+		return "Result [_class=" + _class + ", id=" + id + ", assessmentType=" + assessmentType + ", prompt=" + prompt
+				+ ", correctResponse=" + correctResponse + ", section=" + section + ", questionPlain=" + questionPlain
+				+ ", relatedLectures=" + relatedLectures + ", additionalProperties=" + additionalProperties + "]";
+	}
+
 }

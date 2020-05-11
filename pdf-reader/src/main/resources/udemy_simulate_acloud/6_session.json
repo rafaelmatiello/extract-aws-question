@@ -20,7 +20,7 @@
 					"",
 					""
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"question": "<p>VPC stands for:</p>"
 			},
 			"correct_response": [
@@ -39,15 +39,9 @@
 					"<p>Create an Elastic IP and new network interface. Associate the Elastic IP to the new network interface, and the new network interface to your instance.</p>",
 					"<p>Associate the private IP of your instance to the public IP of the internet gateway.</p>",
 					"<p>Create an Elastic IP address and associate it with your instance.</p>",
-					"<p>Nothing – by default all instances deployed into any public subnet will automatically receive a public IP.</p>"
+					"<p>Nothing - by default all instances deployed into any public subnet will automatically receive a public IP.</p>"
 				],
-				"feedbacks": [
-					"",
-					"",
-					"Although creating a new NIC & associating an EIP also results in your instance being accessible from the internet, it leaves your instance with 2 NICs & 2 private IPs as well as the public address and is therefore not the simplest solution. By default, any user-created VPC subnet WILL NOT automatically assign public IPv4 addresses to instances – the only subnet that does this is the “default” VPC subnets automatically created by AWS in your account.",
-					""
-				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"question": "<p>Having just created a new VPC and launching an instance into its public subnet, you realise that you have forgotten to assign a public IP to the instance during creation. What is the simplest way to make your instance reachable from the outside world?</p>"
 			},
 			"correct_response": [
@@ -67,7 +61,7 @@
 					"Each subnet must reside entirely within one Availability Zone and cannot span zones.",
 					""
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>FALSE</p>",
 					"<p>TRUE</p>"
@@ -91,7 +85,7 @@
 					"<p>No. You must always alert AWS before performing any type of vulnerability scan</p>",
 					"<p>Depends on the type of scan and the service being scanned. Some scans can be performed without alerting AWS, some require you to alert.</p>"
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"",
 					"",
@@ -115,7 +109,7 @@
 					"In a custom VPC with new subnets in each AZ, there is a route that supports communication across all subnets/AZs.  Plus a default SG with an allow rule 'All traffic, all protocols, all ports, from anything using this default SG'. ",
 					""
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>TRUE</p>",
 					"<p>FALSE</p>"
@@ -138,7 +132,7 @@
 					"<p>FALSE</p>",
 					"<p>TRUE</p>"
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"You may have only one internet gateway per VPC.",
 					""
@@ -164,7 +158,7 @@
 					"You may peer a VPC to another VPC that's in your same account, or to any VPC in any other account.",
 					""
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"question": "<p>When peering VPCs, you may peer your VPC only with another VPC in your same AWS account.</p>"
 			},
 			"correct_response": [
@@ -187,7 +181,7 @@
 					"An application load balancer must be deployed into at least two subnets.",
 					""
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"question": "<p>True or False: An application load balancer must be deployed into at least two subnets.</p>"
 			},
 			"correct_response": [
@@ -209,7 +203,7 @@
 					"<p>VPC Endpoints require public IP addresses, offering rapid connectivity from the public internet.</p>",
 					"<p>VPC endpoints are dedicated hardware devices that cannot be accessed without the correct IAM credentials.</p>"
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"In contrast to a NAT gateway, traffic between your VPC and the other service does not leave the Amazon network when using VPC endpoints.",
 					"",
@@ -236,7 +230,7 @@
 					"",
 					""
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>Bastion host</p>",
 					"<p>NAT instance</p>",
@@ -263,7 +257,7 @@
 					"",
 					""
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>1</p>",
 					"<p>2</p>",
@@ -290,7 +284,7 @@
 					"<p>VPCs 'C', 'D', and 'E'</p>"
 				],
 				"question": "<p>You have five VPCs in a 'hub and spoke' configuration, with VPC 'A' in the center and individually paired with VPCs 'B', 'C', 'D', and 'E', which make up the 'spokes'. There are no other VPC connections. Which of the following VPCs can VPC 'B' communicate with directly?</p>",
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"As transitive peering is not allowed, VPC 'B' can communicate directly only with VPC 'A'.",
 					"",
@@ -317,7 +311,7 @@
 					"<p>Both Security Groups and Network Access Control Lists are stateless.</p>",
 					"<p>Both Security Groups and Network Access Control Lists are stateful.</p>"
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"Security Groups are stateful and Network Access Control Lists are stateless.",
 					"",
@@ -344,7 +338,7 @@
 					"<p>/24</p>",
 					"<p>/20</p>"
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"The /16 offers 65,536 possible addresses.",
 					"",
@@ -371,7 +365,7 @@
 					"<p>VPC Security Groups</p>",
 					"<p>Route Tables</p>"
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"",
 					"",
@@ -398,7 +392,7 @@
 					"",
 					""
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>A private IP address &amp; public IP address</p>",
 					"<p>A public IP address &amp; secret IP address</p>",
@@ -423,7 +417,7 @@
 					"<p>TRUE</p>",
 					"<p>FALSE</p>"
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"",
 					""
@@ -448,7 +442,7 @@
 					"",
 					""
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>1</p>",
 					"<p>2</p>",
@@ -475,7 +469,7 @@
 					"<p>You may have only 1 internet gateway per VPC.</p>"
 				],
 				"question": "<p>Select the incorrect statement.</p>",
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"",
 					"",
@@ -503,7 +497,7 @@
 					"",
 					"0.0.0.0/0 would allow ANYONE from ANYWHERE to connect to your instances. This is generally a bad plan. The phrase 'web-facing subnets' does not mean just web servers. It would include any instances in that subnet some of which you may not strangers attacking. You would only allow 0.0.0.0/0 on port 80 or 443 to to connect to your public facing Web Servers, or preferably only to an ELB. Good security starts by limiting public access to only what the customer needs. Please see the AWS Security whitepaper for complete details."
 				],
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"question": "<p>To save administration headaches, a consultant advises that you leave all security groups in web-facing subnets open on port 22 to 0.0.0.0/0 CIDR. That way, you can connect wherever you are in the world. Is this a good security design?</p>"
 			},
 			"correct_response": [

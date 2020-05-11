@@ -110,4 +110,11 @@ public class RelatedLecture {
 		this.additionalProperties.put(name, value);
 	}
 
+	@Override
+	public String toString() {
+		return "RelatedLecture [_class=" + _class + ", id=" + id + ", title=" + title + ", created=" + created
+				+ ", asset=" + asset + ", objectIndex=" + objectIndex + ", url=" + url + ", additionalProperties="
+				+ additionalProperties + "]";
+	}
+
 }

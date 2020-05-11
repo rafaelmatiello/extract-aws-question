@@ -158,7 +158,7 @@
 					""
 				],
 				"explanation": "<p>API Gateway, Elastic Load Balancer, and Kinesis Data Firehose are all valid ways to directly trigger lambda.</p>",
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"API Gateway",
 					"S3",
@@ -1356,7 +1356,7 @@
 					""
 				],
 				"explanation": "<p>By a process of elimination, simply stopping the instances is the only one that makes sense. There is no such thing as a Courtesy Hold, Terminating the instance is the opposite of what is requested, and while creating an AMI would work, why would you put company IP in the AWS Marketplace.&nbsp; &nbsp;Note that if it were an Instance-Store root vol it could not be put in a Stopped state.</p>",
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"Contact AWS Support and put the instances on Courtesy Hold.",
 					"Stop the instances.",
@@ -1550,7 +1550,7 @@
 					"<p>http://my-bucket.s3-website.us-east-2.amazonaws.com/index.htm</p>",
 					"<p>http://my-bucket.s3-website.us-east-2.amazonaws.com/index.htm</p>"
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"c"

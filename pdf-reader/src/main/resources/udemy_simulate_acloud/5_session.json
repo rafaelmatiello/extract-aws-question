@@ -8,7 +8,7 @@
 			"id": 10383222,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>Failover Routing and Simple Routing</p>",
 					"<p>Geoproximity Routing and Geolocation Routing</p>",
@@ -35,7 +35,7 @@
 			"id": 10383224,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>TRUE</p>",
 					"<p>FALSE</p>"
@@ -58,12 +58,12 @@
 			"id": 10383226,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>It was invented in 1953.</p>",
 					"<p>Route 66 was already registered with Microsoft.</p>",
 					"<p>The DNS Port is on Port 53 and Route 53 is a DNS Service.</p>",
-					"<p>Beats me – only people in marketing can tell you the reason behind its name.</p>"
+					"<p>Beats me - only people in marketing can tell you the reason behind its name.</p>"
 				],
 				"question": "<p>Route 53 is named so because ________.</p>",
 				"feedbacks": [
@@ -85,7 +85,7 @@
 			"id": 10383228,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>A</p>",
 					"<p>AAAA</p>",
@@ -112,7 +112,7 @@
 			"id": 10383230,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>True. There is a hard limit of 10 domain names. You cannot go above this number.</p>",
 					"<p>True and False. With Route 53, there is a default limit of 50 domain names. However, this limit can be increased by contacting AWS support.</p>",
@@ -137,7 +137,7 @@
 			"id": 10383232,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>Failover routing policy</p>",
 					"<p>Geolocation routing policy</p>",
@@ -164,7 +164,7 @@
 			"id": 10383234,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>Simple Routing</p>",
 					"<p>Weighted Routing</p>",

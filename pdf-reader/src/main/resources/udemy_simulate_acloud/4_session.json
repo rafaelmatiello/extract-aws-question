@@ -21,7 +21,7 @@
 					"DynamoDB is the AWS managed NoSQL database service.  It has many features that are being added to constantly, but it is not an RDBMS service and therefore it will never have the ability to store relational data.  All of the other options listed are valid features of DynamoDB."
 				],
 				"question": "<p>Which of the following is not a feature of DynamoDB?</p>",
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"d"
@@ -48,7 +48,7 @@
 					""
 				],
 				"question": "<p>What happens to the I/O operations of a single-AZ RDS instance during a database snapshot or backup?</p>",
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"
@@ -62,7 +62,7 @@
 			"id": 10382896,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"",
 					""
@@ -98,7 +98,7 @@
 					""
 				],
 				"question": "<p>AWS's NoSQL product offering is known as ________.</p>",
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"b"
@@ -125,7 +125,7 @@
 					""
 				],
 				"question": "<p>Which set of RDS database engines is currently available?</p>",
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"d"
@@ -139,7 +139,7 @@
 			"id": 10382902,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"",
 					""
@@ -162,7 +162,7 @@
 			"id": 10382904,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"",
 					""
@@ -194,7 +194,7 @@
 					""
 				],
 				"question": "<p>With new RDS DB instances, automated backups are enabled by default.</p>",
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"
@@ -208,7 +208,7 @@
 			"id": 10382908,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"",
 					"",
@@ -235,7 +235,7 @@
 			"id": 10382910,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"",
 					"",
@@ -274,14 +274,14 @@
 					"",
 					""
 				],
-				"question": "<p>How many copies of my data does RDS – Aurora store by default?</p>",
-				"relatedLectureIds": ""
+				"question": "<p>How many copies of my data does RDS - Aurora store by default?</p>",
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"b"
 			],
 			"section": "",
-			"question_plain": "How many copies of my data does RDS – Aurora store by default?",
+			"question_plain": "How many copies of my data does RDS - Aurora store by default?",
 			"related_lectures": []
 		},
 		{
@@ -289,7 +289,7 @@
 			"id": 10382914,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"",
 					"",
@@ -329,7 +329,7 @@
 					""
 				],
 				"question": "<p>If you want your application to check RDS for an error, have it look for an ______ node in the response from the Amazon RDS API.</p>",
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"b"
@@ -356,7 +356,7 @@
 					""
 				],
 				"question": "<p>Which AWS DB platform is most suitable for OLTP?</p>",
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"b"
@@ -383,7 +383,7 @@
 					"Redshift would be the most suitable for online analytics processing."
 				],
 				"question": "<p>Which of the following is most suitable for OLAP?</p>",
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"d"
@@ -410,7 +410,7 @@
 					""
 				],
 				"question": "<p>Which AWS service is ideal for Business Intelligence Tools/Data Warehousing?</p>",
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"d"
@@ -437,7 +437,7 @@
 					""
 				],
 				"question": "<p>What data transfer charge is incurred when replicating data from your primary RDS instance to your secondary RDS instance?</p>",
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"c"
@@ -451,7 +451,7 @@
 			"id": 10382928,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"",
 					"",
@@ -493,7 +493,7 @@
 					""
 				],
 				"question": "<p>If you are using Amazon RDS Provisioned IOPS storage with a Microsoft SQL Server database engine, what is the maximum size RDS volume you can have by default?</p>",
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"d"
@@ -520,7 +520,7 @@
 					""
 				],
 				"question": "<p>Which of the following AWS services is a non-relational database?</p>",
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"c"
@@ -547,7 +547,7 @@
 					""
 				],
 				"question": "<p>You are hosting a MySQL database on the root volume of an EC2 instance. The database is using a large number of IOPS, and you need to increase the number of IOPS available to it. What should you do?</p>",
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"c"
@@ -561,7 +561,7 @@
 			"id": 10382936,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"",
 					"",
@@ -601,7 +601,7 @@
 					""
 				],
 				"question": "<p>Amazon's ElastiCache uses which two engines?</p>",
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"c"
@@ -615,7 +615,7 @@
 			"id": 10382940,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"feedbacks": [
 					"",
 					"Technically a destination port number is needed, however with a DB security group the RDS instance port number is automatically applied to the RDS DB Security Group."

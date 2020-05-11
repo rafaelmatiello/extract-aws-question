@@ -8,7 +8,7 @@
 			"id": 10383400,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>SQS sends messages to people on topics, whereas SNS manages tasks.</p>",
 					"<p>SNS pulls (polls), whereas SQS is push-based message service.</p>",
@@ -35,7 +35,7 @@
 			"id": 10383402,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>Manage user identification and authorization</p>",
 					"<p>Coordinate synchronous and asynchronous tasks</p>",
@@ -62,7 +62,7 @@
 			"id": 10383508,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>TRUE</p>",
 					"<p>FALSE</p>"
@@ -85,7 +85,7 @@
 			"id": 10383510,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>TRUE</p>",
 					"<p>FALSE</p>"
@@ -108,7 +108,7 @@
 			"id": 10383512,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>SNS</p>",
 					"<p>SWF</p>",
@@ -135,7 +135,7 @@
 			"id": 10383514,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>The topic will terminate your EC2 instances that aren't identified by tags.</p>",
 					"<p>Nothing, as topics are specific to Amazon SQS.</p>",
@@ -162,7 +162,7 @@
 			"id": 10383516,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>TRUE</p>",
 					"<p>FALSE</p>"
@@ -185,7 +185,7 @@
 			"id": 10383518,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>A specialized security group configuration.</p>",
 					"<p>A special type of worker instance.</p>",
@@ -212,7 +212,7 @@
 			"id": 10383520,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>Simple Wireless Forms</p>",
 					"<p>Simple Web Form</p>",
@@ -239,7 +239,7 @@
 			"id": 10383522,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>TRUE</p>",
 					"<p>FALSE</p>"
@@ -262,7 +262,7 @@
 			"id": 10383528,
 			"assessment_type": "multiple-choice",
 			"prompt": {
-				"relatedLectureIds": "",
+				"relatedLectureIds": [],
 				"answers": [
 					"<p>Software Enabled Server</p>",
 					"<p>Simple Email Service</p>",

@@ -21,7 +21,7 @@
 					"Like any services in AWS, Lambda needs to have a role associated with it that provide credentials with rights to other services. This is exactly the same as needing a role on an EC2 instance to access S3 or DDB.",
 					""
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"c"
@@ -48,7 +48,7 @@
 					"Lambda scales out automatically - each time your function is triggered, a new, separate instance of that function is started. There are limits, but these can be adjusted on request.",
 					""
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"c"
@@ -75,7 +75,7 @@
 					"AWS X-Ray helps developers analyze and debug production, distributed applications, such as those built using a microservices & serverless architectures.",
 					""
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"c"
@@ -102,7 +102,7 @@
 					"",
 					""
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"
@@ -129,7 +129,7 @@
 					"",
 					""
 				],
-				"relatedLectureIds": ""
+				"relatedLectureIds": []
 			},
 			"correct_response": [
 				"a"

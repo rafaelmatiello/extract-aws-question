@@ -3,6 +3,7 @@ package com.matiello.udemy.pojo;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -16,12 +17,19 @@ public class Prompt {
 
 	@JsonProperty("feedbacks")
 	private List<String> feedbacks = null;
+
 	@JsonProperty("relatedLectureIds")
-	private String relatedLectureIds;
+	private List<String> relatedLectureIds;
+
 	@JsonProperty("answers")
 	private List<String> answers = null;
+
 	@JsonProperty("question")
 	private String question;
+
+	@JsonProperty("explanation")
+	private String explanation;
+
 	@JsonIgnore
 	private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -36,12 +44,12 @@ public class Prompt {
 	}
 
 	@JsonProperty("relatedLectureIds")
-	public String getRelatedLectureIds() {
+	public List<String> getRelatedLectureIds() {
 		return relatedLectureIds;
 	}
 
 	@JsonProperty("relatedLectureIds")
-	public void setRelatedLectureIds(String relatedLectureIds) {
+	public void setRelatedLectureIds(List<String> relatedLectureIds) {
 		this.relatedLectureIds = relatedLectureIds;
 	}
 
@@ -73,6 +81,20 @@ public class Prompt {
 	@JsonAnySetter
 	public void setAdditionalProperty(String name, Object value) {
 		this.additionalProperties.put(name, value);
+	}
+
+	@Override
+	public String toString() {
+		return "Prompt [feedbacks=" + feedbacks + ", relatedLectureIds=" + relatedLectureIds + ", answers=" + answers
+				+ ", question=" + question + ", additionalProperties=" + additionalProperties + "]";
+	}
+
+	public String getExplanation() {
+		return explanation;
+	}
+
+	public void setExplanation(String explanation) {
+		this.explanation = explanation;
 	}
 
 }

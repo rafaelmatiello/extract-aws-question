@@ -87,4 +87,10 @@ public class Asset {
 		this.additionalProperties.put(name, value);
 	}
 
+	@Override
+	public String toString() {
+		return "Asset [_class=" + _class + ", id=" + id + ", assetType=" + assetType + ", title=" + title + ", created="
+				+ created + ", additionalProperties=" + additionalProperties + "]";
+	}
+
 }

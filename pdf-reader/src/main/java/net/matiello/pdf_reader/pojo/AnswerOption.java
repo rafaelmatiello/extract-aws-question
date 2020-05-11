@@ -4,6 +4,12 @@ public class AnswerOption {
 	private String option;
 	private String description;
 
+	public AnswerOption(String option, String description) {
+		super();
+		this.option = option;
+		this.description = description;
+	}
+
 	public AnswerOption() {
 	}
 
