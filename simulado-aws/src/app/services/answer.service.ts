@@ -1,13 +1,15 @@
 import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {ConfigurationService} from './configuration.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AnswerService {
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient,
+              private configurationService: ConfigurationService) {
   }
 
   saveAnswer(answer: any): Observable<any> {
@@ -17,6 +19,6 @@ export class AnswerService {
       })
     };
 
-    return this.http.post('http://192.168.0.15:8080/answers/' + answer.index, answer, httpOptions);
+    return this.http.post(this.configurationService.getUrlBackend() + '/answers/' + answer.index, answer, httpOptions);
   }
 }
