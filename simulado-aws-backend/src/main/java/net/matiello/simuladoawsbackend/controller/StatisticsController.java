@@ -1,6 +1,8 @@
 package net.matiello.simuladoawsbackend.controller;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -43,7 +45,10 @@ public class StatisticsController {
 
 		});
 
-		return list.values();
+		List<Statistics> values = new ArrayList<>(list.values());
+		Collections.sort(values, (o1, o2) -> Integer.valueOf(o1.getKey()).compareTo(Integer.valueOf(o2.getKey())));
+
+		return values;
 	}
 
 }
