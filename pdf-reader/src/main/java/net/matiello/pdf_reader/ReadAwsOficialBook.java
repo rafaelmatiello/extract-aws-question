@@ -6,8 +6,6 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -27,11 +25,11 @@ import net.matiello.pdf_reader.pojo.RightAnswer;
 /**
  * This is an example on how to extract text line by line from pdf document
  */
-public class ReadAwsBook extends PDFTextStripper {
+public class ReadAwsOficialBook extends PDFTextStripper {
 
 	static List<String> lines = new ArrayList<String>();
 
-	public ReadAwsBook() throws IOException {
+	public ReadAwsOficialBook() throws IOException {
 	}
 
 	/**
@@ -39,13 +37,13 @@ public class ReadAwsBook extends PDFTextStripper {
 	 */
 	public static void main(String[] args) throws IOException {
 		PDDocument document = null;
-		String fileName = "C:\\Users\\rafael\\OneDrive\\aws\\livro aws\\AWS-Certified-Solutions-Architect-Official-Study-Guide.pdf.pdf";
+		String fileName = "C:\\workspace\\estudos\\pdf-reader\\src\\main\\resources\\bookPdf.pdf";
 		Map<String, Question> questions = new LinkedHashMap<String, Question>();
 		List<String> questionNotFound = new ArrayList<String>();
 		try {
 
 			document = PDDocument.load(new File(fileName));
-			PDFTextStripper stripper = new ReadAwsBook();
+			PDFTextStripper stripper = new ReadAwsOficialBook();
 			stripper.setSortByPosition(true);
 			stripper.setStartPage(0);
 			stripper.setEndPage(document.getNumberOfPages());
@@ -59,7 +57,6 @@ public class ReadAwsBook extends PDFTextStripper {
 			boolean startQuestion = false;
 			boolean startAnswer = false;
 			int lastChapter = 0;
-			int ansNumber = 0;
 			int lastDomain = 0;
 
 			boolean readQuestion = true;
@@ -67,15 +64,13 @@ public class ReadAwsBook extends PDFTextStripper {
 			RightAnswer currentRightAnswer = null;
 			boolean startRightAnswer = false;
 
-			boolean startParseQuestion = false;
 			int index = 1;
 			// print lines
 			for (String line : lines) {
 				System.out.println(line);
 
 				// inicia os capitulos
-				if (line.equals("Review Questions")) {
-					startParseQuestion = true;
+				if (line.equals("AWS Certified Solutions Architect Practice Tests: Associate SAA-C01 Exam ")) {
 					currentQuestion = null;
 					currentAnswer = null;
 					startAnswer = false;
@@ -83,79 +78,83 @@ public class ReadAwsBook extends PDFTextStripper {
 					continue;
 				}
 
-				if (isChapter(line) != null && startParseQuestion) {
-					lastChapter = isChapter(line);
-					if (lastChapter == 1) {
-						questions.clear();
-					}
-					startParseQuestion = false;
-					continue;
-				}
-
-				if (line.equals("Answers to Review Questions")) {
+				if (line.equals("Answers\tto\tReview\tQuestions")) {
 					readQuestion = false;
 					continue;
 				}
 
 				if (readQuestion) {
-					if (startParseQuestion) {
-						Question question = isQuestion(line);
-						AnswerOption answer = isAnswerOptions(line);
 
-						if (question == null && currentQuestion == null && currentAnswer == null) {
+					Integer chapter = isChapter(line);
+					if (chapter != null) {
+						lastChapter = chapter;
+						continue;
+					}
+
+					Question question = isQuestion(line);
+					AnswerOption answer = isAnswerOptions(line);
+
+					if (question == null && currentQuestion == null && currentAnswer == null) {
+						continue;
+					}
+
+					if (question != null) {
+						currentQuestion = question;
+						currentQuestion.setChapter(lastChapter);
+						question.setIndex(index++);
+						startQuestion = true;
+						startAnswer = false;
+						questions.put(lastChapter + "-" + question.getNumber(), question);
+					} else if (startQuestion && answer == null) {
+						currentQuestion.setAsking(currentQuestion.getAsking() + line);
+					}
+
+					if (answer != null) {
+						currentAnswer = answer;
+						startQuestion = false;
+						startAnswer = true;
+						currentQuestion.getAnswerOption().add(answer);
+					} else if (startAnswer) {
+
+						if (isReviewQuestion(line)) {
 							continue;
 						}
 
-						if (question != null) {
-							currentQuestion = question;
-							currentQuestion.setChapter(lastChapter);
-							question.setIndex(index++);
-							startQuestion = true;
-							startAnswer = false;
-							questions.put(lastChapter + "-" + question.getNumber(), question);
-						} else if (startQuestion && answer == null) {
-							currentQuestion.setAsking(currentQuestion.getAsking() + " " + line);
-						}
-
-						if (answer != null) {
-							currentAnswer = answer;
-							startQuestion = false;
-							startAnswer = true;
-							currentQuestion.getAnswerOption().add(answer);
-						} else if (startAnswer) {
-
-							if (isReviewQuestion(line)) {
-								continue;
-							}
-
-							currentAnswer.setDescription(currentAnswer.getDescription() + " " + line);
-						}
+						currentAnswer.setDescription(currentAnswer.getDescription() + line);
 					}
 				} else {
-
-					if (isChapterAns(line) != null) {
-						lastChapter = isChapterAns(line);
-						startRightAnswer = false;
+					if (isAppendix(line)) {
 						continue;
 					}
 
-					if (isNumberAns(line) != null) {
-						ansNumber = isNumberAns(line);
+					if (isIndexTitle(line)) {
+						break;
+					}
+
+					// Integer domain = isDomain(line);
+					Integer domain = isChapterAns(line);
+					if (domain != null) {
+						lastDomain = domain;
 						startRightAnswer = false;
-						continue;
+					}
+
+					if (lastDomain == 5) {
+						if (isPracticeTest(line)) {
+							lastDomain++;
+							startRightAnswer = false;
+						}
 					}
 
 					RightAnswer rightAnswer = isRightAnswer(line);
 
 					if (rightAnswer != null) {
-						rightAnswer.setNumber(ansNumber);
 						currentRightAnswer = rightAnswer;
-						currentRightAnswer.setDomain(lastChapter);
+						currentRightAnswer.setDomain(lastDomain);
 						startRightAnswer = true;
 
-						Question question = questions.get(lastChapter + "-" + rightAnswer.getNumber());
+						Question question = questions.get(lastDomain + "-" + rightAnswer.getNumber());
 						if (question == null) {
-							questionNotFound.add(lastChapter + "-" + rightAnswer.getNumber());
+							questionNotFound.add(lastDomain + "-" + rightAnswer.getNumber());
 						} else {
 							question.setRightAnswer(currentRightAnswer);
 						}
@@ -164,7 +163,7 @@ public class ReadAwsBook extends PDFTextStripper {
 						if (isDomainWithNumberPage(line)) {
 							continue;
 						}
-						currentRightAnswer.setDescription(currentRightAnswer.getDescription() + " " + line);
+						currentRightAnswer.setDescription(currentRightAnswer.getDescription() + line);
 					}
 
 				}
@@ -176,40 +175,18 @@ public class ReadAwsBook extends PDFTextStripper {
 		}
 
 		ObjectMapper objectMapper = new ObjectMapper();
-		List<Question> values = new ArrayList<Question>(questions.values());
-		Collections.sort(values, new Comparator<Question>() {
+		objectMapper.writerWithDefaultPrettyPrinter().writeValue(
+				new File("C:\\repositorios\\extract-aws-question\\pdf-reader\\src\\main\\resources\\perguntas.json"),
+				questions.values());
 
-			@Override
-			public int compare(Question o1, Question o2) {
-
-				int compareTo = Integer.valueOf(o1.getChapter()).compareTo(o2.getChapter());
-				if (compareTo != 0) {
-					return compareTo;
-				}
-
-				return Integer.valueOf(o1.getNumber()).compareTo(o2.getNumber());
-			}
-
-		});
-
-		int index = 1301;
-		for (Question question : values) {
-			question.setIndex(index++);
-			question.setChapter(question.getChapter() + 30);
-		}
-
-		objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(
-				"C:\\repositorios\\extract-aws-question\\pdf-reader\\src\\main\\resources\\perguntas_oficial.json"),
-				values);
-
-		objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(
-				"C:\\repositorios\\extract-aws-question\\pdf-reader\\src\\main\\resources\\notFound_oficial.json"),
+		objectMapper.writerWithDefaultPrettyPrinter().writeValue(
+				new File("C:\\repositorios\\extract-aws-question\\pdf-reader\\src\\main\\resources\\notFound.json"),
 				questionNotFound);
 
 	}
 
 	private static AnswerOption isAnswerOptions(String line) {
-		Pattern pattern = Pattern.compile("^(A|B|C|D|E|F|G)\\.\\s*(.*)$");
+		Pattern pattern = Pattern.compile("^(A|B|C|D|E)\\.\\s*(.*)$");
 
 		Matcher matcher = pattern.matcher(line);
 
@@ -242,7 +219,7 @@ public class ReadAwsBook extends PDFTextStripper {
 
 	private static Integer isChapter(String line) {
 
-		Pattern pattern = Pattern.compile("(Chapter)\\s([0-9]+)\\s.*");
+		Pattern pattern = Pattern.compile("[0-9]+\\s(Chapter)\\s([0-9])\\s.*");
 		Matcher matcher = pattern.matcher(line);
 
 		if (matcher.find()) {
@@ -254,23 +231,11 @@ public class ReadAwsBook extends PDFTextStripper {
 
 	private static Integer isChapterAns(String line) {
 
-		Pattern pattern = Pattern.compile("(Chapter)\\s([0-9]+):\\s.*");
+		Pattern pattern = Pattern.compile("(Chapter)\\s([0-9])\\s.*");
 		Matcher matcher = pattern.matcher(line);
 
 		if (matcher.find()) {
 			return Integer.parseInt(matcher.group(2));
-		}
-
-		return null;
-	}
-
-	private static Integer isNumberAns(String line) {
-
-		Pattern pattern = Pattern.compile("^([0-9]+).\\s*$");
-		Matcher matcher = pattern.matcher(line);
-
-		if (matcher.find()) {
-			return Integer.parseInt(matcher.group(1));
 		}
 
 		return null;
@@ -304,18 +269,19 @@ public class ReadAwsBook extends PDFTextStripper {
 
 	private static RightAnswer isRightAnswer(String line) {
 
-		Pattern pattern = Pattern.compile("^([A-F|,|\\s]+).\\s(.*)$");
+		Pattern pattern = Pattern.compile("^\\s?([0-9|\\s]+)\\.\\s([\\w|,|\\s]*).\\s(.*)$");
 		Matcher matcher = pattern.matcher(line);
 
 		if (matcher.find()) {
 
 			RightAnswer rightAnswer = new RightAnswer();
+			rightAnswer.setNumber(Integer.parseInt(matcher.group(1).replace(" ", "")));
 
-			String[] answer = matcher.group(1).split(",");
+			String[] answer = matcher.group(2).split(",");
 			for (int i = 0; i < answer.length; i++) {
 				rightAnswer.getOptions().add(answer[i].replace(" ", ""));
 			}
-			rightAnswer.setDescription(matcher.group(2));
+			rightAnswer.setDescription(matcher.group(3));
 			return rightAnswer;
 		}
 
@@ -372,6 +338,6 @@ public class ReadAwsBook extends PDFTextStripper {
 
 	@Override
 	protected void writeString(String str, List<TextPosition> textPositions) throws IOException {
-		lines.add(str.replace("\t", " "));
+		lines.add(str);
 	}
 }

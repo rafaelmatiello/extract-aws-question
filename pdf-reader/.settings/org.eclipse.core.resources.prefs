@@ -1,7 +1,9 @@
 eclipse.preferences.version=1
 encoding//src/main/java=UTF-8
 encoding//src/main/resources=UTF-8
-encoding//src/main/resources/perguntas.json=UTF-8
+encoding//src/main/resources/final/1-perguntas_livro.json=UTF-8
+encoding//src/main/resources/final/3-perguntas_oficial.json=UTF-8
+encoding//src/main/resources/final/Completo.json=UTF-8
 encoding//src/main/resources/udemy_simulate_acloud/10_simulate.json=UTF-8
 encoding//src/main/resources/udemy_simulate_acloud/11_simulate.json=UTF-8
 encoding//src/test/java=UTF-8
