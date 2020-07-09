@@ -73,11 +73,11 @@
 
   <p-confirmDialog header="Confirmação" icon="pi pi-exclamation-triangle"></p-confirmDialog>
 </div>
-<p-sidebar [(visible)]="showSidebar" [fullScreen]="true" [baseZIndex]="10000">
+<p-sidebar [(visible)]="showSidebar" [fullScreen]="true" [baseZIndex]="10000" [closeOnEscape]="true" [blockScroll]="true">
   <div class="ui-g-12">
     <h1>Resultado</h1>
   </div>
-  <p-table *ngIf="statistics" [value]="statistics">
+  <p-table *ngIf="statistics" [value]="statistics" [paginator]="true" [rows]="10">
     <ng-template pTemplate="header">
       <tr>
         <th>Capítulo</th>
@@ -89,7 +89,7 @@
     </ng-template>
     <ng-template pTemplate="body" let-stat>
       <tr style="text-align: right;">
-        <td>{{stat.key}}</td>
+        <td><a [routerLink]="['/report',stat.key]">{{stat.key}}</a></td>
         <td>{{stat.answers}}</td>
         <td>{{stat.correct}}</td>
         <td>{{stat.wrong}}</td>

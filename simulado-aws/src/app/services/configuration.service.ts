@@ -8,7 +8,6 @@ export class ConfigurationService {
   private url = 'http://note-rafael:8080';
 
   constructor() {
-
     this.url = window.location.protocol + '//' + window.location.host + ':8080';
   }
 

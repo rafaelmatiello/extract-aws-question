@@ -160,8 +160,8 @@ export class QuestionComponent implements OnInit {
   }
 
   randomWrong() {
-    this.questionService.getIndexWrong().subscribe((quantidadeTotal: any) => {
-      this.gotoIndex = this.randomInt(1, this.totalQuestion);
+    this.questionService.getIndexWrong().subscribe((wrong: any) => {
+      this.gotoIndex = wrong;
       this.goTo();
     });
 
@@ -171,4 +171,7 @@ export class QuestionComponent implements OnInit {
     return min + Math.floor((max - min) * Math.random());
   }
 
+  showReport(key: string) {
+      alert(key);
+  }
 }

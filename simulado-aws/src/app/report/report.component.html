@@ -1,0 +1,23 @@
+<h1>Resultado</h1>
+
+<div *ngFor="let item of questions" style="margin-bottom: 20px">
+  <p-card>
+    <div style="font-weight: bold">
+      <i class="fa fa-check" aria-hidden="true" *ngIf="item.answer && item.answer.correct" style="color: darkgreen"></i>
+      <i class="fa fa-times" aria-hidden="true" *ngIf="item.answer && !item.answer.correct" style="color: red"></i>
+      {{item.question.chapter + '/' + item.question.number}}
+      - {{item.question.asking}}</div>
+
+    <div *ngFor="let answerOption of item.question.answerOption" style="margin-top: 7px;">
+      <span
+        style="{{item.question.rightAnswer.options.indexOf(answerOption.option) >= 0 ? 'font-weight: bold' : ''}}">{{answerOption.option}}
+        ) {{answerOption.description}}   <i class="fa fa-check-square-o" aria-hidden="true"
+                                            *ngIf="item.answer && item.answer.selectOption.indexOf(answerOption.option) >= 0"></i></span>
+    </div>
+
+    <p style="margin-top: 15px">{{item.question.rightAnswer.description}}</p>
+
+    <div style="font-weight: bold" *ngIf="item.answer">Escolhas:
+      {{item.answer.selectOption}} - {{item.answer.date  | date: 'dd/MM/yyyy hh:mm' }}</div>
+  </p-card>
+</div>
