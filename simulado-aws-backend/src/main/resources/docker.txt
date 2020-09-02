@@ -1,0 +1,16 @@
+### mongo
+docker run --name mongodb -d -p 27017:27017  mongo
+docker exec -i -t 287 /bin/bash
+
+
+###
+docker build -t rmatiello/simulado-backend .
+
+docker run -d --net=host --name backend -p 8080:8080 rmatiello/simulado-backend:1.0.1
+
+###
+docker build -t rmatiello/simulado-frontend:1.0.1 .
+
+docker run -d --name frontend -p 80:80 rmatiello/simulado-frontend:1.0.1
+
+## kubectl apply -f deploy.yaml

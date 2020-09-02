@@ -14,6 +14,17 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+
+### Docker commands
+
+`npm rum build`
+
+`docker build -t rmatiello/simulado-frontend:1.0.1 .`
+
+`docker run -d --name frontend --env API_URL="http://note123.com.br:8080" -p 8001:80 rmatiello/simulado-frontend:1.1.2`
+
+
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
