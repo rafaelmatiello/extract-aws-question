@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+  labels:
+    app: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: simulado-frontend
+        image: rmatiello/simulado-frontend:1.1.2
+        ports:
+        - containerPort: 80
+        env:
+        - name: API_URL
+          value: "http://10.152.183.25:8080"
+          

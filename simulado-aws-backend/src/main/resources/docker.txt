@@ -13,4 +13,19 @@ docker build -t rmatiello/simulado-frontend:1.0.1 .
 
 docker run -d --name frontend -p 80:80 rmatiello/simulado-frontend:1.0.1
 
+
+
+docker run -d --name frontend --env API_URL="http://note123.com.br:8080" -p 8001:80 rmatiello/simulado-frontend:1.1.2
+
+
+
+
+
+
+
 ## kubectl apply -f deploy.yaml
+
+kubectl create -f configMap.yaml
+
+
+echo -n 'admin' | base64

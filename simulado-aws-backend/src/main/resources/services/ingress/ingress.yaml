@@ -1,0 +1,9 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-teste
+spec:
+  backend:
+    serviceName: nginx-node-port
+    servicePort: 80
+       

@@ -14,10 +14,11 @@ spec:
       labels:
         app: frontend
     spec:
-      hostNetwork: true
       containers:
       - name: simulado-frontend
-        image: rmatiello/simulado-frontend:1.0.1
+        image: rmatiello/simulado-frontend:1.1.2
         ports:
         - containerPort: 80
-          
+        envFrom:
+          - configMapRef:
+              name: configmap-simulado

@@ -1,0 +1,31 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-all
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/proxy-body-size: 10m
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - host: rafael-inspiron-7559
+      http:
+       paths:
+       - path: /frontend/
+         pathType: Prefix
+         backend:
+           service:
+            name: my-lb-frontend
+            port:
+              number: 9090
+       - path: /backend/
+         pathType: Prefix
+         backend:
+          service:
+            name: my-lb-backend
+            port:
+              number: 8080
+       
+       
+         
+           

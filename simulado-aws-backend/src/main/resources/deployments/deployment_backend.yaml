@@ -15,9 +15,11 @@ spec:
       labels:
         app: backend
     spec:
-      hostNetwork: true
       containers:
       - name: simulado-backend
         image: rmatiello/simulado-backend:1.0.1
         ports:
-        - containerPort: 8080        
+        - containerPort: 8080       
+        env:
+        - name: spring.data.mongodb.host
+          value: "my-lb-mongo"

@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-loadbalancer
+  name: my-lb-backend
 spec:
   type: LoadBalancer
   selector:
     app: backend
   ports:
     - protocol: TCP
-      port: 9090
-      targetPort: 80
+      port: 8080
+      targetPort: 8080
   
